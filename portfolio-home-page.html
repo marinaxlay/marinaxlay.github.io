@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio UX/UI Designer</title>
+    <!-- Importation des polices -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio-styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h3>Marina Bay</h3>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="#">Offres et tarifications</a></li>
+                <li><a href="#">Réalisations</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Studio numérique pour <span class="highlight">créateurs de projet responsables</span></h1>
+            <p class="intro-text">
+                Tu souhaites être accompagné(e) dans la création ou la refonte de tes solutions web et mobiles, tout en implémentant les principes d'accessibilité et d'éco-conception pour un impact positif aligné avec tes valeurs ? Tu te trouves à la bonne porte !
+            </p>
+            <div class="tags">
+                <span class="tag">UX Design</span>
+                <span class="tag">UI Design</span>
+                <span class="tag">Éco-conception</span>
+                <span class="tag">Accessibilité</span>
+                <span class="tag">SEO</span>
+            </div>
+            <a href="#" class="cta-button">Parlons de ton projet !</a>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <h2>Mes réalisations</h2>
+            <p class="section-intro">Découvre quelques-uns de mes travaux démontrant ma méthodologie de travail et des exemples de ce que je peux apporter à tes projets :</p>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="resources/france_travail/cover_france_travail.png" alt="France Travail">
+                    </div>
+                    <div class="project-tags">
+                        <span>Audit UX</span> • <span>Prototypes</span> • <span>Tests</span>
+                    </div>
+                    <h3>France Travail</h3>
+                    <p class="project-year">2025</p>
+                    <p class="project-description">Redesigning France Travail's homepage to make it easier to navigate through.</p>
+                    <div class="project-platforms">
+                        <span class="platform desktop">Desktop</span>
+                        <span class="platform mobile">Mobile</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="resources/societe_generale/cover_societe_generale.png" alt="Société Générale">
+                    </div>
+                    <div class="project-tags">
+                        <span>Entretiens</span> • <span>Prototypes</span> • <span>Tests</span>
+                    </div>
+                    <h3>Société Générale</h3>
+                    <p class="project-year">2023</p>
+                    <p class="project-description">Designing a showcase homepage for one of Société Générale's IT directions.</p>
+                    <div class="project-platforms">
+                        <span class="platform desktop">Desktop</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="resources/beautify/cover_beautify.png" alt="Beautify">
+                    </div>
+                    <div class="project-tags">
+                        <span>Audit UX</span> • <span>Prototypes</span> • <span>Tests</span>
+                    </div>
+                    <h3>Beautify</h3>
+                    <p class="project-year">2022</p>
+                    <p class="project-description">Designing an inclusive and intuitive platform to make beauty accessible to all.</p>
+                    <div class="project-platforms">
+                        <span class="platform mobile">Mobile</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="secondary-button">Découvre toutes mes réalisations</a>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Parlons de ton projet</h3>
+                    <p>Je serais ravi(e) de discuter de tes besoins et de voir comment je peux t'aider à réaliser ton projet.</p>
+                    <ul class="contact-details">
+                        <li>📧 hello@marinabay.fr</li>
+                        <li>📱 +33 6 12 34 56 78</li>
+                        <li>📍 Paris, France</li>
+                    </ul>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Marina Bay</h3>
+                    <p>Studio numérique pour créateurs de projet responsables</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Projets</a></li>
+                            <li><a href="#">À propos</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+                        <p>hello@marinabay.fr</p>
+                        <p>+33 6 12 34 56 78</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Marina Bay. Tous droits réservés.</p>
+                <p>Mentions légales | Politique de confidentialité</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio-script.js"></script>
+</body>
+</html>
