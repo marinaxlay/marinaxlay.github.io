@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautify | Portfolio UX/UI Designer</title>
+    <!-- Importation des polices -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio-styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="portfolio-home-page.html"><h3>Marina Lay</h3></a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="portfolio-home-page.html">Accueil</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Projets</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="case-study beautify">
+        <img src="resources/beautify/cover_beautify.png" alt="Beautify Cover" class="case-cover">
+        <div class="container">
+            <section class="case-study-header">
+                <h1><span class="emoji">💄</span> Beautify</h1>
+                <div class="case-info">
+                    <div class="case-info-item">
+                        <h4>Description</h4>
+                        <p>Designing an inclusive and intuitive platform to make beauty accessible for everyone.</p>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="case-meta">
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <h4><span class="emoji">⏱</span> Time frame</h4>
+                        <p>January - May 2022</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4><span class="emoji">🧢</span> Role</h4>
+                        <p>UI/UX Designer</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4><span class="emoji">🛠</span> Tools</h4>
+                        <p>Miro, Figma, Notion</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4><span class="emoji">👨‍🏫</span> Mentor</h4>
+                        <p>François Violette, Marie Girard</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4><span class="emoji">👥</span> Team</h4>
+                        <p>Cindy Long, Adeline Poumaroux, Ines Tabti-Benhari, Diane Volpelière</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="case-introduction">
+                <h2>Introduction</h2>
+                <p>From your physical characteristics to your skin type, your beauty is unique: there is none other like yours. But in the mass information age, finding the appropriate products and techniques that will enhance YOUR features keeps growing more challenging – especially in a white, youth and cis female dominated area.</p>
+                
+                <div class="mission-statement">
+                    <h3>Our Mission Statement</h3>
+                    <p>To help all our users find the right products and techniques through an intuitive and inclusive platform.</p>
+                </div>
+            </section>
+
+            <section class="case-phase" id="empathize">
+                <div class="phase-header">
+                    <h2><span class="emoji">🔍</span> Empathize</h2>
+                </div>
+                
+                <h3>User Interviews</h3>
+                <p>For this fictitious university project, and due to time constraints, members of the team were asked to interview only one person each. However, it is worth noting that using a larger user panel would have been necessary for an actual project.</p>
+                
+                <h4>Profiles</h4>
+                <div class="table-container">
+                    <table class="interview-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Interviewee 1</th>
+                                <th>Interviewee 2</th>
+                                <th>Interviewee 3</th>
+                                <th>Interviewee 4</th>
+                                <th>Interviewee 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gender</td>
+                                <td>♀</td>
+                                <td>♀</td>
+                                <td>♀</td>
+                                <td>♂</td>
+                                <td>♀</td>
+                            </tr>
+                            <tr>
+                                <td>Age</td>
+                                <td>32 yo</td>
+                                <td>52 yo</td>
+                                <td>20 yo</td>
+                                <td>22 yo</td>
+                                <td>59 yo</td>
+                            </tr>
+                            <tr>
+                                <td>Race</td>
+                                <td>Latina</td>
+                                <td>White</td>
+                                <td>Black</td>
+                                <td>White</td>
+                                <td>Asian</td>
+                            </tr>
+                            <tr>
+                                <td>Profession</td>
+                                <td>Spanish teacher</td>
+                                <td>Nurse</td>
+                                <td>College student</td>
+                                <td>College student</td>
+                                <td>Dressmaker</td>
+                            </tr>
+                            <tr>
+                                <td>Level</td>
+                                <td>Advanced</td>
+                                <td>Beginner</td>
+                                <td>Intermediate</td>
+                                <td>Intermediate</td>
+                                <td>Beginner</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h4>Questions & Insights</h4>
+                <div class="table-container">
+                    <table class="insights-table">
+                        <thead>
+                            <tr>
+                                <th><span class="emoji">🤔</span> Questions</th>
+                                <th><span class="emoji">💡</span> Insights</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>"What is your relationship with makeup?"</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>"What are the reasons that encourage you to wear makeup / learn how to apply makeup?"</td>
+                                <td>All interviewees mentioned self-confidence as their main reason for wearing makeup.</td>
+                            </tr>
+                            <tr>
+                                <td>"What criteria do you pay attention to when buying beauty products?"</td>
+                                <td>Interviewees mostly pay attention to: 1/ the ingredients ("how chemical is it and how is my skin going to react to it?"), 2/ the price ("is it within my budget?"), 3/ the brand's ethics ("is it cruelty-free?"), 4/ user-friendliness.</td>
+                            </tr>
+                            <tr>
+                                <td>"What makeup techniques you haven't mastered yet would you like to learn? What has stopped you so far?"</td>
+                                <td>Interviewees all mentioned different makeup techniques they would like to learn. The techniques they mentioned seem to match their respective level: beginners mentioned basic techniques such as applying lipstick ("which shade should I pick based on my skin color?"), while advanced-level interviewees mentioned more complex techniques such as contouring ("I don't understand my face shape").</td>
+                            </tr>
+                            <tr>
+                                <td>"Where do you usually look for makeup inspiration or advice?"</td>
+                                <td>1/ The main reason mentioned for not learning or mastering those techniques yet is not knowing where to start due to the myriad of beauty content out there. 2/ Younger interviewees like to watch youtube or tiktok videos for makeup inspiration while older interviewees prefer magazine articles.</td>
+                            </tr>
+                            <tr>
+                                <td>"How well do you generally feel represented in beauty media (based on your skin color, age, etc.?"</td>
+                                <td>Non-white, male and older interviewees feel underrepresented in beauty media, resulting in them being unsure how to apply makeup appropriately in regard to their features.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h3>Competitive Analysis</h3>
+                <div class="table-container">
+                    <table class="competitive-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Sephora</th>
+                                <th>Nocibe</th>
+                                <th>Cosmopolitan</th>
+                                <th>kleo beaute</th>
+                                <th>MarionCameleon</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Type of website</td>
+                                <td>Online retail</td>
+                                <td>Online retail</td>
+                                <td>Magazine website</td>
+                                <td>Blog</td>
+                                <td>Youtube channel</td>
+                            </tr>
+                            <tr>
+                                <td>Product Sales</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                                <td>✗</td>
+                                <td>✗</td>
+                                <td>✗</td>
+                            </tr>
+                            <tr>
+                                <td>News</td>
+                                <td>✓</td>
+                                <td>✗</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                                <td>✗</td>
+                            </tr>
+                            <tr>
+                                <td>Tutorials</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                                <td>✗</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td>Comments</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                                <td>✗</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td>Generic Advice</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                                <td>✗</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td>Tailored Advice</td>
+                                <td>✗</td>
+                                <td>✗</td>
+                                <td>✗</td>
+                                <td>✗</td>
+                                <td>✗</td>
+                            </tr>
+                            <tr>
+                                <td>Representation</td>
+                                <td>Satisfactory</td>
+                                <td>Satisfactory</td>
+                                <td>Satisfactory</td>
+                                <td>Limited</td>
+                                <td>Limited</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="case-phase" id="define">
+                <div class="phase-header">
+                    <h2><span class="emoji">🎯</span> Define</h2>
+                </div>
+                
+                <h3>User Persona</h3>
+                <div class="image-placeholder persona">
+                    <img src="resources/beautify/beautify-persona.png" alt="User Persona">
+                </div>
+                
+                <h3>Empathy Map</h3>
+                <div class="image-placeholder empathy-map">
+                    <img src="resources/beautify/beautify-empathy-map.png" alt="Empathy Map">
+                </div>
+                
+                <h3>User Journey Map</h3>
+                <p>"Shopping beauty products":</p>
+                <div class="image-placeholder journey-map">
+                    <img src="resources/beautify/beautify-user-journey-map.png" alt="User Journey Map">
+                </div>
+                
+                <h3>Problem Statement</h3>
+                <div class="problem-statement">
+                    <p>User likes to wear makeup to help boost their self-confidence but has trouble learning beauty techniques and choosing the right products in a fast-paced world of marketing and mass information where beauty content is never-ending and diversity is lacking.</p>
+                </div>
+            </section>
+
+            <section class="case-phase" id="ideate">
+                <div class="phase-header">
+                    <span class="phase-number">3</span>
+                    <h2><span class="emoji">💭</span> Ideate</h2>
+                </div>
+                
+                <h3>Crazy 8</h3>
+                <p>The 6 main ideas we drew from our workshop are the following:</p>
+                
+                <div class="ideas-grid">
+                    <div class="idea-card">
+                        <span class="idea-number">1</span>
+                        <h4>Quizz</h4>
+                        <p>Users can answer a quizz to get tailored suggestions and advice throughout their experience on the app.</p>
+                    </div>
+                    
+                    <div class="idea-card">
+                        <span class="idea-number">2</span>
+                        <h4>Search</h4>
+                        <p>Sections dedicated to Products and Tutorials, with filters to better help users find what they are looking for.</p>
+                    </div>
+                    
+                    <div class="idea-card">
+                        <h4>Diversity</h4>
+                        <p>Show a diverse panel of models to make sure every user feels represented and has content to relate to.</p>
+                    </div>
+                    
+                    <div class="idea-card">
+                        <span class="idea-number">4</span>
+                        <h4>Community</h4>
+                    </div>
+                    </div>
+                    </section>
+
+                        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Marina Lay</h3>
+                    <p>UX/UI Designer & Product Designer</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Projets</a></li>
+                            <li><a href="#">À propos</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+                        <p>marina.lay92@gmail.com</p>
+                        <p>+33 6 04 05 69 64</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/marinalay/" class="social-link" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Marina Lay. Tous droits réservés.</p>
+                <p>Mentions légales | Politique de confidentialité</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio-script.js"></script>
+</body>
+</html>
