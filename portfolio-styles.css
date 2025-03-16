@@ -600,3 +600,111 @@ footer {
         padding: var(--spacing-md);
     }
 }
+
+/* CSS for the idea cards*/
+.idea-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.idea-card {
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md);
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.idea-card.green {
+    background-color: rgba(52, 106, 93, 0.1); /* Light version of primary-light */
+}
+
+.idea-card.orange {
+    background-color: rgba(248, 169, 120, 0.1); /* Light version of secondary-color */
+}
+
+.idea-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    margin-right: var(--spacing-sm);
+    flex-shrink: 0;
+}
+
+.idea-content {
+    flex-grow: 1;
+}
+
+.idea-content h4 {
+    margin-bottom: var(--spacing-xs);
+    color: var(--primary-color);
+}
+
+.idea-content p {
+    margin-bottom: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .idea-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CSS for the tables*/
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--spacing-lg);
+}
+
+.table th, .table td {
+    border: 1px solid var(--text-light);
+    padding: var(--spacing-sm);
+    text-align: left;
+    vertical-align: top;
+}
+
+.table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.table td {
+    background-color: var(--white);
+}
+
+.table .emoji {
+    font-size: 1.2rem;
+    margin-right: var(--spacing-xs);
+}
+
+/* Responsive images for case study */
+.case-study img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: var(--spacing-md) auto;
+}
+
+.case-study .case-cover {
+    width: 100%;
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+.case-image-container {
+    justify-content: center;
+    flex-direction: row;
+    display: inline-flex;
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+}
