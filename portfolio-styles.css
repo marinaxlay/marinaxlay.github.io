@@ -1,5 +1,5 @@
 :root {
-    /* Palette de couleurs basée sur l'image branding_ui.png */
+    /* Palette de couleurs*/
     --primary-color: #224A42;
     --primary-light: #346A5D;
     --secondary-color: #F8A978;
@@ -36,8 +36,8 @@
 }
 
 body {
-    font-family: 'Satoshi', 'Helvetica', sans-serif;
-    font-size: 16px;
+    font-family: 'Satoshi', 'Arial', sans-serif;
+    font-size: 18px;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-light);
@@ -51,14 +51,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Rowdies', cursive;
-    font-weight: 700;
+    font-family: 'Staatliches', 'Palatino Linotype', sans-serif;
+    font-weight: 100;
     margin-bottom: var(--spacing-sm);
     color: var(--primary-color);
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 72px;
     line-height: 1.2;
 }
 
@@ -90,6 +90,7 @@ a {
 
 a:hover {
     color: var(--accent-color);
+    text-decoration: underline;
 }
 
 ul {
@@ -105,20 +106,20 @@ header {
     z-index: 1000;
 }
 
-.logo h3 {
-    color: var(--white);
-    margin-bottom: 0;
-}
-
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.logo h3 {
+    color: var(--white);
+    margin-bottom: 0;
+}
+
 .main-nav ul {
     display: flex;
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
 }
 
 .main-nav a {
@@ -129,12 +130,44 @@ header .container {
 }
 
 .main-nav a:hover {    
-    background-color: var(--primary-light);
     color: var(--light-text);
 }
 
 .main-nav a.active {
     font-weight: 800;
+    pointer-events: none;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hamburger Menu States */
+.hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
 }
 
 /* Hero Section */
@@ -158,10 +191,10 @@ header .container {
 }
 
 .intro-text {
-    max-width: 700px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.1rem;
+    font-size: 26px;
 }
 
 .tags {
@@ -189,6 +222,7 @@ header .container {
     font-weight: 700;
     font-size: 1.1rem;
     transition: all 0.3s ease;
+    box-shadow: 10px 10px var(--text-color);
 }
 
 .cta-button:hover {
@@ -285,7 +319,7 @@ header .container {
 
 .platform {
     padding: var(--spacing-xs) var(--spacing-sm);
-    border-radius: var(--border-radius-sm);
+    border-radius: var(--border-radius-xl);
     font-size: 0.8rem;
     font-weight: 500;
 }
@@ -520,17 +554,48 @@ footer {
     }
 }
 
-@media (max-width: 576px) {
-    header .container {
+/* Menu hamburger pour écrans < 649px */
+@media (max-width: 649px) {
+    .hamburger-menu {
+        display: flex;
+    }
+    
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--primary-color);
+        display: flex;
         flex-direction: column;
-        gap: var(--spacing-sm);
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+    }
+    
+    .main-nav.active {
+        right: 0;
     }
     
     .main-nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     
+    .main-nav li {
+        margin: var(--spacing-sm) 0;
+    }
+    
+    .main-nav a {
+        font-size: 1.2rem;
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+
+}
+
+@media (max-width: 576px) {
     .contact-form {
         padding: var(--spacing-md);
     }
