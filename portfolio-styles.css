@@ -60,6 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 72px;
     line-height: 1.2;
+    letter-spacing: 2px;
 }
 
 h2 {
@@ -194,7 +195,7 @@ header .container {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 26px;
+    font-size: 22px;
     padding-bottom: var(--spacing-sm);
     font-family: 'Courier Prime', Courier, monospace;
 }
@@ -526,7 +527,7 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 758px) {
     h1 {
         font-size: 2rem;
     }
@@ -603,14 +604,15 @@ footer {
     }
 }
 
-/* Case Study Header specific styles */
+/* Case Study specific styles */
 
 .case-study-header {
     background-color: var(--dark-bg);
     color: var(--light-text);
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-sm) 0;
     width: 100vw; /* Ensure the background spans the full width of the viewport */
     margin-left: calc(-50vw + 50%); /* Center*/
+    margin-bottom: var(--spacing-lg);
 }
 
 .case-study-phase {
@@ -630,19 +632,18 @@ footer {
     margin-bottom: var(--spacing-sm);
 }
 
-/* Responsive styles for case study header */
-@media (max-width: 768px) {
-    .case-study-header .container {
-        padding: 0 var(--spacing-md); /* Adjust padding for smaller screens */
-    }
+.case-study-layout {/* Two-column layout for case study header */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
 }
 
-@media (max-width: 768px) {
-    .case-study-phase {
-        padding: 0 var(--spacing-md); /* Adjust padding for smaller screens */
-        padding: var(--spacing-sm);
-        font-size: 18px;
-    }
+.case-study img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: var(--spacing-md) auto;
 }
 
 .project-details h1 {
@@ -661,27 +662,11 @@ footer {
     color: var(--secondary-color);
 }
 
-/* Responsive styles for case study header */
-@media (max-width: 768px) {
-    .project-details h1 {
-        font-size: 2.5rem;
-    }
-    
-    .project-details .intro-text {
-        font-size: 1.2rem;
-    }
-    
-    .project-meta {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* CSS for the idea cards*/
 .idea-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-md);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
 }
 
 .idea-card {
@@ -692,12 +677,22 @@ footer {
     align-items: flex-start;
 }
 
+.card-title {
+    font-weight: bold;
+    color:var(--primary-color); 
+    padding-bottom: var(--spacing-xs);
+}
+
 .idea-card.green {
     background-color: rgba(52, 106, 93, 0.1); /* Light version of primary-light */
 }
 
 .idea-card.orange {
     background-color: rgba(248, 169, 120, 0.1); /* Light version of secondary-color */
+}
+
+.idea-card.red {
+    background-color: rgba(255, 115, 115, 0.1); 
 }
 
 .idea-number {
@@ -727,7 +722,6 @@ footer {
     margin-bottom: 0;
 }
 
-/* CSS for the tables*/
 .table {
     width: 100%;
     border-collapse: collapse;
@@ -750,13 +744,6 @@ footer {
     background-color: var(--white);
 }
 
-.case-study img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: var(--spacing-md) auto;
-}
-
 .case-gif-container {
     text-align: center;
     display: flex;
@@ -764,20 +751,26 @@ footer {
     flex-wrap: wrap;
 }
 
-/* Two-column layout for case study header */
-.case-study-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-lg);
-    align-items: center;
-}
-
 @media (max-width: 758px) {
-    .idea-grid {
-        grid-template-columns: 1fr;
+    .project-details h1 {
+        font-size: 2.5rem;
+    }
+    .project-details .intro-text {
+        font-size: 1.2rem;
+    }
+    .case-study-phase {
+        padding: 0 var(--spacing-md); /* Adjust padding for smaller screens */
+        padding: var(--spacing-sm);
+        font-size: 18px;
+    }
+    .case-study-header .container {
+        padding: 0 var(--spacing-md); /* Adjust padding for smaller screens */
     }
     .case-study-layout {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-sm);
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+    .idea-grid {
+        grid-template-columns: 1fr;
     }
 }
