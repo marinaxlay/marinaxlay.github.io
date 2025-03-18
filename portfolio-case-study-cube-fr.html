@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautify | Portfolio UX/UI Designer</title>
+    <!-- Importation des polices -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio-styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="portfolio-home-page-en.html"><h3>Marina Lay</h3></a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="portfolio-home-page-en.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="case-study cube">
+        <div class="container">
+
+            <section class="case-study-header">
+                <div class="container">
+                    <div class="case-study-layout">
+                        <div class="case-study-image">
+                            <img src="resources/cube/cube-header.png" alt="CUBE UI">
+                        </div>
+                        <div class="project-details">
+                            <h1>CUBE</h1>
+                            <p class="intro-text">Designing a showcase homepage for one of Société Générale’s IT directions.</p>
+                            <p><b>Time frame:</b> February - July 2023</p>
+                            <p><b>Tools:</b> Figma</p>
+                            <p><b>Team:</b> Boris Durupt-Zhou, Camille Kui</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="case-introduction">
+                <p>CUBE est le portail de gestion des connaissances de CFT (Corporate Functions Technologies), l’une des directions IT de Société Générale. Son objectif est d’identifier et synthétiser toute information nécessaire à l’ensemble des collaborateurs de CFT, et de les centraliser afin de faciliter la recherche d’information.</p>
+                <p>Dans un objectif d’amélioration continue de la plate-forme, plusieurs chantiers UX sont menés chaque année sur CUBE. Lors de l’un de ces précédents chantiers, des utilisateurs nous avaient fait les retours spontanés suivants au sujet de la page d’accueil :</p>
+            
+                <div class="idea-grid">
+                    <div class="idea-card orange">
+                        <div class="idea-content">
+                            <p>💭 <em>“Je trouve la page d’accueil vachement vide. Ça m’attire pas le fond blanc avec du texte dessus, ça me parle pas.”</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card orange">
+                        <div class="idea-content">
+                            <p>💭 <em>“Mon premier ressenti c’est que c’est plutôt froid. Il manque d’éléments dynamiques.”</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card orange">
+                        <div class="idea-content">
+                            <p>💭 <em>“Je me demande s’il n’y a pas moyen visuellement de faire quelque chose sur la page d’accueil. On a l’impression que c’est la plus vide et la plus simple de tout le site.”</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card orange">
+                        <div class="idea-content">
+                            <p>💭 <em>“Quand j’arrive sur la page d’accueil, j’ai l’impression que c’est mort.”</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="resources/cube/cube-v0.png">
+
+                <p>Une refonte de la page d’accueil était donc jugée nécessaire, avec plusieurs enjeux à la clé :</p>
+                <div class="idea-card orange">
+                    <div class="idea-content">
+                        <p class="card-title">Enjeux du chantier</p>
+                        <ul>
+                            <li>👉 Donner une meilleure impression de CUBE aux visiteurs.</li>
+                            <li>👉 Améliorer l’attractivité de CFT.</li>
+                            <li>👉 Renforcer le positionnement de CUBE en tant que vitrine interne pour CFT.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="case-phase" id="empathize">
+                <div class="case-study-phase">
+                    <h2>🔍<br> Empathize</h2>
+                    <p>What do the users need and want?</p>
+                </div>
+                
+                <h3>User Interviews</h3>
+                <p>Pour la phase de recherche préliminaire, nous avons organisé une série d’interviews avec nos utilisateurs cible afin d’identifier les irritants et les évolutions à apporter à la page d’accueil de CUBE.</p>
+                
+                <div class="idea-card orange">
+                    <div class="idea-content">
+                        <p class="card-title">Modalités</p>
+                        <ul>
+                            <li>🎙️ Interviews individuels </li>
+                            <li>👥 44 utilisateurs, sur une période de 2 semaines et demie</li>
+                            <li>⏱️ 15 à 30 minutes</li>
+                            <li>🏢 Présentiel ou Distanciel (caméra encouragée)</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+
+                <h4>User panel</h4>
+                <p>Pour cette série d’interviews, nous avons constitué un panel de 44 utilisateurs à la fois hétérogène et représentatif de la population cible de CUBE :</p>
+                
+                <p>Fonctions :</p>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Responsables CDS</th>
+                                <th>Responsables CSM</th>
+                                <th>Autres métiers</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>39</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Pays :</p>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>France</th>
+                                <th>Inde</th>
+                                <th>Roumanie</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>35</td>
+                                <td>5</td>
+                                <td>4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Ancienneté :</p>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>< 5 mois</th>
+                                <th>> 5 mois</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>19</td>
+                                <td>25</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Profil :</p>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Lecteurs*</th>
+                                <th>Contributeurs*</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>35</td>
+                                <td>9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><em>*Les contributeurs sont les responsables d’activité ayant des droits de modification sur le portail, tandis que les lecteurs n’ont qu’un droit de consultation.</em></p>
+
+                </div>
+                
+                <h4>Questions</h4>
+                <div class="idea-grid">
+                    <div class="idea-card orange">
+                        <div class="idea-content">
+                            <p><em>Quel est ton ressenti global sur la page d’accueil ? Qu’est-ce qui te donne cette impression ? Comment changerais-tu cela ?</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card orange">
+                        <div class="idea-content">
+                            <p><em>Que penses-tu du design de la page d’accueil en termes de visuels ? Comment l’améliorerais-tu ?</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card orange">
+                        <div class="idea-content">
+                            <p><em>Que penses-tu de la page d’accueil en termes de contenus ? Comment l’améliorerais-tu ?</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card orange">
+                        <div class="idea-content">
+                            <p><em>As-tu en tête un exemple de portail ou site dont la page d’accueil te semble particulièrement bien construite ? Laquelle ?</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <h4>Restitution des entretiens</h4>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">Concernant le ressenti global<div class="accordion-icon"></div></div>
+                <div class="accordion-content">
+                <div class="idea-grid">
+                    <div class="idea-card green">
+                        <div class="idea-content">
+                            <p class="card-title">Retours positifs :</p>
+                            <p>✔️ <b>Structure</b> : <em>“C’est simple, très structuré, ça me va bien.”, “Je trouve ça très simple, mais dans le bon sens.”</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card red">
+                        <div class="idea-content">
+                            <p class="card-title">Retours négatifs :</p>
+                            <p>❌ <b>Identité</b> : <em>“J’ai du mal à identifier sur quel type de plate-forme je suis arrivé.”</em></p>
+                            <p>❌ <b>Audience cible</b> : <em>“J’ai l’impression de ne pas être la cible.”</em></p>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li><b>💡 Recommandations UX :</b></li>
+                    <li>→ Présenter CUBE avec une phrase ou une courte description.</li>
+                    <li>→ Faire en sorte que l’utilisateur se sente à sa place en proposant du contenu pour les différents types de profils.</li>
+                </ul>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">Concernant le visuel<div class="accordion-icon"></div></div>
+                <div class="accordion-content">
+                <div class="idea-card red">
+                    <div class="idea-content">
+                        <p class="card-title">Retours négatifs :</p>
+                            <p>❌ <b>Design :</b> <em>“D’un point de vue look and feel ça fait un peu vieillot dans l’ensemble.”, “La barre de recherche avec l’ombre derrière, ça fait très old school.”</em></p>
+                            <p>❌ <b>Couleurs :</b> <em>“Tout est blanc et terne.”, “Il pourrait y avoir un peu plus de jeux de couleurs.”</em></p>
+                            <p>❌ <b>Proportions :</b> <em>“Les icônes et le texte sont tout petits, mais il y a tout cet espace inutilisé tout autour - du moins sur grand écran, parce que sur petit écran c’est moins choquant. Mais du coup il s’agit d’un problème de responsivité ?”, “Vos raccourcis CUBE prennent la place sur la moitié de la page.”</em></p>
+                            <p>❌ <b>Charte graphique :</b> <em>“Il faudrait peut-être que ce soit un peu plus design system.”</em></p>
+                    </div>
+                </div>
+
+                <ul>
+                    <li><b>💡 Recommandations UX :</b></li>
+                    <li>→ Ajouter plus de couleurs, jouer avec la palette au niveau du texte ou des images.</li>
+                    <li>→ Exploiter l’espace disponible.</li>
+                    <li>→ Utiliser la charte graphique Société Générale.</li>
+                </ul>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">Concernant le contenu<div class="accordion-icon"></div></div>
+                <div class="accordion-content">
+                <div class="idea-card red">
+                    <div class="idea-content">
+                        <p class="card-title">Retours négatifs :</p>
+                            <p>❌ <b>Dynamisme :</b> <em>“La page d’accueil pourrait être un peu plus évolutive en faisant remonter un peu plus de contenus dynamiques.”, “Au lieu des éléments figés à gauche, il faudrait du contenu évolutif.”</em></p>
+                            <p>❌ <b>Hiérarchisation :</b> <em>"La première fois que j’y suis allé j’ai cru qu’il n’y avait que Vos informations essentielles sur CUBE.”, “Je sais pas s’il devrait pas y avoir un travail de hiérarchisation. Tout semble mélangé.”</em></p>
+                            <p>❌ <b>Explicitation :</b> <em>“Tu sais pas à quoi ça correspond, il y a pas d’info-bulle quand tu survoles les icônes.”, “Il faut vulgariser dès la page d’accueil.”</em></p>
+                            <p>❌ <b>Raccourcis :</b> <em>“Les raccourcis, je suis pas sûr que ce soit le type de portail qui s’y prête.”</em></p>
+                            <p>❌ <b>Sujets :</b> <em>“Pour que ça intéresse tout le monde, il faut prendre des sujets très larges et pas trop techniques.”</em></p>
+                    </div>
+                </div>
+
+                <ul>
+                    <li><b>💡 Recommandations UX :</b></li>
+                    <li>→ Ajouter du contenu dynamique et vivant.</li>
+                    <li>→ Sélectionner et mettre en avant des sujets larges ciblant l’ensemble de CFT.</li>
+                    <li>→ Expliciter les intitulés (notamment les diminutifs, ou les termes techniques).</li>
+                </ul>
+                </div>
+                </div>
+            </section>
+
+            <section class="case-phase" id="define">
+                <div class="case-study-phase">
+                    <div class="container">
+                        <h2>🎯<br> Define</h2>
+                        <p>Who is the user and what problem do they face?</p>
+                    </div>
+                </div>
+                
+                <h3>Objectif du chantier</h3>
+                <div class="problem-statement">
+                    <p>Créer une page d’accueil intuitive et vivante en y apportant de la couleur et du contenu (notamment dynamique) afin de donner une meilleure compréhension de CUBE et fidéliser tous les utilisateurs du portail.</p>
+                </div>
+
+                <h3>Feuille de route</h3>
+                <img src="resources/cube/cube-roadmap.png">
+
+            </section>
+
+            <section class="case-phase" id="ideate">
+                <div class="case-study-phase">
+                    <h2>💡<br> Ideate</h2>
+                    <p>How can we help them solve their problem?</p>
+                </div>
+                
+                <h3>Atelier d'idéation</h3>
+                <p>J'ai organisé un workshop d’1h30 ayant pour but de recueillir de premières idées au sein de l’équipe et de les prioriser.</p>
+                <img src="resources/cube/cube-workshop.png">
+
+                <p>Restitution de l'atelier et priorisation des idées :</p>
+
+                <div class="idea-grid">
+                    <div class="idea-card orange">
+                        <div class="idea-number">1</div>
+                        <div class="idea-content">
+                            <h4>Expliciter l'identité de CUBE</h4>
+                                <li>Une courte définition de CUBE</li>
+                                <li>Un paragraphe de présentation : que trouve-t-on sur CUBE ?</li>
+                                <li>Un logo avec un sous-titre définissant CUBE</li>
+                        </div>
+                    </div>
+
+                    <div class="idea-card orange">
+                        <div class="idea-number">2</div>
+                        <div class="idea-content">
+                            <h4>Expliciter l'identité de CUBE</h4>
+                                <li>Plus d’images et de couleurs</li>
+                                <li>Moins de boutons, mais des boutons plus clairs</li>
+                                <li>Moins de boutons, mais des boutons plus clairs</li>
+                                <li>Respect du Design System de la Société Générale</li>
+                        </div>
+                    </div>
+
+                    <div class="idea-card orange">
+                        <div class="idea-number">3</div>
+                        <div class="idea-content">
+                            <h4>Pousser de l’actualité aux utilisateurs</h4>
+                                <li>Accès direct à la communauté CFT sur le réseau social d’entreprise Viva Engage</li>
+                                <li>Accès direct à la dernière newsletter CFT</li>
+                        </div>
+                    </div>
+
+                    <div class="idea-card orange">
+                        <div class="idea-number">4</div>
+                        <div class="idea-content">
+                            <h4>Faciliter la recherche de sujets</h4>
+                                <li>Barre de recherche en évidence</li>
+                                <li>Intégration d'un chatbot</li>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card orange">
+                        <div class="idea-number">5</div>
+                        <div class="idea-content">
+                            <h4>Pousser du contenu dynamique aux utilisateurs</h4>
+                                <li>Pages les plus consultées</li>
+                                <li>Derniers contenus mis à jour</li>
+                                <li>Mise en évidence des pages en lien avec l’actualité de Société Générale et/ou CFT</li>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Wireframes</h3>
+                <p>Les recommandations UX que nous avons pu formuler à l’issue des interviews nous ont permis de construire cette première maquette sur Figma :</p>
+                <img src="resources/cube/cube-wireframe.gif">
+
+            </section>
+
+            <section class="case-phase" id="prototype">
+                <div class="case-study-phase">
+                    <h2>📐<br>Prototype</h2>
+                    <p>How can we help them solve their problem?</p>
+                </div>
+            
+                <h3>Design System</h3>
+                <p>Afin de répondre aux inquiétudes des utilisateurs évoquées lors des interviews et renforcer leur sentiment d’appartenance à Société Générale, nous avons repris les couleurs, typographies et icônes du Design System du Groupe. Parmi ces couleurs, nous en avons toutefois choisi une (#418080) qui servira de couleur primaire afin de donner à CUBE une identité visuelle distincte des autres portails internes Société Générale :</p>
+                <img src="resources/cube/cube-ui-kit.png" alt="UI Kit" class="case-image">
+
+                        
+                <h3>Prototype V1</h3>
+                <p>Nous avons ensuite construit un premier prototype dans l’optique de le soumettre à des tests utilisateurs pour mesurer le niveau de satisfaction sur cette première version et prendre note des changements à apporter au cours d’une seconde itération.</p>
+                <img src="resources/cube/cube-prototype-1.gif" alt="Prototype V1" class="case-image">
+            </section>
+
+            <section class="case-phase" id="test">
+                <div class="case-study-phase">
+                    <h2>✅<br>Test</h2>
+                    <p>How can we help them solve their problem?</p>
+                </div>
+
+                <h3>Tests utilisateurs</h3>                
+                <div class="idea-card green">
+                    <div class="idea-content">
+                        <p class="card-title">Modalités</p>
+                        <ul>
+                            <li>🎙️ Tests utilisateurs individuels  </li>
+                            <li>👥 20 à 30 utilisateurs du premier panel d’interviews, sur une période d’1 semaine et demie</li>
+                            <li>⏱️ 15 à 30 minutes</li>
+                            <li>🏢 Présentiel</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+
+                <h4>Questions</h4>
+                <div class="idea-grid">
+                    <div class="idea-card orange">
+                        <div class="idea-content">
+                            <p><em>Quel est ton ressenti global sur la page d’accueil ? Qu’est-ce qui te donne cette impression ? Comment changerais-tu cela ?</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card orange">
+                        <div class="idea-content">
+                            <p><em>Que penses-tu du parcours de navigation proposé ?</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card orange">
+                        <div class="idea-content">
+                            <p><em>Que penses-tu du visuel (couleurs, images, éléments graphiques) ?</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card orange">
+                        <div class="idea-content">
+                            <p><em>Que penses-tu de chacun de ces composants (”En ce moment”, “Zoom sur”, “Les plus consultés”) ?</em></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h4>Restitution des tests</h4>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">De très bonnes premières impressions 🥳<div class="accordion-icon"></div></div>
+                <div class="accordion-content">
+                        <div class="idea-card green">
+                            <div class="idea-content">
+                                <p class="card-title">Retours positifs :</p>
+                                <p>✔️ <b>Moderne</b> : <em>“Ma première impression c’est que c’est plus moderne, plus beau d’un point de vue esthétique.”, “C’est visuellement beaucoup plus attrayant.”, “Déjà c’est beauuuuuuuuucoup plus actuel en termes de design.”, “C’est déjà plus joli et moderne.”</em></p>
+                                <p>✔️ <b>Coloré</b> : <em>“C’est beaucoup moins terne.”, “Visuellement c’est très beau, c’est coloré.”, “C’est super ! C’est beaucoup plus coloré. (…) Ça ressemble davantage aux sites Société Générale.”</em></p>
+                                <p>✔️ <b>Bonne utilisation de l'espace</b> : <em>“Ah bah déjà tout est beaucoup plus grand, ça c’est bien.”, “Les tuiles sont bien visibles, bien détachées.”, “L’espace est mieux utilisé.”</em></p>
+                                <p>✔️ <b>Bon découpage de l'information</b> : <em>“Le découpage est bien fait, je ne suis pas perdu. Je m’y retrouve assez facilement.”, “Il y a beaucoup d’informations, mais c’est vachement plus organisé donc c’est pas gênant du tout.”, “Comme il y a beaucoup de choses, je me dis ‘on commence par quoi ?’ avec toutes ces informations (…) mais finalement le sens de lecture est assez logique, de gauche à droite.”</em></p>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">Bannière et barre de recherche :<div class="accordion-icon"></div></div>
+                <div class="accordion-content">
+                <div class="idea-grid">
+                    <div class="idea-card green">
+                        <div class="idea-content">
+                            <p class="card-title">Retours positifs :</p>
+                            <p>✔️ <b>Choix de la photo</b> : <em>“La photo est sympa, c’est joyeux, on reconnaît les Dunes, ça contribue vraiment au look and feel de CUBE.”, “La photo est parfaite, on comprend que c’est un site fait par les équipes pour les équipes. Le côté souriant, les Dunes derrière… C’est un très bon choix.”</em></p>
+                        </div>
+                    </div>
+                    <div class="idea-card red">
+                        <div class="idea-content">
+                            <p class="card-title">Retours négatifs :</p>
+                            <p>❌ <b>Encombrant</b> : <em>“Elle prend de la place mais c’est la place qu’il lui faut.”, “Un peu gros.”, “Elle prend vraiment beaucoup de place.”</em></p>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li><b>💡 Recommandations UX :</b></li>
+                    <li>→ Réduire la largeur de la bannière.</li>
+                    <li>→ Justifier l’espace que prend la bannière en y ajoutant des icônes Contact.</li>
+                </ul>
+            </div>
+        </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">'En ce moment'<div class="accordion-icon"></div>
+                    </div>
+                <div class="accordion-content">
+                <div class="idea-card red">
+                    <div class="idea-content">
+                        <p class="card-title">Retours négatifs :</p>
+                        <p>❌ <b>Encombrant</b> : <em>“Je réduirais la taille de moitié.”, “Je trouve que ça prend quand même beaucoup de place en fait.”</em></p>
+                        <p>❌ <b>Impression statique</b> : <em>“C’est des actualités ? Les sujets qui défilent ne donnent pas cette impression…”</em></p>
+                        <p>❌ <b>Confusion avec d'autres sections</b> : <em>“J’ai du mal à différencier l’intention derrière En ce moment et Zoom sur….”, “C’est quoi l’intention ? Parce que la partie **Actualité** j’aurais mis dans **En ce moment**.”</em></p>
+                    </div>
+                </div>
+
+                <ul>
+                    <li><b>💡 Recommandations UX :</b></li>
+                    <li>→ Ajouter une description dans le carrousel pour justifier la présence des sujets sélectionnés à la une.</li>
+                    <li>→ Réduire la hauteur du carrousel de moitié.</li>
+                    <li>→ Regrouper le carrousel et les boutons “CFT NEWS” et “YOU CHANGE” dans une unique section En ce moment chez CFT.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">'Zoom sur...'<div class="accordion-icon"></div></div>
+        <div class="accordion-content">
+                <div class="idea-grid">
+                    <div class="idea-card green">
+                        <div class="idea-content">
+                            <p class="card-title">Retours positifs :</p>
+                            <p>✔️ <b>Effet au survol des tuiles</b> : <em>“Ce qui est bien avec les images au survol c’est que c’est imagé et pas du texte. (…) C’est plus synthétique et ça fait plus général sur la page d’accueil.”, “C’est pas mal.”</em></p>
+                            <p>✔️ <b>Pertinence des sujets sélectionnés</b> : <em>“C’est des gros sujets qui parlent à tout le monde. Je peux m’y retrouver.”, “Tout a sa place ici.”</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card red">
+                        <div class="idea-content">
+                            <p class="card-title">Retours négatifs :</p>
+                            <p>❌ <b>Mauvais intitulés</b> : <em>“Il faut revoir l’es intitulés parce que quand je vois ‘RH’ je pense à Dayin’ [l’outil pour déclarer ses jours de présence sur site], poser ses congés…”, “Les intitulés où l’on décrit les acronymes (’RSE’, ‘RH’), je trouve que c’est superflu.”</em></p>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li><b>💡 Recommandations UX :</b></li>
+                    <li>→ Renommer ‘RH’ en ‘Recrutements, mobilités, départs’.</li>
+                    <li>→ Renommer les tuiles exactement comme les pages vers lesquelles elles mènent (’RSE’ → ‘CSR by Design’, ‘Production’ → ‘Guide de production’…).</li>
+                </ul>
+        </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">'Les plus consultés'<div class="accordion-icon"></div></div>
+        <div class="accordion-content">
+                <div class="idea-grid">
+                    <div class="idea-card green">
+                        <div class="idea-content">
+                            <p class="card-title">Retours positifs :</p>
+                            <p>✔️ <b>Pertinence</b> : <em>“Ça me permet de savoir d’emblée les sujets d’affluence, les choses importantes auxquelles je devrais sans doute moi-même jeter un œil.”, “Ça fait de l’auto-promotion et on aura peut-être des contenus différents dedans comparé à dans **En ce moment** ou **Zoom sur…**.”</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card red">
+                        <div class="idea-content">
+                            <p class="card-title">Retours négatifs :</p>
+                            <p>❌ <b>Impression statique, design vieillot</b> : <em>“Graphiquement, j’ai l’impression que cette partie détone un petit peu par rapport au reste (…). On dirait juste un doc Word, une bullet list pas vraiment travaillée visuellement.”</em></p>
+                            <p>❌ <b>Encombrant</b> : <em>“Est-ce nécessaire que ça prenne autant de place ?”</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <ul>
+                    <li><b>💡 Recommandations UX :</b></li>
+                    <li>→ Ajouter des icônes colorées pour rendre évident l’aspect dynamique de cette section.</li>
+                    <li>→ Moderniser le design en modifiant l’effet au survol de chaque item.</li>
+                    <li>→ Réduire la largeur de cette section.</li>
+                </ul>
+        </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">'Vos outils et espaces utiles'<div class="accordion-icon"></div></div>
+        <div class="accordion-content">
+                <div class="idea-grid">
+                    <div class="idea-card green">
+                        <div class="idea-content">
+                            <p class="card-title">Retours positifs :</p>
+                            <p>✔️ <b>Pertinence</b> : <em>"Ça me sera utile pour switcher entre CUBE et d’autres plates-formes.”, “Ça ça aide vraiment, de manière générale à la SG on manque de centralisation, de repères notamment lorsque l’on vient d’arriver.”, “Il n’y a aucun autre endroit où l’on peut retrouver des liens utiles comme ça donc ça a une vraie valeur ajoutée.”</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card red">
+                        <div class="idea-content">
+                            <p class="card-title">Retours négatifs :</p>
+                            <p>❌ <b>Scroll mal visible</b> : <em>“Je n’avais pas du tout mais alors vraiment pas remarqué qu’il fallait scroller.”, “Ah, je ne savais pas qu’on pouvait scroller.”, “Ah, je n’avais pas du tout vu les flèches.”, “Je me suis pas du tout doutée que y avait encore des choses en bas.”</em></p>
+                            <p>❌ <b>Rupture graphique trop brutale avec la partie supérieure de la page</b> : <em>“La rupture avec la partie blanche du haut me perturbe vraiment.”</em></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <ul>
+                    <li><b>💡 Recommandations UX :</b></li>
+                    <li>→ Faire dépasser la section en bas de l’écran pour mettre en évidence le scroll sur la page.</li>
+                    <li>→ Changer le fond vert pâle en blanc.</li>
+                    <li>→ Supprimer le titre de la section.</li>
+                </ul>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                <div class="accordion-header">'Qu'est-ce que CUBE ?'<div class="accordion-icon"></div></div>
+            <div class="accordion-content">
+                <div class="idea-grid">
+                    <div class="idea-card green">
+                        <div class="idea-content">
+                            <p class="card-title">Retours positifs :</p>
+                            <p>✔️ <b>Pertinence</b> : <em>“Enfin ! Je vais savoir ce qu’est CUBE.”, “C’est enfin expliqué !! (…) Je trouvais que ça manquait, c’est super que vous ayez ajouté ça.”, “Ok ça c’est super important que ça y soit, c’est super. Quand je venais d’arriver on m’a dit* ‘vas sur CUBE’*, j’y suis allée mais je savais pas du tout où j’étais.”</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="idea-card red">
+                        <div class="idea-content">
+                            <p class="card-title">Retours négatifs :</p>
+                            <p>❌ <b>Pas assez visible</b> : <em>“Je l’aurais mis en haut.”, “Je me demande si je l’aurais pas mis un peu plus haut.”</em></p>
+                            <p>❌ <b>Trop dense</b> : <em>“Le texte est un peu long, étant donné l’objectif de vulgarisation de CUBE c’est un peu contre-productif, c’est dommage.”, “La première phrase est top (…), en revanche le reste du paragraphe ne sert à rien et est tout de suite beaucoup trop compliqué.”, “Je trouve que le texte est lourd.”</em></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <ul>
+                    <li><b>💡 Recommandations UX :</b></li>
+                    <li>→ Aller à l’essentiel en une seule phrase (la description sera approfondie dans la page ‘Qu’est-ce que CUBE ?’).</li>
+                    <li>→ Sera plus visible avec la mise en évidence et la réduction du scroll (cf. Vos outils et espaces utiles).</li>
+                </ul>
+                </div>
+                </div>
+
+                </section>
+
+                <section class="case-phase" id="iteration-2">
+                    <div class="case-study-phase">
+                        <h2>🪄<br>Deuxième itération</h2>
+                        <p>How can we help them solve their problem?</p>
+                    </div>
+
+                    <h3>Prototype V2</h3>
+                    <img src="resources/cube/cube-prototype-2.gif">
+
+                    <h3>Tests utilisateurs</h3>
+                    
+                    <div class="idea-card orange">
+                        <div class="idea-content">
+                            <p class="card-title">Modalités</p>
+                            <ul>
+                                <li>🎙️ Tests utilisateurs individuels </li>
+                                <li>👥 20 à 30 utilisateurs du panel des premiers tests utilisateurs, sur une période d’1 semaine et demie</li>
+                                <li>⏱️ 15 à 30 minutes</li>
+                                <li>🏢 Présentiel</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <h4>Questions</h4>
+                    <p>1. A quoi pensez-vous que les icônes en bas de la bannière correspondent ?<br>
+                    2. Que pensez-vous des boutons "CFT NEWS" et "YOU CHANGE" ?<br>
+                    3. Que pensez-vous des intitulés des sujets mis en avant ?</p>
+
+                    <h4>Restitution des tests</h4>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">Bannière et barre de recherche<div class="accordion-icon"></div></div>
+                    <div class="accordion-content">
+                    <div class="idea-grid">
+                        <div class="idea-card green">
+                            <div class="idea-content">
+                                <p class="card-title">Retours positifs :</p>
+                                <p>✔️ <b>Largeur et emplacement de la bannière</b> : <em>“La bannière de recherche est bien visible et parfaitement à sa place.”, “C’est bien que la barre de recherche soit en évidence.”, “Je trouve ça bien que la barre de recherche soit visible. (…) Même au niveau du visuel, de l’espace… elle est très bien ici.”</em></p>
+                            </div>
+                        </div>
+                        <div class="idea-card red">
+                            <div class="idea-content">
+                                <p class="card-title">Retours négatifs :</p>
+                                <p>❌ <b>Icônes</b> : <em>“Je pensais que l’icône Viva Engage était équivalent au bouton ‘CFT NEWS’ et que l’enveloppe c’était ‘YOU CHANGE’.”, “J’aurais tendence à penser que ça redirige vers CFT NEWS sauf que c’est déjà [dans la section En ce moment], du coup on l’a deux fois ?”</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><b>💡 Recommandations UX :</b></li>
+                        <li>→ Migrer les accès vers ces liens dans le footer, sous forme de texte : 'Communauté CUBE', 'Contactez-nous'.</li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">'En ce moment'<div class="accordion-icon"></div></div>
+                <div class="accordion-content">
+                    <div class="idea-grid">
+                        <div class="idea-card green">
+                            <div class="idea-content">
+                                <p class="card-title">Retours positifs :</p>
+                                <p>✔️ <b>Intention</b> : <em>“On comprend bien que c’est dans cette partie-là que j’irai voir les trucs qui sont nouveaux, ce qui a changé, etc.”, “J’aime bien toute cette partie-là, c’est super bien d’avoir mis en avant la vie de CFT.”</em></p>
+                                <p>✔️ <b>Localisation des boutons</b> : <em>“Les boutons ‘CFT NEWS’ et ‘YOU CHANGE’ sont mieux placés, ils sont plus visibles mais suffisamment petits pour pas qu’on se sente agressés.”</em></p>
+                            </div>
+                        </div>
+                        <div class="idea-card red">
+                            <div class="idea-content">
+                                <p class="card-title">Retours négatifs :</p>
+                                <p>❌ <b>Intitulés des boutons</b> : <em>“C’est quoi ‘YOU CHANGE’ ?”, “Tu peux penser que c’est un bouton pour changer tes paramètres.”</em></p>
+                                <p>❌ <b>Défilement des slides du carrousel</b> : <em>“Ce serait bien de pouvoir cliquer sur des flèches pour les faire défiler nous-mêmes.”, “Il va un peu vite on n’a pas le temps de lire, je préfère choisir la slide.”, “Si tu essaies de lire les descriptions, je trouve que les slides passent un peu vite.”</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><b>💡 Recommandations UX :</b></li>
+                        <li>→ Ralentir la vitesse de défilement des slides.</li>
+                        <li>→ Remplacer les puces par des flèches pour permettre aux utilisateurs de sélectionner les slides.</li>
+                        <li>→ Renommer ‘YOU CHANGE’ en ‘NEWSLETTER CFT’.</li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">'Zoom sur...'<div class="accordion-icon"></div></div>
+                <div class="accordion-content">
+                    <div class="idea-grid">
+                        <div class="idea-card green">
+                            <div class="idea-content">
+                                <p class="card-title">Retours positifs :</p>
+                                <p>✔️ <b>Intention</b> : <em>“On comprend qu’ici les sujets sont fixes, contrairement à là [En ce moment] où les sujets contre être amenés à changer.”, “C’est une sélection de sujets parmi la masse de sujets existants sur CUBE.”</em></p>
+                            </div>
+                        </div>
+                        <div class="idea-card red">
+                            <div class="idea-content">
+                                <p class="card-title">Retours négatifs :</p>
+                                <p>❌ <b>Intitulés des tuiles</b> : <em>“’CSR’ je sais pas si c’est un terme très répandu, il y en a beaucoup qui ne doivent pas savoir ce que ça veut dire.”, “Je sais pas trop ce que je vais trouver en cliquant sur ‘Communication’, ça va être les dernières communications de CFT ?”</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><b>💡 Recommandations UX :</b></li>
+                        <li>→ Simplifier les intitulés des tuiles au maximum.</li>
+                        <li>→ Ajouter des descriptions au survol des tuiles pour plus de transparence sur le contenu qui se trouve derrière chacune d’elle.</li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">'Les plus consultés'<div class="accordion-icon"></div></div>
+                <div class="accordion-content">
+                    <div class="idea-grid">
+                        <div class="idea-card green">
+                            <div class="idea-content">
+                                <p class="card-title">Retours positifs :</p>
+                                <p>✔️ <b>Intérêt</b> : <em>“Je trouve ça vraiment super. (…) En fonction de l’affluence, ça donne une indication sur si potentiellement on aurait loupé un sujet important ou non.”, “C’est bien d’avoir ça, ça inspire, si jamais t’as pas d’idées et que tu sais pas quoi lire sur CUBE tu peux aller piocher ici.”</em></p>
+                            </div>
+                        </div>
+                        <div class="idea-card red">
+                            <div class="idea-content">
+                                <p class="card-title">Retours négatifs :</p>
+                                <p>❌ <b>Indicateurs des tendances</b> : <em>“J’ai du mal à comprendre les symboles de couleur et leur utilité.”, “Il y avait déjà une idée de temporalité avec le ‘Sur 30 jours’. Les petits pictos ajoutent une info pas indispensable.”, “Il se passe un truc si je clique sur les triangles ?”</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><b>💡 Recommandations UX :</b></li>
+                        <li>→ Ne pas conserver les indicateurs de tendances pour éviter toute confusion.</li>
+                        <li>→ Bonus : Faire apparaître une description au survol de chaque entrée.</li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">Espaces utiles<div class="accordion-icon"></div></div>
+                <div class="accordion-content">
+                    <div class="idea-card green">
+                        <div class="idea-content">
+                            <p class="card-title">Retours positifs :</p>
+                            <p>✔️ <b>Permet la visibilité du scroll</b> : <em>“Cette fois on voit tout de suite le scroll avec ces éléments qui dépassent en bas donc ça c’est bien.”, “La suite en bas est évidente, on comprend qu’il faut encore descendre.”</em></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">'Qu'est-ce que CUBE ?''<div class="accordion-icon"></div></div>
+                <div class="accordion-content">
+                    <div class="idea-grid">
+                        <div class="idea-card green">
+                            <div class="idea-content">
+                                <p class="card-title">Retours positifs :</p>
+                                <p>✔️ <b>Longueur et densité</b> : <em>“C’est plutôt clair, concis, mais descriptif.”</em></p>
+                            </div>
+                        </div>
+                        <div class="idea-card red">
+                            <div class="idea-content">
+                                <p class="card-title">Retours négatifs :</p>
+                                <p>❌ <b>Confusion</b> : <em>“Le phrasing est un peu trompeur, ça donne l’impression que n’importe qui peut contribuer comme sur Wikipedia.”</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><b>💡 Recommandations UX :</b></li>
+                        <li>→ Reformuler la description de CUBE de manière plus claire et moins ambigüe.</li>
+                    </ul>
+                    </div>
+                    </div>
+                </section>
+
+                <section class="case-phase" id="iteration-3">
+                    <div class="case-study-phase">
+                        <h2>🪄<br> Troisième itération</h2>
+                        <p>How can we help them solve their problem?</p>
+                    </div>
+
+                    <h3>Prototype V3</h3>
+                    <img src="resources/cube/cube-prototype-3.gif">
+
+                    <h3>Comment notre prototype final répond-il aux besoins des utilisateurs ?</h3>
+                    <p>A la fin du chantier, nous avons présenté nos conclusions UX à notre Scrum Master et notre développeuse basées à Bangalore en amont des développements. Pour s’assurer que notre proposition finale réponde bien aux problématiques identifiées en début de chantier, nous avons repris chacun des composants de notre prototype en vérifiant le(s) besoin(s) de nos utilisateurs au(x)quel(s) ils répondent :</p>
+
+                    <div class="table-container">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Interviewee 1</th>
+                                    <th>Interviewee 2</th>
+                                    <th>Interviewee 3</th>
+                                    <th>Interviewee 4</th>
+                                    <th>Interviewee 5</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>♀</td>
+                                    <td>♀</td>
+                                    <td>♀</td>
+                                    <td>♂</td>
+                                    <td>♀</td>
+                                </tr>
+                                <tr>
+                                    <td>Age</td>
+                                    <td>32 yo</td>
+                                    <td>52 yo</td>
+                                    <td>20 yo</td>
+                                    <td>22 yo</td>
+                                    <td>59 yo</td>
+                                </tr>
+                                <tr>
+                                    <td>Race</td>
+                                    <td>Latina</td>
+                                    <td>White</td>
+                                    <td>Black</td>
+                                    <td>White</td>
+                                    <td>Asian</td>
+                                </tr>
+                                <tr>
+                                    <td>Profession</td>
+                                    <td>Spanish teacher</td>
+                                    <td>Nurse</td>
+                                    <td>College student</td>
+                                    <td>College student</td>
+                                    <td>Dressmaker</td>
+                                </tr>
+                                <tr>
+                                    <td>Level</td>
+                                    <td>Advanced</td>
+                                    <td>Beginner</td>
+                                    <td>Intermediate</td>
+                                    <td>Intermediate</td>
+                                    <td>Beginner</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </section>
+
+                <section class="case-phase" id="satisfaction">
+                    <div class="case-study-phase">
+                        <h2>🌡️<br> Satisfaction utilisateur</h2>
+                        <p>How can we help them solve their problem?</p>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">Visuel<div class="accordion-icon"></div></div>
+                    <div class="accordion-content">
+                    <img src="resources/cube/cube-poll-1.png">
+                    </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">Contenu et recherche de l'information<div class="accordion-icon"></div></div>
+                    <div class="accordion-content">
+                    <img src="resources/cube/cube-poll-2.png">
+                    </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">Conclusion<div class="accordion-icon"></div></div>
+                    <div class="accordion-content">
+                    <img src="resources/cube/cube-poll-3.png">
+                    </div>
+                    </div>
+
+                </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Marina Lay</h3>
+                    <p>UX/UI Designer & Product Designer</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+                        <p>marina.lay92@gmail.com</p>
+                        <p>+33 6 04 05 69 64</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/marinalay/" class="social-link" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Marina Lay. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio-script.js"></script>
+</body>
+</html>

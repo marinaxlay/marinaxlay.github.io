@@ -70,3 +70,32 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initial check for elements in view
     revealOnScroll();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize accordions
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            // Toggle active class for this header
+            this.classList.toggle('active');
+            
+            // Get the content element
+            const content = this.nextElementSibling;
+            
+            // Toggle the active class for the content
+            if(content.classList.contains('active')) {
+                content.classList.remove('active');
+                content.style.height = '0px';
+            } else {
+                content.classList.add('active');
+                content.style.height = content.scrollHeight + 'px';
+                
+                // After transition completes, set height to auto to accommodate dynamic content
+                setTimeout(function() {
+                    content.style.height = 'auto';
+                }, 300); // Match transition duration (0.3s = 300ms)
+            }
+        });
+    });
+});
