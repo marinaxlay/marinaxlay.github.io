@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France Travail | Portfolio UX/UI Designer</title>
+    <!-- Importation des polices -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio-styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="portfolio-home-page-fr.html"><h3>Marina Lay</h3></a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="portfolio-home-page-en.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="case-study france-travail">
+        <div class="container">
+
+            <section class="case-study-header">
+                <div class="container">
+                    <div class="case-study-layout">
+                        <div class="case-study-image">
+                            <img src="resources/france_travail/france-travail-header.png" alt="France Travail UI">
+                        </div>
+                        <div class="project-details">
+                            <h1>France Travail</h1>
+                            <p class="intro-text">Redesigning France Travail's homepage to make it easier to navigate through.</p>
+                            <p><b>Time frame:</b> January 2025</p>
+                            <p><b>Tools:</b> Figma</p>
+                            <p><b>Scope:</b> Unsolicited redesign of the homepage</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="case-introduction">
+                
+                <p>As a job seeker looking for a UX/UI designer position, there was something ironic about having to complete administrative procedures on the France Travail website while constantly complaining about its unintuitive interface... So naturally, I decided it would make a good redesign subject to build my portfolio!</p>
+
+                <h3>Context</h3>
+                <p>France Travail is the public employment service in France that compensates job seekers and supports them in returning to employment. However, despite its institutional nature, its site dedicated to candidates has an outdated UI, far from the polished and refined interfaces of the Service Public website and most of its other organizations and administrations.</p>
+
+                <h3>Problem Statement</h3>
+                <p><b>How to modernize France Travail's homepage in line with the Service Public website while facilitating navigation, but without altering its content?</b></p>
+                
+                <div class="idea-card orange">
+                    <div class="idea-content">
+                        <p class="card-title">Objectives:</p>
+                        <p>Redesign the France Travail homepage to:</p>
+                        <ul>
+                            <li>👉 facilitate navigation.</li>
+                            <li>👉 make it more consistent with the Service Public website, as well as those of its various organizations and administrations.</li>
+                        </ul>
+                        <p><em>This project was carried out without access to the site's analytics or other challenges faced by France Travail.</em></p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="case-phase" id="audit UX">
+                <div class="case-study-phase">
+                    <h2>🔍<br> UX Audit</h2>
+                    <p>What do the users need and want?</p>
+                </div>
+                
+                <h3>Heuristic Evaluation</h3>
+                <p>In the absence of a panel of platform users with whom to conduct UX research, I undertook a heuristic evaluation of the France Travail homepage based on Jakob Nielsen's usability principles:</p>
+                
+                    <img src="resources/france_travail/france-travail-v0.png">
+
+
+                <h4>Visibility of System Status</h4>
+                <ul>
+                    <p>1. There is no navigation bar indicating to the user where they are, or what other parts of the site they can navigate to.</p>
+                    <p>2. The articles do not indicate what type of news they are and where users will be taken when clicking on them (either francetravail.fr/actualites, francetravail.fr/candidat, or even a new tab to an external site).</p>
+                </ul>
+
+                <h4>Match Between System and the Real World</h4>
+                <ul>
+                    <p>3. The "Allocations and aid" and "Find my training" icons don't speak for themselves and can confuse the user.</p>
+                    <p>4. The placement and appearance of the "Newsletter", "Guide to simulators" and "I give my opinion" tiles suggest that they are part of the "Employment News" section, which can confuse the user.</p>
+                    <p>5. The distant location of the "More news" button seems to dissociate it from the articles. It should be located immediately after the articles.</p>
+                </ul>
+
+                <h4>Consistency and Standards (Jakob's Law)</h4>
+                <ul>
+                    <p>6. The way links behave is inconsistent across the homepage: "Access my job search" is underlined when hovering over it, but the links under the icons ("Update my status", "Manage my file", etc.) are not.</p>
+                    <p>7. The Design System is radically different from those of the websites of other Service Public organizations and administrations.</p>
+                </ul>
+
+                <h4>Aesthetic and Minimalist Design</h4>
+                <ul>
+                    <p>8. The size of article illustrations compared to navigation icons disrupts the visual hierarchy of information: the small navigation icons (main actions) get lost among the larger and more numerous article illustrations.</p>
+                </ul>
+
+                <h3>Accessibility</h3>
+                <ul>
+                    <p>9. Search bar placeholders: The color contrast is not sufficient.</p>
+                    <p>10. "All vigilant!": The color contrast is not sufficient (2:12).</p>
+                    <p>11. "Learn more": The hyperlink has a generic title, which reduces the usability of the site for screen reader users.</p>
+                </ul>
+
+                <h3>Competitive Analysis</h3>
+                <p>While France Travail doesn't have competitors per se, we can compare its site to other sites referenced in the Service Public's directory of organizations and administrations to identify standards and best practices:</p>
+                
+                <p>Comparison:</p>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Websites</th>
+                                <th>👍 Strengths</th>
+                                <th>👎 Weaknesses</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Service-public.fr</td>
+                                <td><p>• Interactive and personalized content ("Practical guides by life event") facilitating site searches,</p>
+                                    <p>• Consistent iconography throughout the site,</p>
+                                    <p>• Visually distinct sections through the use of titles,</p>
+                                    <p>• Tags allowing categorization of news, practical guides, procedures and tools, etc.,</p>
+                                    <p>• An intuitive and functional navigation bar (arrows indicating items expandable on click, sub-items changing behavior on hover, etc.),</p>
+                                    <p>• Accessibility standards respected.</p></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>French Embassy in Phnom Penh</td>
+                                <td><p>• An intuitive and functional navigation bar (items expandable on hover, sub-items changing behavior on hover, etc.),</p>
+                                    <p>• A carousel highlighting a selection of latest news,</p>
+                                    <p>• A header consistent with the Service Public graphic identity (logo, font), making the site more credible.</p>
+                                    <p>• Tags allowing categorization of news, practical guides, procedures and tools, etc.,</p></td>
+                                <td><p>• Several accessibility issues: insufficient color contrasts on certain text elements, hyperlinks in image form without alternative text, font sizes too small, etc.,</p>
+                                    <p>• A non-linear reading direction, difficult to identify. Moreover, secondary information (contact details, quick access, social networks, etc.) appears before main information (news) on the mobile version.</p></td>
+                            </tr>
+                            <tr>
+                                <td>Paris Academy</td>
+                                <td><p>• Visually distinct sections through the use of titles,</p>
+                                    <p>• Accessibility settings allowing each user to adjust contrasts, font, line spacing and justification according to their preferences,</p>
+                                    <p>• A header consistent with the Service Public graphic identity (logo, font), making the site more credible.</p></td>
+                                <td><p>• Despite accessibility settings, images containing text don't have alternative text,</p>
+                                    <p>• Generic "Read content" buttons redundant with clickable article titles that pollute the experience of screen reader users,</p>
+                                    <p>• The absence of tags allowing categorization of news,</p>
+                                    <p>• A lot of scrolling to reach the bottom of the homepage.</p></td>
+                            </tr>
+                            <tr>
+                                <td>Onisep</td>
+                                <td><p>• Interactive and personalized content ("Guided search") facilitating site searches,</p>
+                                    <p>• Tags allowing categorization of featured news,</p>
+                                    <p>• An intuitive and functional navigation bar (arrows indicating items expandable on click, sub-items changing behavior on hover, etc.),</p>
+                                <p>• A header and Design System consistent with the Service Public graphic identity (logo, font), making the site more credible.</p></td>
+                                <td><p>• Many obtrusive advertisements that pollute the user experience and increase cognitive load,</p>
+                                    <p>• An exhaustive and dense footer, redundant with the navigation bar and increasing the user's cognitive load.</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                </section>
+
+            <section class="case-phase" id="ideate">
+                <div class="case-study-phase">
+                    <div class="container">
+                        <h2>💡<br> Ideate</h2>
+                        <p>Who is the user and what problem do they face?</p>
+                    </div>
+                </div>
+
+                <h3>Wireframes</h3>
+                <div class="case-img-container">
+                    <img src="resources/france_travail/france-travail-wireframe-top.jpg" alt="Wireframe" class="case-image" width="550" height="550">
+                    <img src="resources/france_travail/france-travail-wireframe-bottom.jpg" alt="Wireframe" class="case-image" width="550" height="550">
+                </div>
+
+                </section>
+
+                <section class="case-phase" id="prototype">
+                    <div class="case-study-phase">
+                        <div class="container">
+                            <h2>📐<br> Prototype</h2>
+                            <p>Who is the user and what problem do they face?</p>
+                        </div>
+                    </div>
+    
+                    <h3>Prototypes</h3>
+
+                    <div class="case-img-container">
+                        <img src="resources/france_travail/france-travail-proto-desktop.gif" alt="Desktop prototype" class="case-image" width="600" height="600">
+                        <img src="resources/france_travail/france-travail-proto-tablet.gif" alt="Desktop prototype" class="case-image" width="230" height="230">
+                        <img src="resources/france_travail/france-travail-proto-mobile.gif" alt="Desktop prototype" class="case-image" width="130" height="130">
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">Desktop<div class="accordion-icon"></div></div>
+                    <div class="accordion-content">
+                        <img src="resources/france_travail/france-travail-proto-desktop.png">
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Tablet<div class="accordion-icon"></div></div>
+                    <div class="accordion-content">
+                        <img src="resources/france_travail/france-travail-proto-tablet.png">
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Mobile<div class="accordion-icon"></div></div>
+                    <div class="accordion-content">
+                        <img src="resources/france_travail/france-travail-proto-mobile.png">
+                    </div>
+                    </div>
+
+                    <h3>Solutions</h3>
+
+                    <h4>Consistency and Standardization</h4>
+                        <ul>
+                            <p>• The dominant color is blue, similar to the Service Public website and most of its other organizations and administrations, which reinforces the institutional and official character of the France Travail site. Blue is also softer and less aggressive than the red originally used.</p>
+                            <p>• All links behave in the same way and appear underlined when the mouse hovers over them, indicating to the user that they are clickable.</p>
+                        </ul>
+
+                    <h4>Information Architecture</h4>
+                        <ul>
+                            <p>• The navigation bar has tabs allowing the user to easily switch from one part of the site to another, and to better locate themselves on the site.</p>
+                            <p>• A carousel allows highlighting a selection of articles that the user can refer to if they don't have the time or patience to browse all the articles on the homepage. A tag also helps to determine at a glance what category of article it is.</p>
+                            <p>• Articles on the homepage are categorized, easily distinguished with large titles ("News", "Events" and "Files") and number 3 to 4 per category to limit the user's cognitive load.</p>
+                            <p>• The reduced size of article illustrations prevents them from eclipsing the buttons in the "Candidate Service" section (main actions).</p>
+                            <p>• The newsletter has its own section ("Mode of Employment, the mag"), which avoids confusing it with other articles. Similarly, the guide to allocation and aid simulators has its own button in "Candidate Services", while "I give my opinion" is now located in the footer.</p>
+                        </ul>
+
+                    <h4>Accessibility</h4>
+                        <ul>
+                            <p>• The placeholders of the search bars have a sufficiently high color contrast with the background so that they are visible to as many users as possible.</p>
+                            <p>• The "See all" buttons are named in such a way that screen readers can guide all users correctly and efficiently. Their color contrast is also sufficiently high so that they are visible to as many users as possible.</p>
+                        </ul>
+
+                    </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Marina Lay</h3>
+                    <p>UX/UI Designer & Product Designer</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+                        <p>marina.lay92@gmail.com</p>
+                        <p>+33 6 04 05 69 64</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/marinalay/" class="social-link" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Marina Lay. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio-script.js"></script>
+</body>
+</html>
