@@ -66,21 +66,28 @@ h1 {
 h2 {
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: var(--spacing-md);
 }
 
 h3 {
     font-size: 1.8rem;
+    margin-top: var(--spacing-md);
     margin-bottom: var(--spacing-sm);
 }
 
 h4 {
     font-size: 1.3rem;
     font-weight: 600;
+    margin-top: var(--spacing-xs);
 }
 
 p {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+ol, ul {
+    list-style-position: outside;
+    margin-left: 50px;
+    padding-bottom: 8px;
 }
 
 a {
@@ -276,6 +283,7 @@ header .container {
     width: 100%;
     height: 220px;
     overflow: hidden;
+    margin-bottom: var(--spacing-sm);
 }
 
 .project-image img {
@@ -287,12 +295,6 @@ header .container {
 
 .project-card:hover .project-image img {
     transform: scale(1.05);
-}
-
-.project-tags {
-    padding: var(--spacing-md) var(--spacing-md) var(--spacing-sm);
-    color: var(--text-light);
-    font-size: 0.9rem;
 }
 
 .project-card h3 {
@@ -744,10 +746,11 @@ footer {
     background-color: var(--white);
 }
 
-.case-gif-container {
-    text-align: center;
+.case-img-container {
     display: flex;
-    gap: var(--spacing-xl);
+    justify-content: center; /* Align images in the center */
+    align-items: center; /* Align images vertically */
+    gap: 20px; /* Space between images */
     flex-wrap: wrap;
 }
 
