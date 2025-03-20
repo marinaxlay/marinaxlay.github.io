@@ -99,3 +99,44 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Add this to your portfolio-script.js file
+document.addEventListener('DOMContentLoaded', function() {
+    // Language dropdown functionality
+    const languageDropdown = document.querySelector('.language-dropdown');
+    const languageSelector = document.querySelector('.language-selector');
+    const currentLanguage = document.querySelector('.current-language');
+    const languageOptions = document.querySelectorAll('.language-options a');
+    
+    // Toggle dropdown on click
+    languageSelector.addEventListener('click', function(e) {
+        e.stopPropagation();
+        languageDropdown.classList.toggle('active');
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function() {
+        languageDropdown.classList.remove('active');
+    });
+    
+    // Handle language selection
+    languageOptions.forEach(option => {
+        option.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Update current language display
+            currentLanguage.textContent = this.dataset.lang.toUpperCase();
+            
+            // Update active class
+            languageOptions.forEach(opt => opt.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Close dropdown
+            languageDropdown.classList.remove('active');
+            
+            // Here you would add logic to actually switch the language
+            // e.g., redirect to translated page or apply translations
+            console.log('Language switched to:', this.dataset.lang);
+        });
+    });
+});

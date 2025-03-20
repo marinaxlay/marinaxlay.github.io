@@ -146,6 +146,10 @@ header .container {
     pointer-events: none;
 }
 
+.language-options {
+    color: var(--white);
+}
+
 /* Hamburger Menu */
 .hamburger-menu {
     display: none;
@@ -775,6 +779,7 @@ footer a {
 .accordion-header.active {
     color: var(--accent-color);
 }
+
 
 /* Mobile responsiveness improvements */
 @media (max-width: 649px) {
