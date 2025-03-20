@@ -140,3 +140,48 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Existing code...
+    
+    // Tag animation
+    const tags = document.querySelectorAll('.tag');
+    tags.forEach((tag, index) => {
+        // Set a delay based on the index (each tag appears after the previous one)
+        tag.style.animation = `fadeInUp 0.5s ease ${index * 0.2}s forwards`;
+    });
+    
+    // Scroll animation for sections
+    const sections = document.querySelectorAll('section:not(.hero)');
+    sections.forEach(section => {
+        section.classList.add('animate-on-scroll');
+    });
+    
+    // Projects cards animation
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+        card.classList.add('animate-on-scroll');
+    });
+    
+    // Function to check if element is in viewport and animate
+    function checkVisibility() {
+        const elements = document.querySelectorAll('.animate-on-scroll');
+        const windowHeight = window.innerHeight;
+        
+        elements.forEach(element => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const elementVisible = 150; // Adjust this value to change when the animation triggers
+            
+            if (elementPosition < windowHeight - elementVisible) {
+                element.classList.add('visible');
+            }
+        });
+    }
+    
+    // Run on initial load
+    checkVisibility();
+    
+    // Run on scroll
+    window.addEventListener('scroll', checkVisibility);
+});
+

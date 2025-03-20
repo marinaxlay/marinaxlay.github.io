@@ -148,6 +148,7 @@ header .container {
 
 .language-options {
     color: var(--white);
+    margin-left: 20px;
 }
 
 /* Hamburger Menu */
@@ -258,6 +259,36 @@ footer a {
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--border-radius-xl);
     font-size: 0.9rem;
+}
+
+/* Add these animation classes to your portfolio-styles.css */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tag {
+    /* Keep your existing tag styles */
+    opacity: 0; /* Start invisible */
+    animation-fill-mode: forwards;
+}
+
+/* For section animations */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .cta-button {
@@ -501,7 +532,7 @@ footer a {
     }
     
     footer {
-        margin-top: var(--spacing-sm);
+        margin-top: var(--spacing-lg);
     }
 
     .footer-bottom {
