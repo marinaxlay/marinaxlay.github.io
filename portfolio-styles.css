@@ -75,18 +75,18 @@ h3 {
 }
 
 h4 {
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 500;
     margin-top: var(--spacing-xs);
+    letter-spacing: 1px;
 }
 
 p {
     margin-bottom: var(--spacing-sm);
 }
 
-ol, ul {
+ol, li {
     list-style-position: outside;
-    margin-left: 50px;
     padding-bottom: 8px;
 }
 
@@ -102,7 +102,8 @@ a:hover {
 }
 
 ul {
-    list-style: none;
+    margin-bottom: var(--spacing-xs);
+    margin-left: 50px;
 }
 
 /* Header */
@@ -120,14 +121,10 @@ header .container {
     align-items: center;
 }
 
-.logo h3 {
-    color: var(--white);
-    margin-bottom: 0;
-}
-
 .main-nav ul {
     display: flex;
     gap: var(--spacing-sm);
+    list-style: none;
 }
 
 .main-nav a {
@@ -137,14 +134,15 @@ header .container {
     border-radius: var(--border-radius-sm);
 }
 
+
 .main-nav a:hover {    
     color: var(--light-text);
 }
 
-.main-nav a.active {
-    font-weight: 800;
-    pointer-events: none;
+.contact a:active {
+    font-weight: 200;
 }
+
 
 .language-options {
     color: var(--white);
@@ -220,7 +218,7 @@ footer a {
 .hero {
     background-color: var(--primary-color);
     color: var(--white);
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-lg) 0;
     text-align: center;
 }
 
@@ -241,7 +239,7 @@ footer a {
     margin-left: auto;
     margin-right: auto;
     font-size: 22px;
-    padding-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
     font-family: 'Courier Prime', Courier, monospace;
 }
 
@@ -258,7 +256,7 @@ footer a {
     color: var(--white);
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--border-radius-xl);
-    font-size: 0.9rem;
+    font-size: 15px;
 }
 
 /* Add these animation classes to your portfolio-styles.css */
@@ -274,7 +272,6 @@ footer a {
 }
 
 .tag {
-    /* Keep your existing tag styles */
     opacity: 0; /* Start invisible */
     animation-fill-mode: forwards;
 }
@@ -311,7 +308,7 @@ footer a {
 
 /* Projects Section */
 .projects {
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-lg) 0;
     background-color: var(--background-light);
 }
 
@@ -328,6 +325,16 @@ footer a {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-lg);
     margin-top: var(--spacing-md);
+}
+    
+.projects-grid a:hover h3 {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.projects-grid a:hover {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .project-card {
@@ -393,19 +400,19 @@ footer a {
 
 .platform {
     padding: var(--spacing-xs) var(--spacing-sm);
+    border: solid;
+    border-width: 1px;
     border-radius: var(--border-radius-xl);
     font-size: 0.8rem;
     font-weight: 500;
 }
 
 .desktop {
-    background-color: var(--secondary-light);
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .mobile {
-    background-color: var(--primary-light);
-    color: var(--white);
+    color: var(--text-color);
 }
 
 .secondary-button {
@@ -425,84 +432,6 @@ footer a {
     border-color: var(--hover-button);
 }
 
-/* Contact Section */
-.contact {
-    background-color: var(--dark-bg);
-    color: var(--light-text);
-    padding: var(--spacing-xl) 0;
-}
-
-.contact h2 {
-    color: var(--light-text);
-}
-
-.contact h3 {
-    color: var(--secondary-color);
-}
-
-.contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-lg);
-}
-
-.contact-details {
-    margin-top: var(--spacing-md);
-}
-
-.contact-details li {
-    margin-bottom: var(--spacing-sm);
-}
-
-.contact-form {
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: var(--spacing-lg);
-    border-radius: var(--border-radius-lg);
-}
-
-.form-group {
-    margin-bottom: var(--spacing-md);
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: var(--spacing-xs);
-    font-weight: 500;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: var(--spacing-sm);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: var(--border-radius-sm);
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--light-text);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--secondary-color);
-}
-
-.submit-button {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    border: none;
-    padding: var(--spacing-sm) var(--spacing-md);
-    border-radius: var(--border-radius-md);
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.submit-button:hover {
-    background-color: var(--accent-color);
-    color: var(--white);
-    transform: translateY(-2px);
-}
-
 /* Responsive Styles */
 @media (max-width: 992px) {
     h1 {
@@ -511,10 +440,6 @@ footer a {
     
     h2 {
         font-size: 2rem;
-    }
-
-    .contact-content {
-        grid-template-columns: 1fr;
     }
 }
 
@@ -530,9 +455,14 @@ footer a {
     .main-nav ul {
         gap: var(--spacing-sm);
     }
+
+    .intro-text {
+        font-size: 20px;
+    }
     
     footer {
         margin-top: var(--spacing-lg);
+        padding: var(--spacing-md);
     }
 
     .footer-bottom {
@@ -587,13 +517,27 @@ footer a {
 
 }
 
-@media (max-width: 576px) {
-    .contact-form {
-        padding: var(--spacing-md);
-    }
+/* Case Study specific styles */
+
+.button-container {
+    text-align: center;
+    margin-top: var(--spacing-md);
 }
 
-/* Case Study specific styles */
+.button {
+    padding: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: var(--primary-color);
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-decoration: none;
+}
 
 .case-study-header {
     background-color: var(--dark-bg);
@@ -602,6 +546,15 @@ footer a {
     width: 100vw; /* Ensure the background spans the full width of the viewport */
     margin-left: calc(-50vw + 50%); /* Center*/
     margin-bottom: var(--spacing-lg);
+}
+
+.case-insights {
+    padding: 20px;
+    border: solid;
+    border-width: 1px;
+    border-radius: var(--border-radius-sm);
+    border-color: var(--primary-color);
+    margin-bottom: var(--border-radius-lg);
 }
 
 .case-study-phase {
@@ -656,10 +609,12 @@ footer a {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-md);
     margin-bottom: var(--spacing-md);
+    margin-top: var(--spacing-md);
+
 }
 
 .idea-card {
-    border-radius: var(--border-radius-md);
+    border-radius: var(--border-radius-lg);
     padding: var(--spacing-md);
     position: relative;
     display: flex;
@@ -713,7 +668,7 @@ footer a {
 .table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
 }
 
 .table th, .table td {
@@ -811,6 +766,66 @@ footer a {
     color: var(--accent-color);
 }
 
+/* About page specific styles */
+.about-content {
+    padding-top: var(--spacing-md);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+}
+
+.about-bio p {
+    margin-top: var(--spacing-md);
+}
+
+
+.resume-download {
+    text-align: center;
+    margin: var(--spacing-lg) 0;
+}
+
+.contact-cta {
+    text-align: center;
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-lg);
+    background-color: var(--background-dark);
+    border-radius: var(--border-radius-lg);
+}
+
+.contact-cta h2 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.contact-cta a {
+    color: var(--accent-color);
+}
+
+/* Responsive design for about page */
+@media (max-width: 992px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .skills-section {
+        margin-bottom: var(--spacing-md);
+    }
+}
+
+@media (max-width: 649px) {
+    .about-bio p {
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .contact-cta {
+        padding: var(--spacing-md);
+    }
+}
 
 /* Mobile responsiveness improvements */
 @media (max-width: 649px) {

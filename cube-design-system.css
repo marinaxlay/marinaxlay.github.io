@@ -1,0 +1,102 @@
+        /* Colors section */
+        .colors-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            padding: 50px;
+            border-radius: 20px;
+            margin-bottom: var(--spacing-md);
+            gap: var(--spacing-xl);
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-sm);
+        }
+
+        .color-box {
+            width: 100px;
+            height: 100px;
+            border-radius: var(--border-radius-sm);
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            color: white;
+            padding: var(--spacing-xs);
+            font-size: 0.8rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+
+        /* Typography section */
+        .typography-container {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 50px;
+            border-radius: 20px;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .typography-example {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .typography-example.h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 26px;
+        }
+
+        .typography-example.h2 {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .typography-example.body {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        /* Icons section */
+        .icons-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-xs);
+            background-color: white;
+            padding: 50px;
+            border-radius: 20px;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+
+        @media (max-width: 900px) {
+            .colors-container {
+                padding: 20px;
+                gap: var(--spacing-md);
+            }
+            .color-box {
+                width: 85px;
+                height: 85px;
+            }
+            .typography-container {
+                padding: 20px;
+                gap: var(--spacing-md);
+            }
+            .icons-container {
+                padding: 20px;
+                gap: var(--spacing-md);
+            }
+    }
+

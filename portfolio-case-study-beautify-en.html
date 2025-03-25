@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="portfolio-styles.css">
 </head>
 <body>
-    <header>
+    <header id="top">
         <div class="container">
             <div class="logo">
-                <a href="portfolio-home-page-en.html"><h3>Marina Lay</h3></a>
+                <a href="portfolio-home-page-en.html"><img src="resources/logo.svg"></a>
             </div>
             <div class="hamburger-menu">
                 <div class="bar"></div>
@@ -24,9 +24,9 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="portfolio-home-page-en.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="portfolio-projects-en.html">Projects</a></li>
+                    <li><a href="portfolio-about-en.html">About</a></li>
+                    <li><a href="#footer" class="contact">Contact</a></li>
                     <li class="language-options"><a href="portfolio-case-study-beautify-fr.html" data-lang="fr" alt="français">🇫🇷</a> | <a href="portfolio-case-study-beautify-en.html" data-lang="en" class="active" alt="english">🇬🇧</a></li>
 
                 </div>
@@ -47,15 +47,30 @@
                         <div class="project-details">
                             <h1>BEAUTIFY</h1>
                             <p class="intro-text">Designing an inclusive and intuitive platform to make beauty accessible for everyone.</p>
+                            
+                            <p><b>Category :</b> Student project</p>
                             <p><b>Time frame:</b> January - May 2022</p>
                             <p><b>Tools:</b> Miro, Figma, Notion</p>
                             <p><b>Mentors:</b> François Violette, Marie Girard</p>
                             <p><b>Team:</b> Cindy Long, Adeline Poumaroux, Ines Tabti-Benhari, Diane Volpelière</p>
+                            <p><b>Device :</b> Mobile</p>
                         </div>
-                    </div>
-                    
+                    </div>    
                 </div>
             </section>
+
+            <div class="case-insights">
+                <p class="card-title">In a nutshell :</p>
+
+                <p>Beautify aims to make make-up more inclusive through broader representation and better access to personalized advice.</p>
+                <ul>
+                    <li><b>Objectives</b>: To design an intuitive platform enabling everyone to easily find products and techniques adapted to their physical characteristics.</li>
+                    <li><b>Skills applied</b>: User interviews, Competitive analysis, Persona, Empathy map, User journey map, Wireframing, Prototyping, User tests.</li>
+                    <li><b>Solutions</b>: A quiz to determine personalized recommendations, diversity of representation.</li>
+                    <li><b>Results</b>: An inclusive, intuitive experience validated by tests and very positive feedback.</li>
+                </ul>
+            </div>
+            <br>
 
             <section class="case-introduction">
                 <p>From your physical characteristics to your skin type, your beauty is unique: there is none other like yours. But in the mass information age, finding the appropriate products and techniques that will enhance YOUR features keeps growing more challenging – especially in a white, youth and cis female dominated area.</p>
@@ -112,15 +127,15 @@
                             </tr>
                             <tr>
                                 <td>Race</td>
-                                <td>Latina</td>
                                 <td>White</td>
+                                <td>Latina</td>
                                 <td>Black</td>
                                 <td>White</td>
                                 <td>Asian</td>
                             </tr>
                             <tr>
                                 <td>Profession</td>
-                                <td>Spanish teacher</td>
+                                <td>English teacher</td>
                                 <td>Nurse</td>
                                 <td>College student</td>
                                 <td>College student</td>
@@ -128,9 +143,9 @@
                             </tr>
                             <tr>
                                 <td>Level</td>
-                                <td>Advanced</td>
-                                <td>Beginner</td>
                                 <td>Intermediate</td>
+                                <td>Beginner</td>
+                                <td>Advanced</td>
                                 <td>Intermediate</td>
                                 <td>Beginner</td>
                             </tr>
@@ -158,15 +173,15 @@
                             </tr>
                             <tr>
                                 <td>"What criteria do you pay attention to when buying beauty products?"</td>
-                                <td>Interviewees mostly pay attention to: 1/ the ingredients ("how chemical is it and how is my skin going to react to it?"), 2/ the price ("is it within my budget?"), 3/ the brand's ethics ("is it cruelty-free?"), 4/ user-friendliness.</td>
+                                <td>Interviewees mostly pay attention to: <br>1/ the ingredients ("how chemical is it and how is my skin going to react to it?"), <br>2/ the price ("is it within my budget?"), <br>3/ the brand's ethics ("is it cruelty-free?"), <br>4/ user-friendliness.</td>
                             </tr>
                             <tr>
                                 <td>"What makeup techniques you haven't mastered yet would you like to learn? What has stopped you so far?"</td>
-                                <td>Interviewees all mentioned different makeup techniques they would like to learn. The techniques they mentioned seem to match their respective level: beginners mentioned basic techniques such as applying lipstick ("which shade should I pick based on my skin color?"), while advanced-level interviewees mentioned more complex techniques such as contouring ("I don't understand my face shape").</td>
+                                <td>Interviewees all mentioned different makeup techniques they would like to learn. The techniques they mentioned seem to match their respective level: beginners mentioned basic techniques such as applying lipstick ("which shade should I pick based on my skin color?"), while advanced-level interviewees mentioned more complex techniques such as contouring ("I don't understand my face shape"). The main reason mentioned for not learning or mastering those techniques yet is not knowing where to start due to the myriad of beauty content out there.</td>
                             </tr>
                             <tr>
                                 <td>"Where do you usually look for makeup inspiration or advice?"</td>
-                                <td>1/ The main reason mentioned for not learning or mastering those techniques yet is not knowing where to start due to the myriad of beauty content out there. 2/ Younger interviewees like to watch youtube or tiktok videos for makeup inspiration while older interviewees prefer magazine articles.</td>
+                                <td>Younger interviewees like to watch youtube or tiktok videos for makeup inspiration while older interviewees prefer magazine articles.</td>
                             </tr>
                             <tr>
                                 <td>"How well do you generally feel represented in beauty media (based on your skin color, age, etc.?"</td>
@@ -182,11 +197,11 @@
                         <thead>
                             <tr>
                                 <th></th>
-                                <th>Sephora</th>
-                                <th>Nocibe</th>
-                                <th>Cosmopolitan</th>
-                                <th>kleo beaute</th>
-                                <th>MarionCameleon</th>
+                                <th><a href="https://www.sephora.fr/" target="_blank">Sephora</a></th>
+                                <th><a href="https://www.nocibe.fr/fr" target="_blank">Nocibe</a></th>
+                                <th><a href="https://www.cosmopolitan.fr/" target="_blank">Cosmopolitan</a></th>
+                                <th><a href="https://www.kleo-beaute.com/" target="_blank">kleo beaute</a></th>
+                                <th><a href="https://www.youtube.com/@MarionCameleon" target="_blank">MarionCameleon</a></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -263,7 +278,6 @@
                 <div class="case-study-phase">
                     <div class="container">
                         <h2>🎯<br> Define</h2>
-                        <p>Who is the user and what problem do they face?</p>
                     </div>
                 </div>
                 
@@ -292,7 +306,6 @@
             <section class="case-phase" id="ideate">
                 <div class="case-study-phase">
                     <h2>💡<br> Ideate</h2>
-                    <p>How can we help them solve their problem?</p>
                 </div>
                 
                 <h3>Crazy 8</h3>
@@ -353,7 +366,6 @@
             <section class="case-phase" id="ideate">
                 <div class="case-study-phase">
                     <h2>📐<br>Prototype</h2>
-                    <p>How can we help them solve their problem?</p>
                 </div>
             
                 <h3>Prototypes</h3>
@@ -362,6 +374,9 @@
                         <img src="resources/beautify/beautify-demo-2.gif" alt="Information Architecture" class="case-image">
                         <img src="resources/beautify/beautify-demo-3.gif" alt="Information Architecture" class="case-image">
                     </div>
+
+                    <div class="button-container"><a href="https://www.figma.com/proto/WAVBWvjRxbVJJduyXPKI9Y/Beautify?node-id=1-183&t=Q5GApBbA2PYu7zMC-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A183" class="button" target="_blank">See prototype on Figma</a></div>
+
                         
                 <h3>Design System</h3>
                     <img src="resources/beautify/beautify-ui-kit.png" alt="Information Architecture" class="case-image">
@@ -372,7 +387,6 @@
             <section class="case-phase" id="test">
                 <div class="case-study-phase">
                     <h2>✅<br>Test</h2>
-                    <p>How can we help them solve their problem?</p>
                 </div>
                 <p>For the user tests, we reused the same user panel as in Step 1.</p>
                 <div class="table-container">
@@ -403,7 +417,7 @@
                             <tr>
                                 <td>General</td>
                                 <td>"Comment anything that comes to your mind as you navigate through the app."</td>
-                                <td>👍: 1/ It's didactic. 2/ It is intuitive and easy to navigate: all 4 tabs at the bottom all have a distinct usage. 3/ The fonts and colors are very harmonious, legible and easy on the eye. 4/ The tailored suggestions after taking the quizz are a big added value. 5/ The tutorials being similar to cooking recipes (difficulty, time, products used...) and multi-format. 6/ Favoriting items. 7/ The representation and diversity of models. 👎: 1/ Language inconsistencies: mix of French and English ("highlighter"). 2/ Titles are missing on tutorial tiles in gallery view. 3/ Prices are missing on product information sheets. 4/ The difference between "novice" and "débutant" is unclear.</td>
+                                <td>👍: <br>1/ It's didactic. <br>2/ It is intuitive and easy to navigate: all 4 tabs at the bottom all have a distinct usage. <br>3/ The fonts and colors are very harmonious, legible and easy on the eye. <br>4/ The tailored suggestions after taking the quizz are a big added value. <br>5/ The tutorials being similar to cooking recipes (difficulty, time, products used...) and multi-format. <br>6/ Favoriting items. <br>7/ The representation and diversity of models. <br><br>👎: <br>1/ Language inconsistencies: mix of French and English ("highlighter"). <br>2/ Titles are missing on tutorial tiles in gallery view. <br>3/ Prices are missing on product information sheets. <br>4/ The difference between "novice" and "débutant" is unclear.</td>
                             </tr>
                             <tr>
                                 <td>General</td>
@@ -435,9 +449,9 @@
                         <div class="idea-content">
                             <p class="card-title">Potential improvements in ulterior updates based on user feedbacks:</p>
                             <ul>
-                                <li>👉 Add a search bar in the Community section to allow users to search keywords and find topics and posts of interest more easily.</li>
-                                <li>👉 Add titles on tutorial tiles in gallery view to guarantee easier identification as well as consistency across the app.</li>
-                                <li>👉 Add price (or price range) on product information sheet, as budget is an important criterion for our users when purchasing beauty products.</li>
+                                <li>Add a search bar in the Community section to allow users to search keywords and find topics and posts of interest more easily.</li>
+                                <li>Add titles on tutorial tiles in gallery view to guarantee easier identification as well as consistency across the app.</li>
+                                <li>Add price (or price range) on product information sheet, as budget is an important criterion for our users when purchasing beauty products.</li>
                             </ul>
                         </div>
                     </div>
@@ -446,7 +460,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer id="footer">
         <div class="footer-content">
             <h2>Thank you for stopping by!</h2>
             <p>📧 Email : marina.lay92@gmail.com | <a href="https://www.linkedin.com/in/marinalay/" target="_blank">LinkedIn</a></p>

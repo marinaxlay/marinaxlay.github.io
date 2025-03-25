@@ -131,9 +131,6 @@ document.addEventListener('DOMContentLoaded', function() {
             languageOptions.forEach(opt => opt.classList.remove('active'));
             this.classList.add('active');
             
-            // Close dropdown
-            languageDropdown.classList.remove('active');
-            
             // Here you would add logic to actually switch the language
             // e.g., redirect to translated page or apply translations
             console.log('Language switched to:', this.dataset.lang);
@@ -142,7 +139,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Existing code...
     
     // Tag animation
     const tags = document.querySelectorAll('.tag');
@@ -185,3 +181,34 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', checkVisibility);
 });
 
+        // Add animation to color boxes on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const colorBoxes = document.querySelectorAll('.color-box');
+            
+            colorBoxes.forEach((box, index) => {
+                box.style.opacity = '0';
+                box.style.transform = 'translateY(20px)';
+                box.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                
+                // Staggered animation
+                setTimeout(() => {
+                    box.style.opacity = '1';
+                    box.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+            
+            // For accessibility - ensure color boxes have proper contrast for text
+            colorBoxes.forEach(box => {
+                const bgColor = getComputedStyle(box).backgroundColor;
+                const rgb = bgColor.match(/\d+/g);
+                
+                // Calculate luminance to determine if text should be white or black
+                const luminance = 0.299 * rgb[0] + 0.587 * rgb[1] + 0.114 * rgb[2];
+                
+                if (luminance > 186) {
+                    box.style.color = '#000000';
+                } else {
+                    box.style.color = '#FFFFFF';
+                }
+            });
+        });
