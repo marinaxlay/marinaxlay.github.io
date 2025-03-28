@@ -1,14 +1,14 @@
 :root {
     /* Palette de couleurs*/
-    --primary-color: #224A42;
-    --primary-light: #346A5D;
-    --secondary-color: #F8A978;
-    --secondary-light: #FFD0B5;
+    --primary-color: #496E5A;
+    --primary-light: #6A9C89;
+    --secondary-color: #FFA725;
+    --secondary-light: #FFE2BD;
     --accent-color: #C64C38;
     --text-color: #333333;
     --text-light: #666666;
     --background-light: #FFFAF4;
-    --background-dark: #F5EFE7;
+    --background-dark: #643843;
     --dark-bg: #222222;
     --light-text: #F7F7F7;
     --white: #FFFFFF;
@@ -218,8 +218,13 @@ footer a {
 .hero {
     background-color: var(--primary-color);
     color: var(--white);
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-md) 0;
     text-align: center;
+}
+
+.hero .container {
+    margin-top: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
 }
 
 .hero h1 {
@@ -239,7 +244,7 @@ footer a {
     margin-left: auto;
     margin-right: auto;
     font-size: 22px;
-    padding-bottom: var(--spacing-xs);
+    padding-bottom: var(--spacing-md);
     font-family: 'Courier Prime', Courier, monospace;
 }
 
@@ -257,6 +262,22 @@ footer a {
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--border-radius-xl);
     font-size: 15px;
+}
+
+.hero .button-container {
+    margin-top: var(--spacing-xs);
+}
+
+.hero .button {
+    border-color: white;
+    color: white;
+    margin-left: var(--spacing-xs);
+    margin-right: var(--spacing-xs);
+}
+
+.hero .button:hover {
+    background-color: var(--background-light);
+    color: var(--primary-color);
 }
 
 /* Add these animation classes to your portfolio-styles.css */
@@ -291,7 +312,7 @@ footer a {
 .cta-button {
     display: inline-block;
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--text-color);
     padding: var(--spacing-sm) var(--spacing-md);
     border-radius: var(--border-radius-md);
     font-weight: 700;
