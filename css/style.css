@@ -2,7 +2,7 @@
     /* Palette de couleurs*/
     --primary-color: #496E5A;
     --primary-light: #6A9C89;
-    --secondary-color: #FFA725;
+    --secondary-color: #FFAD33;
     --secondary-light: #FFE2BD;
     --accent-color: #C64C38;
     --text-color: #333333;
@@ -106,6 +106,26 @@ ul {
     margin-left: 50px;
 }
 
+.button-container {
+    text-align: center;
+    margin-top: var(--spacing-md);
+}
+
+.button {
+    padding: 18px;
+    border: solid;
+    border-width: 1px;
+    border-color: var(--primary-color);
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-decoration: none;
+}
+
 /* Header */
 header {
     background-color: var(--primary-color);
@@ -134,15 +154,9 @@ header .container {
     border-radius: var(--border-radius-sm);
 }
 
-
 .main-nav a:hover {    
     color: var(--light-text);
 }
-
-.contact a:active {
-    font-weight: 200;
-}
-
 
 .language-options {
     color: var(--white);
@@ -219,33 +233,31 @@ footer a {
     background-color: var(--primary-color);
     color: var(--white);
     padding: var(--spacing-md) 0;
-    text-align: center;
 }
 
 .hero .container {
-    margin-top: var(--spacing-xs);
     margin-bottom: var(--spacing-md);
 }
 
 .hero h1 {
     color: var(--white);
     margin-bottom: var(--spacing-md);
-    max-width: 800px;
+    max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.highlight {
+.highlight-1 {
     color: var(--secondary-color);
 }
 
 .intro-text {
-    max-width: 800px;
+    max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 22px;
-    padding-bottom: var(--spacing-md);
+    font-size: 24px;
     font-family: 'Courier Prime', Courier, monospace;
+    padding-bottom: var(--spacing-md);
 }
 
 .tags {
@@ -266,13 +278,18 @@ footer a {
 
 .hero .button-container {
     margin-top: var(--spacing-xs);
+    text-align: left;
+    color: var(--white);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero .button {
     border-color: white;
     color: white;
     margin-left: var(--spacing-xs);
-    margin-right: var(--spacing-xs);
+    margin-right: var(--spacing-xs);    
 }
 
 .hero .button:hover {
@@ -280,7 +297,19 @@ footer a {
     color: var(--primary-color);
 }
 
-/* Add these animation classes to your portfolio-styles.css */
+.hero .availability-label {
+    border: solid 1px #8FFF1F;
+    color: #8FFF1F;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-xl);
+    font-size: 16px;
+    vertical-align: middle;
+    margin-left: var(--spacing-xs);
+    display: inline-block;
+    margin-bottom: var(--spacing-xs);
+}
+
+/*Animation classes*/
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -299,7 +328,7 @@ footer a {
 
 /* For section animations */
 .animate-on-scroll {
-    opacity: 0;
+    opacity: 0.1;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
@@ -309,25 +338,7 @@ footer a {
     transform: translateY(0);
 }
 
-.cta-button {
-    display: inline-block;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    padding: var(--spacing-sm) var(--spacing-md);
-    border-radius: var(--border-radius-md);
-    font-weight: 700;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    box-shadow: 10px 10px var(--text-color);
-}
-
-.cta-button:hover {
-    background-color: var(--accent-color);
-    color: var(--white);
-    transform: translateY(-2px);
-}
-
-/* Projects Section */
+/* Projects */
 .projects {
     padding: var(--spacing-lg) 0;
     background-color: var(--background-light);
@@ -369,6 +380,7 @@ footer a {
     flex-direction: column;
     height: 100%;
     padding-bottom: var(--spacing-md);
+    color: var(--text-color);
 }
 
 .project-card:hover {
@@ -436,50 +448,38 @@ footer a {
     color: var(--text-color);
 }
 
-.secondary-button {
-    display: block;
-    width: fit-content;
-    margin: var(--spacing-lg) auto 0;
-    padding: var(--spacing-sm) var(--spacing-md);
-    border: 2px solid var(--primary-color);
-    border-radius: var(--border-radius-md);
-    font-weight: 600;
-    text-align: center;
-}
-
-.secondary-button:hover {
-    background-color: var(--hover-button);
-    color: var(--light-text);
-    border-color: var(--hover-button);
-}
-
 /* Responsive Styles */
-@media (max-width: 992px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-    
-    h2 {
-        font-size: 2rem;
-    }
-}
-
 @media (max-width: 758px) {
     h1 {
-        font-size: 2rem;
+        font-size: 48px;
     }
     
     h2 {
-        font-size: 1.8rem;
-    }
-    
-    .main-nav ul {
-        gap: var(--spacing-sm);
+        font-size: 40px;
     }
 
     .intro-text {
-        font-size: 20px;
+        font-size: 18px;
+        padding-bottom: var(--spacing-sm);
     }
+
+    .hero .availability-label {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .button-container {
+        margin-top: var(--spacing-sm);
+    }
+    
+    .hero .button {
+        border-color: white;
+        color: white;
+        margin-bottom: var(--spacing-sm);  
+        padding: 14px;  
+    }
+
+@media (max-width: 648px) {
+
     
     footer {
         margin-top: var(--spacing-lg);
@@ -495,10 +495,17 @@ footer a {
     .projects-grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
+
+    
+    .main-nav ul {
+        gap: var(--spacing-sm);
+    }
+}
+    
 }
 
 /* Menu hamburger pour écrans < 649px */
-@media (max-width: 649px) {
+@media (max-width: 800px) {
     .hamburger-menu {
         display: flex;
     }
@@ -539,26 +546,6 @@ footer a {
 }
 
 /* Case Study specific styles */
-
-.button-container {
-    text-align: center;
-    margin-top: var(--spacing-md);
-}
-
-.button {
-    padding: 20px;
-    border: solid;
-    border-width: 1px;
-    border-color: var(--primary-color);
-    display: inline-block;
-    transition: all 0.3s ease;
-}
-
-.button:hover {
-    background-color: var(--primary-color);
-    color: var(--light-text);
-    text-decoration: none;
-}
 
 .case-study-header {
     background-color: var(--dark-bg);
@@ -803,29 +790,6 @@ footer a {
     margin-top: var(--spacing-md);
 }
 
-
-.resume-download {
-    text-align: center;
-    margin: var(--spacing-lg) 0;
-}
-
-.contact-cta {
-    text-align: center;
-    margin: var(--spacing-xl) 0;
-    padding: var(--spacing-lg);
-    background-color: var(--background-dark);
-    border-radius: var(--border-radius-lg);
-}
-
-.contact-cta h2 {
-    color: var(--primary-color);
-    margin-bottom: var(--spacing-sm);
-}
-
-.contact-cta a {
-    color: var(--accent-color);
-}
-
 /* Responsive design for about page */
 @media (max-width: 992px) {
     .about-grid {
@@ -841,10 +805,6 @@ footer a {
 @media (max-width: 649px) {
     .about-bio p {
         margin-bottom: var(--spacing-sm);
-    }
-    
-    .contact-cta {
-        padding: var(--spacing-md);
     }
 }
 
