@@ -129,7 +129,7 @@ ul {
 /* Header */
 header {
     background-color: var(--primary-color);
-    padding: var(--spacing-sm) 0;
+    padding: var(--spacing-xs) 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -303,7 +303,6 @@ footer a {
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--border-radius-xl);
     font-size: 16px;
-    vertical-align: middle;
     margin-left: var(--spacing-xs);
     display: inline-block;
     margin-bottom: var(--spacing-xs);
@@ -464,7 +463,8 @@ footer a {
     }
 
     .hero .availability-label {
-        margin-bottom: var(--spacing-md);
+        margin-bottom: var(--spacing-xs);
+        font-size: 14px;
     }
 
     .button-container {
@@ -476,6 +476,10 @@ footer a {
         color: white;
         margin-bottom: var(--spacing-sm);  
         padding: 14px;  
+    }
+
+    footer h2 {
+        font-size: 30px;
     }
 
 @media (max-width: 648px) {
@@ -504,7 +508,7 @@ footer a {
     
 }
 
-/* Menu hamburger pour écrans < 649px */
+/* Menu hamburger*/
 @media (max-width: 800px) {
     .hamburger-menu {
         display: flex;
@@ -532,6 +536,7 @@ footer a {
     .main-nav ul {
         flex-direction: column;
         align-items: center;
+        margin-left: 0px;
     }
     
     .main-nav li {
@@ -557,12 +562,20 @@ footer a {
 }
 
 .case-insights {
+    border: solid 1px var(--primary-color);
+    border-radius: 4px;
+    margin-bottom: var(--spacing-md);
+}
+
+.case-insights .accordion-header {
     padding: 20px;
-    border: solid;
-    border-width: 1px;
-    border-radius: var(--border-radius-sm);
-    border-color: var(--primary-color);
-    margin-bottom: var(--border-radius-lg);
+}
+
+.case-insights .accordion-header:hover {
+    color: var(--light-text);
+    background: var(--hover-button);
+    padding: 20px;
+
 }
 
 .case-study-phase {
@@ -720,7 +733,6 @@ footer a {
     cursor: pointer;
     font-weight: 600;
     color: var(--primary-color);
-    transition: all 0.3s ease;
 }
 
 .accordion-header:hover {
@@ -776,6 +788,10 @@ footer a {
 
 .accordion-header.active {
     color: var(--accent-color);
+}
+
+.case-insights .accordion-item {
+    border: none;
 }
 
 /* About page specific styles */

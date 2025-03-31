@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add this to your portfolio-script.js file
+// Languages
 document.addEventListener('DOMContentLoaded', function() {
     // Language dropdown functionality
     const languageDropdown = document.querySelector('.language-dropdown');
@@ -114,10 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
         languageDropdown.classList.toggle('active');
     });
     
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function() {
-        languageDropdown.classList.remove('active');
-    });
+
     
     // Handle language selection
     languageOptions.forEach(option => {
