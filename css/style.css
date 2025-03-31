@@ -297,7 +297,7 @@ footer a {
     color: var(--primary-color);
 }
 
-.hero .availability-label {
+.availability-label {
     border: solid 1px #8FFF1F;
     color: #8FFF1F;
     padding: var(--spacing-xs) var(--spacing-sm);
@@ -578,7 +578,7 @@ footer a {
     font-family: 'Courier Prime', Courier, monospace;
 }
 
-.case-study-phase h2{
+.case-study-phase h2 {
     margin-bottom: var(--spacing-sm);
 }
 
@@ -671,6 +671,10 @@ footer a {
 
 .idea-content p {
     margin-bottom: var(--spacing-sm);
+}
+
+.table-container {
+    overflow-x:auto;
 }
 
 .table {
