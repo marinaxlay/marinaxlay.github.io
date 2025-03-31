@@ -82,7 +82,7 @@ h4 {
 }
 
 p {
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
 }
 
 ol, li {
@@ -236,7 +236,7 @@ footer a {
 }
 
 .hero .container {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
 }
 
 .hero h1 {
@@ -247,11 +247,34 @@ footer a {
     margin-right: auto;
 }
 
-.highlight-1 {
-    color: var(--secondary-color);
+.intro-text {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    font-family: 'Courier Prime', Courier, monospace;
+    padding-bottom: var(--spacing-sm);
 }
 
-.intro-text {
+.hero-homepage {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: var(--spacing-md) 0;
+}
+
+.hero-homepage .container {
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-homepage h1 {
+    color: var(--white);
+    margin-bottom: var(--spacing-md);
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-homepage .intro-text {
     max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
@@ -260,23 +283,11 @@ footer a {
     padding-bottom: var(--spacing-md);
 }
 
-.tags {
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-sm);
-    margin-bottom: var(--spacing-md);
-    flex-wrap: wrap;
+.highlight-1 {
+    color: var(--secondary-color);
 }
 
-.tag {
-    background-color: var(--primary-light);
-    color: var(--white);
-    padding: var(--spacing-xs) var(--spacing-sm);
-    border-radius: var(--border-radius-xl);
-    font-size: 15px;
-}
-
-.hero .button-container {
+.hero-homepage .button-container {
     margin-top: var(--spacing-xs);
     text-align: left;
     color: var(--white);
@@ -285,14 +296,14 @@ footer a {
     margin-right: auto;
 }
 
-.hero .button {
+.hero-homepage .button {
     border-color: white;
     color: white;
     margin-left: var(--spacing-xs);
     margin-right: var(--spacing-xs);    
 }
 
-.hero .button:hover {
+.hero-homepage .button:hover {
     background-color: var(--background-light);
     color: var(--primary-color);
 }
@@ -318,11 +329,6 @@ footer a {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.tag {
-    opacity: 0; /* Start invisible */
-    animation-fill-mode: forwards;
 }
 
 /* For section animations */
@@ -573,9 +579,8 @@ footer a {
 
 .case-insights .accordion-header:hover {
     color: var(--light-text);
-    background: var(--hover-button);
+    background-color: var(--hover-button);
     padding: 20px;
-
 }
 
 .case-study-phase {

@@ -137,15 +137,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Tag animation
-    const tags = document.querySelectorAll('.tag');
-    tags.forEach((tag, index) => {
-        // Set a delay based on the index (each tag appears after the previous one)
-        tag.style.animation = `fadeInUp 0.5s ease ${index * 0.2}s forwards`;
-    });
-    
     // Scroll animation for sections
-    const sections = document.querySelectorAll('section:not(.hero)');
+    const sections = document.querySelectorAll('section:not(.case-study-header)');
     sections.forEach(section => {
         section.classList.add('animate-on-scroll');
     });
