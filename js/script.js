@@ -42,27 +42,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Animation on scroll (simple version)
+    const sectionsToExclude = ['.hero-homepage', '.hero', '.case-study-header'];
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    
+    animatedElements.forEach(element => {
+        if (!sectionsToExclude.some(selector => element.matches(selector))) {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        }
+    });
+
     function revealOnScroll() {
-        const elements = document.querySelectorAll('.service-card, .process-step');
-        
+        const elements = document.querySelectorAll('.animate-on-scroll');
         elements.forEach(element => {
-            const elementTop = element.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
-            
-            if (elementTop < windowHeight - 100) {
-                element.style.opacity = '1';
-                element.style.transform = 'translateY(0)';
+            if (!sectionsToExclude.some(selector => element.matches(selector))) {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (elementTop < windowHeight - 100) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
             }
         });
     }
-
-    // Initial styles for animation
-    const animatedElements = document.querySelectorAll('.service-card, .process-step');
-    animatedElements.forEach(element => {
-        element.style.opacity = '0';
-        element.style.transform = 'translateY(20px)';
-        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    });
 
     // Add event listener for scroll
     window.addEventListener('scroll', revealOnScroll);
@@ -138,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     
     // Scroll animation for sections
-    const sections = document.querySelectorAll('section:not(.case-study-header)');
+    const sections = document.querySelectorAll('section:not(hero-homepage)');
     sections.forEach(section => {
         section.classList.add('animate-on-scroll');
     });

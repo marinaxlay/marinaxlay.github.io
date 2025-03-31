@@ -463,24 +463,24 @@ footer a {
         font-size: 40px;
     }
 
-    .intro-text {
+    .hero-homepage .intro-text {
         font-size: 18px;
-        padding-bottom: var(--spacing-sm);
+        padding-bottom: var(--spacing-xs);
     }
 
-    .hero .availability-label {
-        margin-bottom: var(--spacing-xs);
+    .availability-label {
+        margin-bottom: var(--spacing-sm);
         font-size: 14px;
     }
 
-    .button-container {
+    .hero-homepage .button-container {
         margin-top: var(--spacing-sm);
     }
     
-    .hero .button {
+    .hero-homepage .button {
         border-color: white;
         color: white;
-        margin-bottom: var(--spacing-sm);  
+        margin-top: var(--spacing-sm);  
         padding: 14px;  
     }
 
