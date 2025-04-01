@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a id="top"></a>
+
     <header>
         <div class="container">
             <div class="logo">
@@ -32,8 +34,9 @@
             </nav>
         </div>
     </header>
-
+    
     <main class="case-study cube">
+
         <div class="container">
 
             <section class="case-study-header">
@@ -45,7 +48,7 @@
                         <div class="project-details">
                             <h1>CUBE</h1>
                             <p class="intro-text">Refonte d'une page vitrine pour l'une des directions IT de Société Générale.</p>
-                            <p><b>Période :</b> Février - Juillet 2023</p>
+                            <p><b>Année :</b> 2023</p>
                             <p><b>Outils :</b> Figma</p>
                             <p><b>Team :</b> Boris Durupt-Zhou, Camille Kui</p>
 
@@ -56,21 +59,36 @@
 
             <div class="case-insights"><div class="accordion-item">
                 <div class="accordion-header">
-                    En bref
+                    L'étude de cas en bref
                     <div class="accordion-icon"></div></div>
                     <div class="accordion-content">
-                    <p>CUBE souffrait d’une page d’accueil jugée peu engageante et peu intuitive par ses utilisateurs. À travers une approche UX complète, nous avons repensé son design pour renforcer son attractivité et son efficacité. Ce projet illustre l'importance d’une approche centrée utilisateur pour transformer un portail de gestion des connaissances en un véritable outil de communication interne efficace.</p>
+                    <p>CUBE souffrait d’une page d’accueil jugée peu engageante et peu intuitive par ses utilisateurs. À travers une approche UX complète, nous avons entièrement repensé son design pour renforcer son attractivité et son efficacité. Ce projet illustre l'importance d’une approche centrée utilisateur pour transformer un portail de gestion des connaissances en un véritable outil de communication interne efficace.</p>
                     <ul>
                         <li><b>Problèmes identifiés</b> : Une interface froide et statique, un manque de dynamisme et de clarté (de l'information et de la cible).</li>
-                        <li><b>Compétences appliquées</b> : Entretiens utilisateurs, Workshop, Maquettage, Prototypage, Tests utilisateurs, Design par itération.</li>
+                        <li><b>Méthodes appliquées</b> : Entretiens utilisateurs, Wireframes, Prototypes, Tests utilisateurs, Design itératif.</li>
                         <li><b>Solutions apportées</b> : Modernisation du design, implémentation du Design System du Groupe, intégration de contenu dynamique et optimisation de l'architecture de l'information.</li>
-                        <li><b>Résultats</b> : Une interface plus intuitive, plus engageante et mieux adaptée aux besoins des utilisateurs, validée par des tests et démontrée par une enquête de satisfaction.</li>
                     </ul>                  
                     </div>
                 </div>
             </div>
 
+            <div class="animate-on-scroll">
+                <p><b>Table des matières :</b></p>
+                <ol>
+                    <li><a href="#empathize">🔍 Phase d'empathie</a> : Entretiens utilisateurs</li>
+                    <li><a href="#define">🎯 Phase de définition</a> : Objectifs du chantier, Feuille de route</li>
+                    <li><a href="#ideate">💡 Phase d'idéation</a> : Atelier d'idéation, Wireframes</li>
+                    <li><a href="#prototype">📐 Phase de prototypage</a> : Design System, Protoype V1</li>
+                    <li><a href="#test">✅ Phase de test</a> : Tests utilisateurs</li>
+                    <li><a href="#iteration-2">🪄 Deuxième itération</a> : Prototype V2, Tests utilisateurs</li>
+                    <li><a href="#iteration-3">🪄 Troisième itération</a> : Prototype V3, Tests utilisateurs</li>
+                    <li><a href="#satisfaction">🌡️ Satisfaction utilisateur</a></li>
+                    <li><a href="#other-works">🚧 Autres réalisations sur le produit</a></li>
+                </ol>
+            </div>
+
             <section class="case-introduction">
+                <h3>Introduction</h3>
                 <p>CUBE est le portail de gestion des connaissances de CFT (Corporate Functions Technologies), l’une des directions IT de Société Générale. Son objectif est d’identifier et synthétiser toute information nécessaire à l’ensemble des collaborateurs de CFT, et de les centraliser afin de faciliter la recherche d’information.</p>
                 <p>Dans un objectif d’amélioration continue de la plate-forme, plusieurs chantiers UX sont menés chaque année sur CUBE. Lors de l’un de ces précédents chantiers, des utilisateurs nous avaient fait les retours spontanés suivants au sujet de la page d’accueil :</p>
             
@@ -103,9 +121,9 @@
                 <img src="resources/cube/cube-v0.png" alt="CUBE original homepage screenshot">
 
                 <p>Une refonte de la page d’accueil était donc jugée nécessaire, avec plusieurs enjeux à la clé :</p>
-                <div class="idea-card orange">
-                    <div class="idea-content">
-                        <p class="card-title">Enjeux du chantier</p>
+                <div class="callout">
+                    <div class="callout-content">
+                        <h4>Enjeux du chantier</h4>
                         <ul>
                             <li>Donner une meilleure impression de CUBE aux visiteurs.</li>
                             <li>Améliorer l’attractivité de CFT.</li>
@@ -124,11 +142,11 @@
                 <h3>User Interviews</h3>
                 <p>Pour la phase de recherche préliminaire, nous avons organisé une série d’interviews avec nos utilisateurs cible afin d’identifier les irritants et les évolutions à apporter à la page d’accueil de CUBE.</p>
                 
-                <div class="idea-card orange">
-                    <div class="idea-content">
-                        <p class="card-title">Modalités</p>
+                <div class="callout">
+                    <div class="callout-content">
+                        <h4>Modalités des entretiens</h4>
                         <ul>
-                            <li>🎙️ Interviews individuels </li>
+                            <li>🎙️ Entretiens individuels </li>
                             <li>👥 44 utilisateurs, sur une période de 2 semaines et demie</li>
                             <li>⏱️ 15 à 30 minutes</li>
                             <li>🏢 Présentiel ou Distanciel (caméra encouragée)</li>
@@ -219,31 +237,12 @@
                 </div>
                 
                 <h4>Questions</h4>
-                <div class="idea-grid">
-                    <div class="idea-card orange">
-                        <div class="idea-content">
-                            <p>🎙️ <em>Quel est ton ressenti global sur la page d’accueil ? Qu’est-ce qui te donne cette impression ? Comment changerais-tu cela ?</em></p>
-                        </div>
-                    </div>
-                    
-                    <div class="idea-card orange">
-                        <div class="idea-content">
-                            <p>🎙️ <em>Que penses-tu du design de la page d’accueil en termes de visuels ? Comment l’améliorerais-tu ?</em></p>
-                        </div>
-                    </div>
-                    
-                    <div class="idea-card orange">
-                        <div class="idea-content">
-                            <p>🎙️ <em>Que penses-tu de la page d’accueil en termes de contenus ? Comment l’améliorerais-tu ?</em></p>
-                        </div>
-                    </div>
-                    
-                    <div class="idea-card orange">
-                        <div class="idea-content">
-                            <p>🎙️ <em>As-tu en tête un exemple de portail ou site dont la page d’accueil te semble particulièrement bien construite ? Laquelle ?</em></p>
-                        </div>
-                    </div>
-                </div>
+                <ul>
+                    <li><em>Quel est ton ressenti global sur la page d’accueil ? Qu’est-ce qui te donne cette impression ? Comment changerais-tu cela ?</em></em></li>
+                    <li><em>Que penses-tu du design de la page d’accueil en termes de visuels ? Comment l’améliorerais-tu ?</em></li>
+                    <li><em>Que penses-tu de la page d’accueil en termes de contenus ? Comment l’améliorerais-tu ?</em></li>
+                    <li><em>As-tu en tête un exemple de portail ou site dont la page d’accueil te semble particulièrement bien construite ? Laquelle ?</em></li>
+                </ul>
 
                 <h4>Restitution des entretiens</h4>
                 
@@ -403,7 +402,7 @@
                 </div>
 
                 <h3>Wireframes</h3>
-                <p>Les recommandations UX que nous avons pu formuler à l’issue des interviews nous ont permis de construire cette première maquette sur Figma :</p>
+                <p>Les recommandations UX formulées à l’issue des interviews nous ont permis de construire cette première maquette sur Figma :</p>
                 <img src="resources/cube/cube-wireframe.gif" alt="CUBE wireframe">
 
             </section>
@@ -505,9 +504,9 @@
                 </div>
 
                 <h3>Tests utilisateurs</h3>                
-                <div class="idea-card orange">
-                    <div class="idea-content">
-                        <p class="card-title">Modalités</p>
+                <div class="callout">
+                    <div class="callout-content">
+                        <h4>Modalités</h4>
                         <ul>
                             <li>🎙️ Tests utilisateurs individuels  </li>
                             <li>👥 20 à 30 utilisateurs du premier panel d’interviews, sur une période d’1 semaine et demie</li>
@@ -516,34 +515,14 @@
                         </ul>
                     </div>
                 </div>
-                <br>
 
                 <h4>Questions</h4>
-                <div class="idea-grid">
-                    <div class="idea-card orange">
-                        <div class="idea-content">
-                            <p>🎙️ <em>Quel est ton ressenti global sur la page d’accueil ? Qu’est-ce qui te donne cette impression ? Comment changerais-tu cela ?</em></p>
-                        </div>
-                    </div>
-                    
-                    <div class="idea-card orange">
-                        <div class="idea-content">
-                            <p>🎙️ <em>Que penses-tu du parcours de navigation proposé ?</em></p>
-                        </div>
-                    </div>
-                    
-                    <div class="idea-card orange">
-                        <div class="idea-content">
-                            <p>🎙️ <em>Que penses-tu du visuel (couleurs, images, éléments graphiques) ?</em></p>
-                        </div>
-                    </div>
-                    
-                    <div class="idea-card orange">
-                        <div class="idea-content">
-                            <p>🎙️ <em>Que penses-tu de chacun de ces composants (”En ce moment”, “Zoom sur”, “Les plus consultés”) ?</em></p>
-                        </div>
-                    </div>
-                </div>
+                <ul>
+                    <li><em>Quel est ton ressenti global sur la page d’accueil ? Qu’est-ce qui te donne cette impression ? Comment changerais-tu cela ?</em></li>
+                    <li><em>Que penses-tu du parcours de navigation proposé ?</em></li>
+                    <li><em>Que penses-tu du visuel (couleurs, images, éléments graphiques) ?</em></li>
+                    <li><em>Que penses-tu de chacun de ces composants (”En ce moment”, “Zoom sur”, “Les plus consultés”) ?</em></li>
+                </ul>
                 
                 <h4>Restitution des tests</h4>
                 
@@ -739,9 +718,9 @@
 
                     <h3>Tests utilisateurs</h3>
                     
-                    <div class="idea-card orange">
-                        <div class="idea-content">
-                            <p class="card-title">Modalités</p>
+                    <div class="callout">
+                        <div class="callout-content">
+                            <h4>Modalités</h4>
                             <ul>
                                 <li>🎙️ Tests utilisateurs individuels </li>
                                 <li>👥 20 à 30 utilisateurs du panel des premiers tests utilisateurs, sur une période d’1 semaine et demie</li>
@@ -753,25 +732,12 @@
                     <br>
                     
                     <h4>Questions</h4>
-                    <div class="idea-grid">
-                        <div class="idea-card orange">
-                            <div class="idea-content">
-                                <p>🎙️ <em>A quoi pensez-vous que les icônes en bas de la bannière correspondent ?</em></p>
-                            </div>
-                        </div>
-                        
-                        <div class="idea-card orange">
-                            <div class="idea-content">
-                                <p>🎙️ <em>Que pensez-vous des boutons "CFT NEWS" et "YOU CHANGE" ?</em></p>
-                            </div>
-                        </div>
-                        
-                        <div class="idea-card orange">
-                            <div class="idea-content">
-                                <p>🎙️ <em>Que pensez-vous des intitulés des sujets mis en avant ?</em></p>
-                            </div>
-                        </div>
-                    </div>
+
+                <ul>
+                    <li><em>A quoi pensez-vous que les icônes en bas de la bannière correspondent ?</em></li>
+                    <li><em>Que pensez-vous des boutons "CFT NEWS" et "YOU CHANGE" ?</em></li>
+                    <li><em>Que pensez-vous des intitulés des sujets mis en avant ?</em></li>
+                </ul>
 
                     <h4>Restitution des tests</h4>
                     
@@ -931,31 +897,136 @@
                 <section class="case-phase" id="satisfaction">
                     <div class="case-study-phase">
                         <h2>🌡️<br> Satisfaction utilisateur</h2>
-                        <p>Détecter les futurs axes d'amélioration</p>
+                        <p>Détecter les futurs axes d'amélioration du produit</p>
+                    </div>
+
+                    <div class="callout">
+                        <div class="callout-content">
+                            <h4>Modalités de l'enquête de satisfaction</h4>
+                            <ul>
+                                <li>💻 Microsoft Forms</li>
+                                <li>⏱️ 1 mois et demi</li>
+                                <li>📥 25 réponses</li>
+                                <li>👤 Réponses anonymes </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="accordion-item">
-                        <div class="accordion-header">Visuel<div class="accordion-icon"></div></div>
+                        <div class="accordion-header">A propos de l'aspect graphique<div class="accordion-icon"></div></div>
                     <div class="accordion-content">
                     <img src="resources/cube/cube-poll-1.png" alt="CUBE user satisfaction poll results about visual design">
+                    <p><b>"Le design est moderne et attrayant" :</b></p>
+                    <ul>
+                        <li>40% sont absolument d'accord</li>
+                        <li>52% sont plutôt d'accord</li>
+                        <li>8% ne sont pas d'accord</li>
+                        <li>0% ne sont pas du tout d'accord</li>
+                    </ul>
+                    <p><b>"Le design est clair et intuitif" :</b></p>
+                    <ul>
+                        <li>48% sont absolument d'accord</li>
+                        <li>44% sont plutôt d'accord</li>
+                        <li>8% ne sont pas d'accord</li>
+                        <li>0% ne sont pas du tout d'accord</li>
+                    </ul>
+                    <div class="idea-grid">
+                        <div class="idea-card green">
+                            <div class="idea-content">
+                                <p>💭 <em>“Bon code couleur et usage des photos.”</em></p>
+                            </div>
+                        </div>
+                        
+                        <div class="idea-card green">
+                            <div class="idea-content">
+                                <p>💭 <em>“C’est clair et agréable à naviguer.”</em></p>
+                            </div>
+                        </div>
+                        
+                        <div class="idea-card green">
+                            <div class="idea-content">
+                                <p>💭 <em>“Je me demande s’il n’y a pas moyen visuellement de faire quelque chose sur la page d’accueil. On a l’impression que c’est la plus vide et la plus simple de tout le site.”</em></p>
+                            </div>
+                        </div>
+                        
                     </div>
+                
+                </div>
                     </div>
 
                     <div class="accordion-item">
-                        <div class="accordion-header">Contenu et recherche de l'information<div class="accordion-icon"></div></div>
+                        <div class="accordion-header">A propos du contenu et de la recherche de l'information<div class="accordion-icon"></div></div>
                     <div class="accordion-content">
                     <img src="resources/cube/cube-poll-2.png" alt="CUBE user satisfaction poll results about content and information search">
+                    <p><b>"Le contenu poussé sur la page d'accueil est pertinent" :</b></p>
+                    <ul>
+                        <li>36% sont absolument d'accord</li>
+                        <li>64% sont plutôt d'accord</li>
+                        <li>0% ne sont pas d'accord</li>
+                        <li>0% ne sont pas du tout d'accord</li>
+                    </ul>
+                    <div class="idea-grid">
+                        <div class="idea-card green">
+                            <div class="idea-content">
+                                <p>💭 <em>“On trouve facilement ce que l’on cherche.”</em></p>
+                            </div>
+                        </div>
+                        
+                        <div class="idea-card green">
+                            <div class="idea-content">
+                                <p>💭 <em>“Je trouve vite les informations recherchées.”</em></p>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                     </div>
 
                     <div class="accordion-item">
-                        <div class="accordion-header">Conclusion<div class="accordion-icon"></div></div>
+                        <div class="accordion-header">Conclusion de l'enquête<div class="accordion-icon"></div></div>
                     <div class="accordion-content">
                     <img src="resources/cube/cube-poll-3.png" alt="CUBE user satisfaction poll results conclusion">
+                    <p><b>"La nouvelle page d'accueil de CUBE est une bonne vitrine interne pour CFT." :</b></p>
+                    <ul>
+                        <li>60% sont absolument d'accord</li>
+                        <li>28% sont plutôt d'accord</li>
+                        <li>12% ne sont pas d'accord</li>
+                        <li>0% ne sont pas du tout d'accord</li>
+                    </ul>
+                    <div class="idea-grid">
+                        <div class="idea-card green">
+                            <div class="idea-content">
+                                <p>💭 <em>“C’est indéniablement une vitrine pour CFT, et il faut la peaufiner.”</em></p>
+                            </div>
+                        </div>
+                        
+                        <div class="idea-card green">
+                            <div class="idea-content">
+                                <p>💭 <em>“A very good entry point for all necessary information regarding CFT.”</em></p>
+                            </div>
+                        </div>
+                    </div>
+                
                     </div>
                     </div>
 
                 </section>
+
+                <section class="case-phase" id="other-works">
+                    <div class="case-study-phase">
+                        <h2>🚧<br>Autres réalisations sur le portail</h2>
+                        <p>Assurer l'amélioration continue du produit</p>
+                    </div>
+
+                    <ul>
+                        <li>Refonte du gabarit des pages wiki</li>
+                        <li>Refonte de la navigation</li>
+                        <li>Refonte du parcours d’ajout de document @ contributeurs</li>
+                        <li>Refonte du composant dédié à la visualisation des documents @ visiteurs</li>
+                        <li>Création d’un outil d’analytics (dashboard) @ équipe</li>
+                    </ul>
+                </section>
+
+                <a href="#top" class="back-to-top">↑</a>
 
         </div>
     </main>
