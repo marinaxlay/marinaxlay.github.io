@@ -395,7 +395,7 @@ footer a {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
     margin-top: var(--spacing-md);
 }
     
@@ -528,7 +528,7 @@ footer a {
 /* Responsive Styles */
 @media (max-width: 758px) {
     h1 {
-        font-size: 42px;
+        font-size: 44px;
     }
     
     h2 {
@@ -545,7 +545,7 @@ footer a {
 
     ul, ol {
         margin-bottom: var(--spacing-sm);
-        margin-left: 40px;
+        margin-left: 30px;
     }
 
     .hero-homepage .intro-text {
@@ -566,11 +566,11 @@ footer a {
         border-color: white;
         color: white;
         margin-top: var(--spacing-sm);  
-        padding: 14px;  
+        padding: 12px;  
+        font-size: 17px;
     }
 
     .projects-grid {
-        gap: var(--spacing-md);
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 
