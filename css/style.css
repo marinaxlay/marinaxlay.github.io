@@ -51,33 +51,44 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Staatliches', 'Palatino Linotype', sans-serif;
     font-weight: 100;
     margin-bottom: var(--spacing-sm);
     color: var(--primary-color);
 }
 
 h1 {
+    font-family: 'Staatliches', 'Palatino Linotype', sans-serif;
     font-size: 72px;
     line-height: 1.2;
     letter-spacing: 2px;
 }
 
 h2 {
+    font-family: 'Staatliches', 'Palatino Linotype', sans-serif;
     font-size: 2.5rem;
     text-align: center;
 }
 
 h3 {
+    font-family: 'Staatliches', 'Palatino Linotype', sans-serif;
     font-size: 1.8rem;
     margin-top: var(--spacing-md);
     margin-bottom: var(--spacing-sm);
 }
 
 h4 {
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin-top: var(--spacing-sm);
+    font-family: 'Courier Prime', 'Courier', monospace;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-xs);
+    letter-spacing: 1px;
+}
+
+h5 {
+    font-family: 'Staatliches', 'Palatino Linotype', sans-serif;
+    font-size: 20px;
+    margin-top: var(--spacing-md);
     margin-bottom: var(--spacing-xs);
     letter-spacing: 1px;
 }
@@ -384,7 +395,7 @@ footer a {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-lg);
+    gap: var(--spacing-md);
     margin-top: var(--spacing-md);
 }
     
@@ -396,6 +407,7 @@ footer a {
 .projects-grid a:hover {
     text-decoration: none;
     color: var(--text-color);
+
 }
 
 .project-card {
@@ -412,12 +424,16 @@ footer a {
     height: 100%;
     padding-bottom: var(--spacing-md);
     color: var(--text-color);
-    text-align: left;
+
 }
 
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    border: solid 2px var(--accent-color);
+    .corner {
+        border: solid 2px var(--accent-color);
+    }
 }
 
 
@@ -512,11 +528,24 @@ footer a {
 /* Responsive Styles */
 @media (max-width: 758px) {
     h1 {
-        font-size: 48px;
+        font-size: 42px;
     }
     
     h2 {
         font-size: 40px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p, ul, ol, li {
+        font-size: 17px;
+    }
+
+    ul, ol {
+        margin-bottom: var(--spacing-sm);
+        margin-left: 40px;
     }
 
     .hero-homepage .intro-text {
@@ -540,6 +569,11 @@ footer a {
         padding: 14px;  
     }
 
+    .projects-grid {
+        gap: var(--spacing-md);
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
     footer h2 {
         font-size: 30px;
     }
@@ -557,11 +591,6 @@ footer a {
         text-align: center;
         gap: var(--spacing-sm);
     }
-    
-    .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-
     
     .main-nav ul {
         gap: var(--spacing-sm);
@@ -689,9 +718,10 @@ footer a {
 
 .callout {
     background-color: rgba(248, 169, 120, 0.1); /* Light version of secondary-color */
-    margin-top: var(--spacing-md);
+    margin-top: var(--spacing-sm);
     padding: var(--spacing-md);
     border-radius: 16px;
+    margin-bottom: var(--spacing-md);
 }
 
 .callout-content ul, p, h4 {
