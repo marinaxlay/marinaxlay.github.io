@@ -258,6 +258,7 @@ footer a {
     bottom: 30px;
     right: 30px;
     z-index: 1;
+    text-decoration: none;
 }
 
 .back-to-top:hover {
@@ -948,6 +949,10 @@ footer a {
     .about-bio p {
         margin-bottom: var(--spacing-sm);
     }
+}
+
+.table {
+    font-size: 17px;
 }
 
 /* Mobile responsiveness improvements */
