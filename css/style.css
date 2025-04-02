@@ -936,6 +936,26 @@ footer a {
 
 .about-bio p {
     margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.about-skills {
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-sm);
+}
+
+.about-skills h3 {
+    margin-top: var(--spacing-xs);
+    margin-bottom: var(--spacing-xs);
+    font-size: 24px;
+}
+
+.skills-section {
+    padding: 12px;
+    background-color: rgba(52, 106, 93, 0.1);
+    border-radius: var(--border-radius-lg);
+    margin-bottom: var(--spacing-sm);
+
 }
 
 /* Responsive design for about page */
