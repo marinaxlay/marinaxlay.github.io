@@ -106,6 +106,7 @@ a {
     text-decoration: none;
     color: var(--primary-color);
     transition: all 0.3s ease;
+    text-decoration: underline;
 }
 
 a:hover {
@@ -114,7 +115,8 @@ a:hover {
 }
 
 ul, ol {
-    margin-bottom: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
     margin-left: 50px;
 }
 
@@ -130,6 +132,7 @@ ul, ol {
     border-color: var(--primary-color);
     display: inline-block;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .button:hover {
@@ -157,7 +160,6 @@ header .container {
     display: flex;
     gap: var(--spacing-sm);
     list-style: none;
-    margin-bottom: var(--spacing-xs);
 }
 
 .main-nav li {
@@ -170,10 +172,12 @@ header .container {
     font-weight: 200;
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--border-radius-sm);
+    text-decoration: none;
 }
 
 .main-nav a:hover {    
     color: var(--light-text);
+    text-decoration: underline;
 }
 
 .language-options {
@@ -404,10 +408,9 @@ footer a {
     text-decoration: underline;
 }
 
-.projects-grid a:hover {
+.projects-grid a, a:hover {
     text-decoration: none;
     color: var(--text-color);
-
 }
 
 .project-card {
@@ -424,7 +427,6 @@ footer a {
     height: 100%;
     padding-bottom: var(--spacing-md);
     color: var(--text-color);
-
 }
 
 .project-card:hover {
@@ -434,8 +436,10 @@ footer a {
     .corner {
         border: solid 2px var(--accent-color);
     }
+    .project-card h3, .project-year, .project-description, .project-platforms {
+        text-decoration: none;
+    }
 }
-
 
 .corner {
     position: absolute;
@@ -730,6 +734,12 @@ footer a {
     flex-grow: 1;
 }
 
+.card-title {
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+
 .idea-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -810,6 +820,18 @@ footer a {
 
 .table td {
     background-color: var(--white);
+}
+
+.table th a {
+    color: var(--light-text);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.table th a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 .case-img-container {
