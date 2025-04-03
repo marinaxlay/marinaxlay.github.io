@@ -99,7 +99,6 @@ p {
 
 li {
     list-style-position: outside;
-    padding-bottom: 8px;
 }
 
 a {
@@ -724,7 +723,7 @@ footer a {
 
 .callout {
     background-color: rgba(248, 169, 120, 0.1); /* Light version of secondary-color */
-    margin-top: var(--spacing-sm);
+    margin-top: var(--spacing-md);
     padding: var(--spacing-md);
     border-radius: 16px;
     margin-bottom: var(--spacing-md);
