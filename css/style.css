@@ -36,7 +36,8 @@
 }
 
 body {
-    font-family: 'Satoshi', 'Arial', sans-serif;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
     color: var(--text-color);
@@ -61,28 +62,31 @@ h1 {
     font-size: 72px;
     line-height: 1.2;
     letter-spacing: 2px;
+    font-weight: 600;
+
 }
 
 h2 {
-    font-family: 'Staatliches', 'Palatino Linotype', sans-serif;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-weight: 800;
     font-size: 2.5rem;
     text-align: center;
 }
 
 h3 {
     font-family: 'Staatliches', 'Palatino Linotype', sans-serif;
+    font-weight: 400;
     font-size: 1.8rem;
     margin-top: var(--spacing-md);
     margin-bottom: var(--spacing-sm);
 }
 
 h4 {
-    font-family: 'Courier Prime', 'Courier', monospace;
-    font-weight: 600;
-    font-size: 22px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
     margin-top: var(--spacing-md);
     margin-bottom: var(--spacing-sm);
-    letter-spacing: 1px;
 }
 
 h5 {
@@ -173,6 +177,7 @@ header .container {
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--border-radius-sm);
     text-decoration: none;
+    font-weight: 300;
 }
 
 .main-nav a:hover {    
@@ -227,7 +232,7 @@ footer {
     margin-left: calc(-50vw + 50%); /* Center*/
     text-align: center;
     font-size: 18px;
-    font-family: 'Courier Prime', Courier, monospace;
+    font-family: 'poppins', 'arial', sans-serif;
     margin-top: var(--spacing-lg);
 }
 
@@ -291,8 +296,8 @@ footer a {
     max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 24px;
-    font-family: 'Courier Prime', Courier, monospace;
+    font-size: 22px;
+    font-family: 'Poppins', 'Arial', sans-serif;
     padding-bottom: var(--spacing-sm);
 }
 
@@ -318,9 +323,10 @@ footer a {
     max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 24px;
-    font-family: 'Courier Prime', Courier, monospace;
+    font-size: 26px;
+    font-family: 'Poppins', 'Arial', sans-serif;
     padding-bottom: var(--spacing-md);
+    font-weight: 400;
 }
 
 .highlight-1 {
