@@ -7,6 +7,7 @@
             border-radius: 20px;
             margin-bottom: var(--spacing-md);
             gap: var(--spacing-xl);
+            border: solid 1px var(--primary-color);
         }
 
         .color-grid {
@@ -38,6 +39,7 @@
             padding: 50px;
             border-radius: 20px;
             margin-bottom: var(--spacing-md);
+            border: solid 1px var(--primary-color);
         }
 
         .typography-example {
@@ -71,6 +73,7 @@
             background-color: white;
             padding: 50px;
             border-radius: 20px;
+            border: solid 1px var(--primary-color);
         }
 
         .icon {
