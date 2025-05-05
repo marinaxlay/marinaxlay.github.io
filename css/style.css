@@ -1,6 +1,6 @@
 :root {
     /* Palette de couleurs*/
-    --primary-color: #496E5A;
+    --primary-color: rgb(52, 116, 81);
     --primary-light: #6A9C89;
     --secondary-color: #FFAD33;
     --secondary-light: #FFE2BD;
@@ -52,7 +52,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 100;
     margin-bottom: var(--spacing-sm);
     color: var(--primary-color);
 }
@@ -95,6 +94,7 @@ h5 {
     margin-top: var(--spacing-md);
     margin-bottom: var(--spacing-xs);
     letter-spacing: 1px;
+    font-weight: 100;
 }
 
 p {
@@ -243,6 +243,11 @@ footer h2 {
 
 footer a {
     color: var(--secondary-color);
+}
+
+footer a:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 .footer-bottom {
@@ -407,7 +412,6 @@ footer a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-lg);
-    margin-top: var(--spacing-md);
 }
     
 .projects-grid a:hover h3 {
@@ -677,6 +681,26 @@ footer a {
     color: var(--light-text);
     background-color: var(--hover-button);
     padding: 20px;
+}
+
+.title-banner {
+    background-color: #F1EEDB;
+    color: var(--text-color);
+    padding: var(--spacing-md);
+    width: 100vw; /* Ensure the background spans the full width of the viewport */
+    margin-left: calc(-50vw + 50%); /* Center*/
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+    font-size: 24px;
+    font-family: 'Courier Prime', Courier, monospace;
+}
+
+.title-banner h2 {
+    color: var(--primary-color);
+    font-weight: 800;
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
 }
 
 .case-study-phase {

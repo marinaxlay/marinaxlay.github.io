@@ -6,6 +6,7 @@
     <title>Beautify - Etude de cas | Marina Lay, UX/UI Designer</title>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/beautify.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -28,9 +29,7 @@
                 <ul>
                     <li><a href="projects.html">Projets</a></li>
                     <li><a href="about.html">À propos</a></li>
-                    <li><a href="#footer" class="contact">Contact</a></li>
-                    <li class="language-options"><a href="projects-beautify.html" data-lang="fr" class="active" alt="français">🇫🇷</a> | <a href="/en/projects-beautify.html" data-lang="en" alt="english">🇬🇧</a></li>
-                    
+                    <li><a href="#footer" class="contact">Contact</a></li>                    
                 </div>
             </ul>
             </nav>
@@ -44,49 +43,27 @@
                 <div class="container">
                     <div class="case-study-layout">
                         <div class="case-study-image">
-                            <img src="resources/beautify/beautify-header.png" alt="Beautify homepage redesign header">
+                            <img src="resources/beautify/beautify-header.png" alt="" />
                         </div>
                         <div class="project-details">
                             <h1>BEAUTIFY</h1>
                             <p class="intro-text">Conception d'une plate-forme inclusive et intuitive pour rendre la beauté accessible à toutes et tous.</p>                            
                             
-                            <p><b>Catégorie :</b> Projet universitaire</p>
-                            <p><b>Période :</b> Janvier - Mai 2022</p>
-                            <p><b>Outils :</b> Miro, Figma, Notion</p>
-                            <p><b>Mentors :</b> François Violette, Marie Girard</p>
-                            <p><b>Team :</b> Cindy Long, Adeline Poumaroux, Ines Tabti-Benhari, Diane Volpelière</p>
+                            <p><b><span class="highlight">Catégorie :</span></b> Projet universitaire</p>
+                            <p><b><span class="highlight">Période :</span></b> Janvier - Mai 2022 (1 semestre universitaire)</p>
+                            <p><b><span class="highlight">Mentors :</span></b> François Violette, Marie Girard</p>
+                            <p><b><span class="highlight">Format :</span></b> Mobile</p>
                             </div>
                         </div>
                     </div>
             </section>
 
-            <div class="case-insights"><div class="accordion-item">
-                <div class="accordion-header">
-                    L'étude de cas en bref
-                    <div class="accordion-icon"></div></div>
-                    <div class="accordion-content">
-                        <p>Beautify vise à rendre l'univers du maquillage plus inclusif à travers une représentation plus large et un meilleur accès à des conseils personnalisés.</p>
-                        <ul>
-                            <li><b>Objectifs</b> : Concevoir une plate-forme intuitive permettant à chacun de trouver facilement des produits et techniques adaptés à ses caractéristiques physiques.</li>
-                            <li><b>Méthodes</b> : Entretiens utilisateurs, Analyse compétitive, Persona, Carte d'empathie, Parcours utilisateurs, Maquettage, Prototypage, Tests utilisateurs.</li>
-                            <li><b>Solutions</b> : Un quiz permettant de déterminer des recommandations personnalisées, une diversité de la représentation.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
 
-            <div class="animate-on-scroll">
-                <p><b>Table des matières :</b></p>
-                <ol>
-                    <li><a href="#empathize">🔍 Phase d'empathie</a> : Entretiens utilisateurs, Analyse compétitive</li>
-                    <li><a href="#define">🎯 Phase de définition</a> : Persona, Carte d'empathie, User journey map, Enoncé du problème</li>
-                    <li><a href="#ideate">💡 Phase d'idéation</a> : Crazy 8</li>
-                    <li><a href="#prototype">📐 Phase de prototypage</a> : Protoype, Design System</li>
-                    <li><a href="#test">✅ Phase de test</a> : Tests utilisateurs, Recommandations UX</li>
-                </ol>
-            </div>
-
-            <section class="case-introduction">
+            <section class="context">
+                <div class="title-banner">
+                    <h2>🎯<br>Contexte et objectifs</h2>
+                </div>                
+                
                 <h3>Introduction</h3>
                 <p>De vos caractéristiques physiques à votre type de peau, votre beauté est unique : il n'y en a aucune autre comme la vôtre. Mais à l'ère de l'information de masse, trouver les produits et techniques appropriés qui mettront en valeur VOS caractéristiques physiques devient de plus en plus difficile – particulièrement dans un univers dominé par les personnes blanches, jeunes et cisgenres féminines.</p>
                 
@@ -100,102 +77,50 @@
                 </div>
             </section>
 
-            <section class="case-phase" id="empathize">
-                <div class="case-study-phase">
-                    <h2>🔍<br> Empathie</h2>
+            <section class="ux-research">
+                <div class="title-banner">
+                    <h2>🔍<br> Recherche utilisateur</h2>
                 </div>
                 
                 <h3>Entretiens utilisateurs</h3>
-                <p>Pour ce projet universitaire fictif, et en raison de contraintes de temps, les membres de l'équipe avaient pour consigne d'interroger une personne chacune. Cependant, il convient de noter qu'un panel d'utilisateurs plus large aurait été nécessaire pour un projet réel.</p>
+                <p>Pour la phase de recherche utilisateur, nous avons organisé une série d'entretiens avec des utilisateurs cible afin d’identifier leurs attentes, leurs motivations et leurs frustrations.</p>
                 <br>
-                <h4>Profils</h4>
-                <div class="table-container">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Personne 1</th>
-                                <th>Personne 2</th>
-                                <th>Personne 3</th>
-                                <th>Personne 4</th>
-                                <th>Personne 5</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Genre</td>
-                                <td>♀</td>
-                                <td>♀</td>
-                                <td>♀</td>
-                                <td>♂</td>
-                                <td>♀</td>
-                            </tr>
-                            <tr>
-                                <td>Âge</td>
-                                <td>32 ans</td>
-                                <td>52 ans</td>
-                                <td>20 ans</td>
-                                <td>22 ans</td>
-                                <td>59 ans</td>
-                            </tr>
-                            <tr>
-                                <td>Niveau</td>
-                                <td>Intermédiaire</td>
-                                <td>Débutante</td>
-                                <td>Avancé</td>
-                                <td>Intermédiaire</td>
-                                <td>Débutante</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
                 
                 <h4>Questions & Insights</h4>
-                <div class="table-container">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>🤔 Questions</th>
-                                <th>💡 Insights</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>"Quelle est votre relation avec le maquillage ?"</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>"Quelles sont les raisons qui vous encouragent à porter du maquillage / à apprendre à mettre du maquillage ?"</td>
-                                <td>Toutes les personnes interrogées ont mentionné la confiance en soi comme principale raison de porter du maquillage.</td>
-                            </tr>
-                            <tr>
-                                <td>"À quels critères êtes-vous attentif lors de l'achat de produits de beauté ?"</td>
-                                <td>Les personnes interrogées sont principalement attentives :
-                                    <ol>
-                                        <li>aux ingrédients ("à quel point est-ce chimique et comment ma peau va-t-elle réagir ?"),</li>
-                                        <li>au prix ("est-ce dans mon budget ?"),</li> 
-                                        <li>à l'éthique de la marque ("est-ce cruelty-free ?"),</li> 
-                                        <li>à la facilité d'utilisation.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>"Quelles techniques de maquillage que vous ne maîtrisez pas encore aimeriez-vous apprendre ? Qu'est-ce qui vous en a empêché jusqu'à présent ?"</td>
-                                <td>Les personnes interrogées ont toutes mentionné différentes techniques de maquillage qu'elles aimeraient apprendre. Les techniques mentionnées semblent correspondre à leur niveau respectif : les débutants ont mentionné des techniques de base comme l'application de rouge à lèvres ("quelle teinte dois-je choisir en fonction de ma couleur de peau ?"), tandis que les personnes de niveau avancé ont mentionné des techniques plus complexes comme le contouring ("je ne comprends pas la forme de mon visage"). La principale raison mentionnée pour ne pas apprendre ou maîtriser ces techniques est de ne pas savoir par où commencer en raison de la multitude de contenus beauté disponibles. </td>
-                            </tr>
-                            <tr>
-                                <td>"Où cherchez-vous habituellement de l'inspiration ou des conseils de maquillage ?"</td>
-                                <td>Les personnes interrogées plus jeunes aiment regarder des vidéos YouTube ou TikTok pour l'inspiration maquillage tandis que les personnes plus âgées préfèrent les articles de magazines.</td>
-                            </tr>
-                            <tr>
-                                <td>"Dans quelle mesure vous sentez-vous généralement représenté dans les médias de beauté (en fonction de votre couleur de peau, âge, etc.) ?"</td>
-                                <td>Les personnes interrogées non blanches, masculines et plus âgées se sentent sous-représentées dans les médias de beauté.</td>
-                            </tr>
-                        </tbody>
-                    </table>
+
+                <div class="qa-container">
+                    <p class="question">Quelles sont les raisons qui vous encouragent à porter du maquillage / à apprendre à mettre du maquillage ?</p>
+                    <p>Toutes les personnes interrogées ont mentionné la confiance en soi comme principale raison de porter du maquillage.</p>
+                </div>
+
+                <div class="qa-container">
+                    <p class="question">À quels critères êtes-vous attentif lors de l'achat de produits de beauté ?</p>
+                    <p>Les personnes interrogées sont principalement attentives :
+                        <ol>
+                            <li>aux ingrédients ("à quel point est-ce chimique et comment ma peau va-t-elle réagir ?"),</li>
+                            <li>au prix ("est-ce dans mon budget ?"),</li> 
+                            <li>à l'éthique de la marque ("est-ce cruelty-free ?"),</li> 
+                            <li>à la facilité d'utilisation.</li>
+                        </ol></p>
+                </div>
+
+                <div class="qa-container">
+                    <p class="question">Quelles techniques de maquillage que vous ne maîtrisez pas encore aimeriez-vous apprendre ? Qu'est-ce qui vous en a empêché jusqu'à présent ?</p>
+                    <p>Les personnes interrogées ont toutes mentionné différentes techniques de maquillage qu'elles aimeraient apprendre. Les techniques mentionnées semblent correspondre à leur niveau respectif : les débutants ont mentionné des techniques de base comme l'application de rouge à lèvres ("quelle teinte dois-je choisir en fonction de ma couleur de peau ?"), tandis que les personnes de niveau avancé ont mentionné des techniques plus complexes comme le contouring ("je ne comprends pas la forme de mon visage"). La principale raison mentionnée pour ne pas apprendre ou maîtriser ces techniques est de ne pas savoir par où commencer en raison de la multitude de contenus beauté disponibles.</p>
+                </div>
+
+                <div class="qa-container">
+                    <p class="question">Où cherchez-vous habituellement de l'inspiration ou des conseils de maquillage ?</p>
+                    <p>Les personnes interrogées plus jeunes aiment regarder des vidéos YouTube ou TikTok pour l'inspiration maquillage tandis que les personnes plus âgées préfèrent les articles de magazines.</p>
+                </div>
+
+                <div class="qa-container">
+                    <p class="question">Dans quelle mesure vous sentez-vous généralement représenté dans les médias de beauté (en fonction de votre couleur de peau, âge, etc.) ?</p>
+                    <p>Les personnes interrogées non blanches, masculines et plus âgées se sentent sous-représentées dans les médias de beauté.</p>
                 </div>
                 
                 <h3>Analyse compétitive</h3>
+                
                 <div class="table-container">
                     <table class="table">
                         <thead>
@@ -276,26 +201,49 @@
                         </tbody>
                     </table>
                 </div>
-            </section>
-
-            <section class="case-phase" id="define">
-                <div class="case-study-phase">
-                    <div class="container">
-                        <h2>🎯<br> Définition</h2>
-                    </div>
-                </div>
                 
-                <h3>Persona utilisateur</h3>
+                <h3>Persona</h3>
                 <div>
                     <a target="_blank" href="resources/beautify/beautify-persona.png">
-                        <img src="resources/beautify/beautify-persona.png" alt="Beautify user persona">
+                        <img src="resources/beautify/beautify-persona.png" alt="Selena Lenerand, 23 ans
+                        Selena est une jeune étudiante introvertie à l'Université de Paris. Elle est socialement maladroite, et elle voudrait apprendre à porter du maquillage pour mettre en valeur ses caractéristiques physiques dans le but de l'aider à se sentir plus jolie et avoir plus confiance en elle. Malheureusement, ses recherches sur les produits de beauté et les techniques de maquillage finissent toujours par la mener dans des spirales de recherche Google qui lui prennent tout son temps alors qu'elle devrait étudier, ce qui la conduit à abandonner.
+                        Profession : Étudiante
+                        Statut : Célibataire
+                        Localisation : Paris, France
+                        Traits : Travailleuse, Impatiente, Créative
+                        « Je veux porter du maquillage pour renforcer ma confiance, mais je n'en porte pas car je ne sais pas comment choisir les bons produits. »
+                        Marques préférées : Fenty Beauty, The Ordinary, Sézane
+                        Personnalité : Introvertie, un peu bordélique, assez occupée.
+                        Objectifs : Trouver des marques de fond de teint qui correspondent non seulement à sa couleur de peau (noire) mais aussi à son type de peau (sèche et sensible), Découvrir comment prendre soin de ses cheveux bouclés.
+                        Frustrations : Trop de temps passé à naviguer sur internet pour des réponses claires...et pourtant, très peu d'influenceurs beauté et d'articles auxquels elle s'identifie.
+                        Motivations : Mettre en valeur ses traits et avoir plus confiance en elle dans les contextes sociaux, Dissimuler efficacement ses cernes causés par les études nocturnes.">
                     </a>
                 </div>
                 
                 <h3>Carte d'empathie</h3>
                 <div>
                     <a target="_blank" href="resources/beautify/beautify-empathy-map.png">
-                        <img src="resources/beautify/beautify-empathy-map.png" alt="Beautify empathy map">
+                        <img src="resources/beautify/beautify-empathy-map.png" alt="DIT :
+                        « Quel look devrais-je rechercher ? »
+                        « Par où commencer ? »
+                        « Quels produits devrais-je utiliser ? »
+                        « Où puis-je trouver ces produits ? »
+                        PENSE :
+                        « Comment puis-je recréer ce look ? »
+                        « Cette teinte ne me conviendrait pas. »
+                        « Que sont même ces ingrédients ??? »
+                        « Ce produit est tellement cher ! »
+                        « Il ny a aucune chance que je puisse réussir cela ! »
+                        ACTIONS :
+                        Recherche de linspiration et des tutoriels sur divers sites web
+                        Croise les données de différents sites web pour comparer les produits
+                        Fait des essais de teintes au magasin
+                        Demande de laide au magasin
+                        EMOTIONS :
+                        Dépassée
+                        Anxieuse
+                        Frustrée
+                        Inadéquate">
                     </a>
                 </div>
                 
@@ -303,22 +251,48 @@
                 <p>"Acheter des produits de beauté" :</p>
                 <div>
                     <a target="_blank" href="resources/beautify/beautify-user-journey-map.png">
-                        <img src="resources/beautify/beautify-user-journey-map.png" alt="Beautify user journey map">
+                        <img src="resources/beautify/beautify-user-journey-map.png" alt="MOTIVATIONS :
+                        Action : Veut être jolie pour une sortie avec des amis
+                        Pensées : « Je vais me faire belle pour me sentir plus confiante ! », « Tellement de contenu ! Par où commencer ? »
+                        Émotion : Excitée
+                        RECHERCHES :
+                        Action : Recherche des looks sur Pinterest et les blogs en ligne
+                        Pensées : « Il y a trop d'informations, je ne m'y retrouve plus ! », « Cette blogueuse ne me ressemble pas du tout. Est-ce que cette teinte m'irait bien ? »
+                        Émotion : Dépassée
+                        Idées et opportunités : Conseils de beauté centralisés et personnalisés sur une seule plateforme
+                        ACHAT :
+                        Action : Achète des produits de beauté en ligne ou au magasin
+                        Pensées : « C'est tellement cher ! », « J'espère avoir acheté le bon produit », « J'ai hâte de le tester ! »
+                        Émotions : Inquiète, puis Pleine d'espoir
+                        Idées et opportunités : Suggestions de produits basées sur le budget, le type de peau, la couleur de peau... 
+                        APPLICATION : 
+                        Action : Reproduit le tutoriel
+                        Pensées : « Ça prend tellement de temps ! », « Pourquoi est-ce si difficile ?! »
+                        Émotion : Frustrée
+                        Idées et opportunités : Catégoriser les tutoriels par durée et difficulté, Décomposer les techniques dans des tutoriels digestes
+                        RESULTAT : 
+                        Action : Vérifie le résultat dans le miroir
+                        Pensées : « Ça ne rend pas aussi bien que je l'espérais... »
+                        Émotion : Déçue
+                        ">
                     </a>
                 </div>
-                
-                <h3>Énoncé du problème</h3>
-                <div class="problem-statement">
-                    <p>L'utilisateur aime porter du maquillage pour l'aider à renforcer sa confiance en soi, mais a du mal à apprendre les techniques de maquillage et choisir les produits adaptés dans un monde de marketing en constante évolution et d'information de masse où les contenus beauté sont sans fin et la diversité de la représentation est faible.</p>
+
+                <div class="callout">
+                    <div class="callout-content">
+                        <p class="card-title">Enoncé du problème</b></p>
+                        <p>L'utilisateur aime porter du maquillage pour l'aider à renforcer sa confiance en soi, mais a du mal à apprendre les techniques de maquillage et choisir les produits adaptés dans un monde de marketing en constante évolution et d'information de masse où les contenus beauté sont sans fin et la diversité de la représentation est faible.</p>
+                    </div>
                 </div>
+
             </section>
 
             <section class="case-phase" id="ideate">
-                <div class="case-study-phase">
-                    <h2>💡<br> Idéation</h2>
+                <div class="title-banner">
+                    <h2>🎨<br> Processus de conception</h2>
                 </div>
 
-                <h3>Crazy 8</h3>
+                <h3>Génération d'idées</h3>
                     <p>Les 6 idées principales issues de notre atelier sont les suivantes :</p>
 
                     <div class="idea-grid">
@@ -371,120 +345,151 @@
                     </div>
                 </div>
 
-            </section>
+                    <h3>Design System</h3>
 
-            <section class="case-phase" id="ideate">
-                <div class="case-study-phase">
-                    <h2>📐<br>Prototypage</h2>
-                </div>
+                            <h4>COULEURS</h4>
+                            <div class="colors-container">
+                                    <div class="color-grid">
+                                        <div class="color-box" style="background-color: #FFFBF5;">
+                                            #FFFBF5
+                                        </div>
+                                        <div class="color-box" style="background-color: #FED6A8;">
+                                            #FED6A8
+                                        </div>
+                                        <div class="color-box" style="background-color: #D65200;">
+                                            #D65200
+                                        </div>
+                                        <div class="color-box" style="background-color: #BB6500;">
+                                            #BB6500
+                                        </div>
+                                        <div class="color-box" style="background-color: #003B4A;">
+                                            #003B4A
+                                        </div>
+                                        <div class="color-box" style="background-color: #111111;">
+                                            #111111
+                                        </div>
+                                 </div>
+                            </div>
+
+                            <h4>TYPOGRAPHIE</h4>
+                            <div class="typography-container">
+                                    <div class="typography-example h1">H1 – Poppins Bold / 24pt</div>
+                                    <div class="typography-example h2">H2 – Poppins SemiBold / 20pt</div>
+                                    <div class="typography-example h3">H3 – Poppins Bold / 14pt</div>
+                                    <div class="typography-example body">Body - Poppins Regular / 14pt</div>
+                            </div>
+
+                            <h4>BOUTONS & ICÔNES</h4>
+                                <div class="colors-container">
+                                    <div class="color-category">
+                                        <h5>Boutons</h5>
+                                        <div class="color-grid">
+                                            <div class="but"><img src="resources/beautify/buttons/button-primary.png" alt="Bouton primaire : color #FFFBF5 (blanc), background-color #D65200 (orange), ombre en bas"></div><br>
+                                            <div class="but"><img src="resources/beautify/buttons/button-secondary.png" alt="Bouton secondaire : color #003B4A (bleu marine), background-color transparent, ombre en bas" /></div>
+                                        </div>
+                                        <h5>Par défaut</h5>
+                                        <div class="color-grid">
+                                            <div class="icon"><img src="resources/beautify/icons/home.png" alt="Accueil (maison), Material Icons, noir, weight: 400, sans remplissage"></div>
+                                            <div class="icon"><img src="resources/beautify/icons/message.png" alt="Message (bulle), Material Icons, noir, weight: 400, sans remplissage"></div>
+                                            <div class="icon"><img src="resources/beautify/icons/search.png" alt="Recherche (loupe), Material Icons, noir, weight: 400, sans remplissage"></div>
+                                            <div class="icon"><img src="resources/beautify/icons/menu.png" alt="Menu (trois traits parallèles et horizontaux), Material Icons, noir, weight: 400, sans remplissage"></div>
+                                            <div class="icon"><img src="resources/beautify/icons/arrow.png" alt="Précédent (flèche vers la gauche), Material Icons, noir, weight: 400, sans remplissage"></div>
+                                            <div class="icon"><img src="resources/beautify/icons/help.png" alt="Aide (point d'interrogation), Material Icons, noir, weight: 400, remplissage"></div>
+                                        </div>
+                                        <br>
+                                        <h5>Actifs</h5>
+                                        <div class="color-grid">
+                                            <div class="icon"><img src="resources/beautify/icons/home-active.png" alt="Accueil (maison), #D65200 (orange)"></div>
+                                            <div class="icon"><img src="resources/beautify/icons/message-active.png" alt="Message (bulle), #D65200 (orange)"></div>
+                                            <div class="icon"><img src="resources/beautify/icons/search-active.png" alt="Recherche (loupe), #D65200 (orange)"></div>
+                                        </div>
+                                    </div>
+                                </div>
             
                 <h3>Prototypes</h3>
                     <div class="case-img-container">
-                        <img src="resources/beautify/beautify-demo-1.gif" alt="Beautify prototype demo 1">
-                        <img src="resources/beautify/beautify-demo-2.gif" alt="Beautify prototype demo 2">
-                        <img src="resources/beautify/beautify-demo-3.gif" alt="Beautify prototype demo 3">
+                        <img src="resources/beautify/beautify-demo-1.gif" alt="Prototype : onboarding, quiz, recommandations, création de compte">
+                        <img src="resources/beautify/beautify-demo-2.gif" alt="Prototype : page d'accueil personnalisée, recherche de produits (filtre, vue mosaïque ou liste), fiche produit (composition, avis, mise en favori), recherche tutoriel, fiche tutoriel">
+                        <img src="resources/beautify/beautify-demo-3.gif" alt="Prototype : communauté, votre compte">
                     </div>
 
                 <div class="button-container"><a href="https://www.figma.com/proto/WAVBWvjRxbVJJduyXPKI9Y/Beautify?node-id=1-183&t=Q5GApBbA2PYu7zMC-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A183" class="button" target="_blank">Voir le prototype sur Figma</a></div>
                         
-                <h3>Design System</h3>
-                <a target="_blank" href="resources/beautify/beautify-ui-kit.png">
-                    <img src="resources/beautify/beautify-ui-kit.png" alt="Beautify design system and UI kit">
-                </a>
-
-            
             </section>
 
-            <section class="case-phase" id="test">
-                <div class="case-study-phase">
-                    <h2>✅<br>Test</h2>
+            <section class="results">
+                <div class="title-banner">
+                    <h2>🧪<br>Tests utilisteurs</h2>
                 </div>
-                <p>Pour les tests utilisateurs, nous avons réutilisé le même panel d'utilisateurs que dans l'Étape 1.</p>
-                <div class="table-container">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>À propos de...</th>
-                                <th>🤔 Questions</th>
-                                <th>💡 Enseignements</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Onboarding</td>
-                                <td>"Décrivez les illustrations des trois premiers écrans en 3 adjectifs."</td>
-                                <td>Les personnes interrogées ont utilisé les adjectifs suivants : chaleureux, stimulant, amusant, attrayant, (femmes) fortes, doux, confiance.</td>
-                            </tr>
-                            <tr>
-                                <td>Quiz</td>
-                                <td>"Sur une échelle de 1 à 5, à quel point les questions et réponses vous semblent-elles claires ?" (1 - Pas claires du tout / 5 - Très claires)</td>
-                                <td>La note moyenne pour cette question est de 4,8/5 (4 personnes interrogées ont répondu 5/5 ; 1 personne a répondu 4/5).</td>
-                            </tr>
-                            <tr>
-                                <td>Quiz</td>
-                                <td>"Trouvez-vous le bouton d'aide utile ?" (Oui - Non - Je n'ai pas vu ce bouton)</td>
-                                <td>Toutes les personnes interrogées ont répondu "Oui".</td>
-                            </tr>
-                            <tr>
-                                <td>Général</td>
-                                <td>"Commentez tout ce qui vous vient à l'esprit en naviguant dans l'application."</td>
-                                <td>👍 : 
-                                    <ol>
-                                        <li>C'est didactique.</li> 
-                                        <li>C'est intuitif et facile à naviguer : les 4 onglets en bas ont tous une utilisation distincte.</li> 
-                                        <li>Les polices et les couleurs sont très harmonieuses, lisibles et agréables à l'œil.</li> 
-                                        <li>Les suggestions personnalisées après avoir répondu au quiz sont une grande valeur ajoutée.</li> 
-                                        <li>Les tutoriels ressemblent à des recettes de cuisine (difficulté, temps, produits utilisés...) et sont multi-formats.</li> 
-                                        <li>La mise en favoris des articles.</li> 
-                                        <li>La représentation et la diversité des modèles.</li>
-                                    </ol>
-                                    👎 : 
-                                    <ol>
-                                        <li>Incohérences linguistiques : mélange de français et d'anglais ("highlighter").</li>
-                                        <li>Les titres manquent sur les vignettes des tutoriels en vue galerie.</li> 
-                                        <li>Les prix manquent sur les fiches d'information des produits.</li> 
-                                        <li>La différence entre "novice" et "débutant" n'est pas claire.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Général</td>
-                                <td>"Le langage et les termes utilisés dans l'application vous semblent-ils appropriés ?" (1 - Pas appropriés du tout / 5 - Parfaitement appropriés)</td>
-                                <td>La note moyenne pour cette question est de 4,8/5 (4 personnes interrogées ont répondu 5/5 ; 1 personne a répondu 4/5).</td>
-                            </tr>
-                            <tr>
-                                <td>Général</td>
-                                <td>"Quelles seraient les fonctionnalités manquantes selon vous ?"</td>
-                                <td>Une personne interrogée a mentionné "une barre de recherche dans la section Communauté" comme amélioration de fonctionnalité. Une personne interrogée a mentionné "des articles courts" comme un plus.</td>
-                            </tr>
-                            <tr>
-                                <td>Général</td>
-                                <td>"Sur une échelle de 1 à 5, à quel point est-il facile de naviguer dans l'application ?" (1 - Pas intuitive du tout ; 5 - Très intuitive)</td>
-                                <td>La note moyenne pour cette question est de 5/5 (toutes les personnes interrogées ont répondu 5/5).</td>
-                            </tr>
-                            <tr>
-                                <td>Général</td>
-                                <td>"D'autres commentaires ?"</td>
-                                <td>"J'apprécie de voir autant de visages différents et de types de peau, et les photos des produits me donnent envie de tous les essayer !" ; "Quand l'application sera-t-elle lancée ? J'en ai besoin !" ; "C'est parfait, je suis très impressionné(e)."</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
 
-            <section class="case-phase" id="fixes">
-                    <div class="idea-card green">
-                        <div class="idea-content">
-                            <p class="card-title">Améliorations potentielles dans les mises à jour ultérieures basées sur les retours des utilisateurs :</p>
-                            <ul>
-                                <li>Ajouter une barre de recherche dans la section Communauté pour permettre aux utilisateurs de rechercher des mots-clés et de trouver plus facilement des sujets et des publications d'intérêt.</li>
-                                <li>Ajouter des titres sur les vignettes des tutoriels en vue galerie pour garantir une identification plus facile ainsi qu'une cohérence dans toute l'application.</li>
-                                <li>Ajouter le prix (ou la fourchette de prix) sur la fiche d'information du produit, car le budget est un critère important pour nos utilisateurs lors de l'achat de produits de beauté.</li>
-                            </ul>
-                        </div>
+                <div class="qa-container">
+                    <p class="question">[Onboarding] Décrivez les illustrations des trois premiers écrans en 3 adjectifs.</p>
+                    <p>Les personnes interrogées ont utilisé les adjectifs suivants : chaleureux, stimulant, amusant, attrayant, (femmes) fortes, doux, confiance.</p>
+                </div>
+
+                <div class="qa-container">
+                    <p class="question">[Quiz] Sur une échelle de 1 à 5, à quel point les questions et réponses vous semblent-elles claires ? (1 - Pas claires du tout / 5 - Très claires)</p>
+                    <p>La note moyenne pour cette question est de 4,8/5 (4 personnes interrogées ont répondu 5/5 ; 1 personne a répondu 4/5).</p>
+                </div>
+
+                <div class="qa-container">
+                    <p class="question">[Quiz] Trouvez-vous le bouton d'aide utile ? (Oui - Non - Je n'ai pas vu ce bouton)</p>
+                    <p>Toutes les personnes interrogées ont répondu "Oui".</p>
+                </div>
+
+                <div class="qa-container">
+                    <p class="question">[Général] Commentez tout ce qui vous vient à l'esprit en naviguant dans l'application.</p>
+                    <p>Points positifs :</p>
+                        <ol>
+                        <li>C'est didactique.</li> 
+                        <li>C'est intuitif et facile à naviguer : les 4 onglets en bas ont tous une utilisation distincte.</li> 
+                        <li>Les polices et les couleurs sont très harmonieuses, lisibles et agréables à l'œil.</li> 
+                        <li>Les suggestions personnalisées après avoir répondu au quiz sont une grande valeur ajoutée.</li> 
+                        <li>Les tutoriels ressemblent à des recettes de cuisine (difficulté, temps, produits utilisés...) et sont multi-formats.</li> 
+                        <li>La mise en favoris des articles.</li> 
+                        <li>La représentation et la diversité des modèles.</li>
+                    </ol>
+                    <p>Points négatifs :</p>
+                        <ol>
+                            <li>Incohérences linguistiques : mélange de français et d'anglais ("highlighter").</li>
+                            <li>Les titres manquent sur les vignettes des tutoriels en vue galerie.</li> 
+                            <li>Les prix manquent sur les fiches d'information des produits.</li> 
+                            <li>La différence entre "novice" et "débutant" n'est pas claire.</li>
+                        </ol>                
                     </div>
+
+                <div class="qa-container">
+                    <p class="question">[Général] Le langage et les termes utilisés dans l'application vous semblent-ils appropriés ? (1 - Pas appropriés du tout / 5 - Parfaitement appropriés)</p>
+                    <p>La note moyenne pour cette question est de 4,8/5 (4 personnes interrogées ont répondu 5/5 ; 1 personne a répondu 4/5).</p>
+                </div>
+
+                <div class="qa-container">
+                    <p class="question">[Général] Quelles seraient les fonctionnalités manquantes selon vous ?</p>
+                    <p>Une personne interrogée a mentionné "une barre de recherche dans la section Communauté" comme amélioration de fonctionnalité. <br>Une personne interrogée a mentionné "des articles courts" comme un plus.</p>
+                </div>
+
+                <div class="qa-container">
+                    <p class="question">[Général] Sur une échelle de 1 à 5, à quel point est-il facile de naviguer dans l'application ? (1 - Pas intuitive du tout ; 5 - Très intuitive)</p>
+                    <p>La note moyenne pour cette question est de 5/5 (toutes les personnes interrogées ont répondu 5/5).</p>
+                </div>
+
+                <div class="qa-container">
+                    <p class="question">[Général] D'autres commentaires ?</p>
+                    <p>"J'apprécie de voir autant de visages différents et de types de peau, et les photos des produits me donnent envie de tous les essayer !"; <br>"Quand l'application sera-t-elle lancée ? J'en ai besoin !" ; <br>"C'est parfait, je suis très impressionné(e)."</p>
+                </div>
+
+                <div class="callout">
+                    <div class="callout-content">
+                        <p class="card-title">Améliorations potentielles dans les mises à jour ultérieures basées sur les retours des utilisateurs :</b></p>
+                        <ul>
+                            <li>Ajouter une barre de recherche dans la section Communauté pour permettre aux utilisateurs de rechercher des mots-clés et de trouver plus facilement des sujets et des publications d'intérêt.</li>
+                            <li>Ajouter des titres sur les vignettes des tutoriels en vue galerie pour garantir une identification plus facile ainsi qu'une cohérence dans toute l'application.</li>
+                            <li>Ajouter le prix (ou la fourchette de prix) sur la fiche d'information du produit, car le budget est un critère important pour nos utilisateurs lors de l'achat de produits de beauté.</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
-        </div>
+
     </main>
 
     <a href="#top" class="back-to-top">↑</a>

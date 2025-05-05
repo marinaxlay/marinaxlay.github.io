@@ -1,0 +1,141 @@
+.question {
+    font-weight: bold;
+}
+
+.qa-container {
+    margin-bottom: var(--spacing-sm);
+}
+
+.table th a {
+    color: var(--light-text);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.table th a:hover {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+        /* Colors section */
+        .colors-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            padding: 50px;
+            border-radius: 20px;
+            margin-bottom: var(--spacing-md);
+            gap: var(--spacing-xl);
+            border: solid 1px var(--primary-color);
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: var(--spacing-sm);
+        }
+
+        .color-box {
+            width: 100px;
+            height: 100px;
+            border-radius: var(--border-radius-sm);
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            color: white;
+            padding: var(--spacing-xs);
+            font-size: 0.8rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+
+        /* Typography section */
+        .typography-container {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 50px;
+            border-radius: 20px;
+            margin-bottom: var(--spacing-md);
+            border: solid 1px var(--primary-color);
+        }
+
+        .typography-example {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .typography-example.h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 24pt;
+        }
+
+        .typography-example.h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 20pt;
+        }
+
+        .typography-example.h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+
+        .typography-example.body {
+            font-family: 'Poppins', sans-serif;
+            font-weight: none;
+            font-size: 14pt;
+        }
+
+        /* Icons section */
+        .icons-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-xs);
+            background-color: white;
+            padding: 50px;
+            border-radius: 20px;
+            border: solid 1px var(--primary-color);
+        }
+
+        .icon {
+            margin-bottom: var(--spacing-sm);
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Buttons section */
+
+        .but {
+            width: 200px;
+            height: 200px;
+        }
+
+        @media (max-width: 900px) {
+
+            .color-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: var(--spacing-sm);
+            }
+            .colors-container {
+                padding: 20px;
+                gap: var(--spacing-md);
+            }
+            .color-box {
+                width: 85px;
+                height: 85px;
+            }
+            .typography-container {
+                padding: 20px;
+                gap: var(--spacing-md);
+            }
+            .icons-container {
+                padding: 20px;
+                gap: var(--spacing-md);
+            }
+    }
