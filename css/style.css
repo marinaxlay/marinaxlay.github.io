@@ -442,10 +442,23 @@ footer a {
     margin-left: auto;
     margin-right: auto;
     font-family: 'staatliches', 'Palatino Linotype', sans-serif;
-    font-size: 56px;
+    font-size: 60px;
     line-height: 1.2;
     letter-spacing: 2px;
     font-weight: 600;
+}
+
+.hero-homepage h2 {
+    color: var(--white);
+    margin-top: var(--spacing-xs);
+    margin-bottom: var(--spacing-xs);
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: left;
 }
 
 
@@ -457,7 +470,7 @@ footer a {
 .hero-homepage .intro-text {    
     padding-top: var(--spacing-sm);
     margin-bottom: var(--spacing-sm);
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .hero .intro-text {    
@@ -554,7 +567,12 @@ footer a {
     }
 
     .hero-homepage h1 {
-        font-size: 30px;
+        font-size: 40px;
+    }
+
+    .hero-homepage h2 {
+        font-size: 24px;
+        text-align: center;
     }
 
     .hero-homepage .intro-text {
