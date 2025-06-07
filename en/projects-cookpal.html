@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookPal - Etude de cas | Marina Lay, UX/UI Designer</title>
+    <script src="../js/script.js"></script>   
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a id="top"></a>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="../resources/logo.svg" alt="Marina Lay logo"></a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#footer" class="contact">Contact</a></li>
+                    <li class="language-options"><a href="../realisations-cookpal.html" data-lang="fr" alt="français">🇫🇷</a> | <a href="/en/projects-cookpal.html" data-lang="en" class="active" alt="english">🇬🇧</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="case-study beautify">
+        <div class="container">
+
+            <section class="case-study-header">
+                <div class="container">
+                    <div class="case-study-layout">
+                        <div class="case-study-image">
+                            <img src="../resources/cookpal/cookpal-header.png" alt="" />
+                        </div>
+                        <div class="project-details">
+                            <h1>CookPal</h1>
+                            <p class="intro-text">Conception d'une application d'automatisation de la gestion des repas.</p>                            
+                            
+                            <p><b><span class="highlight">Catégorie :</span></b> Projet personnel</p>
+                            <p><b><span class="highlight">Période :</span></b> Mai - Juin 2025</p>
+                            <p><b><span class="highlight">Format :</span></b> Mobile, Desktop</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+
+            <section class="context">
+                <div class="title-banner">
+                    <h2>🎯<br>Contexte et objectifs</h2>
+                </div>                
+                
+                <h3>Introduction</h3>
+                <p>Organiser les repas de la semaine, faire les courses, éviter le gaspillage, manger équilibré, varier les plats… autant de micro-décisions qui, répétées jour après jour, finissent par peser lourd dans la charge mentale domestique.</p>
+                <p>C’est en partant de ce constat vécu au quotidien dans mon propre foyer que j’ai initié ce projet personnel : concevoir une application qui automatise au maximum la gestion des repas pour simplifier la vie des utilisateurs.</p>
+                
+                <div id="mission-statement">
+                    <div class="callout">
+                        <div class="callout-content">
+                            <p class="card-title">Ma mission :</b></p>
+                            <p>Concevoir une application centrée sur l’utilisateur qui permettra de :</p>
+                            <ul>
+                                <li>alléger significativement la charge mentale liée aux repas (planification et courses),</li>
+                                <li>favoriser une alimentation de saison, saine et moins gaspilleuse,</li>
+                            </ul>
+                            <p>et tout cela dans un usage domestique quotidien, pensé pour être à la fois fluide, intelligent et personnalisé.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ux-research">
+                <div class="title-banner">
+                    <h2>🔍<br> Recherche utilisateur</h2>
+                </div>
+                
+                <h3>Entretien utilisateur</h3>
+
+                <div class="qa-container">
+                    <p class="question">As-tu un système de gestion des repas en place actuellement ?</p>
+                    <p>Oui : un fichier Google Sheet, avec un onglet “Recettes” et un onglet “Planning”. Le problème principal réside dans l’impossibilité d’automatiser la planification des repas, de devoir remplir le planning soi-même tous les 3-4 jours. La liste de courses est établie manuellement sur Listonic.</p>
+                </div>
+
+                <div class="qa-container">
+                    <p class="question">Y a-t-il des moments où tu te retrouves sans idée de repas ? Que fais-tu dans ces cas-là ?</p>
+                        <ul>
+                            <li><em>“S’inspire des plats dernièrement cuisinés”</em> (→ besoin de varier davantage les repas)</li>
+                            <li><em>“Demande de l’aide à une IA”</em> (→ délégation de la partie planification des repas)</li> 
+                            <li><em>“Achète des plats industriels ou commande à manger par manque d’idées et de temps”</em> (→ besoin de manger plus sain)</li> 
+                        </ul>
+                </div>
+
+                <div class="qa-container">
+                    <p class="question">Qu’est-ce qui te frustre le plus dans la gestion des repas à la maison ?</p>
+                        <ul>
+                            <li><em>“Tous les jours devoir se demander quoi faire à manger”</em> (→ besoin d’alléger la charge mentale quotidienne)</li>
+                            <li><em>“Finir par faire toujours la même chose à manger”</em> (→ besoin de varier davantage les repas)</li> 
+                            <li><em>“Trouver le temps d’aller faire les courses et de cuisiner après une journée déjà bien chargée”</em> (→ besoin d’automatisation des tâches et d’une meilleure organisation/gestion du temps)</li> 
+                        </ul>
+                </div>
+
+                <div class="qa-container">
+                    <p class="question">Quels sont les critères importants dans tes choix de repas au quotidien ?</p>
+                        <ul>
+                            <li><em>“Consommer des produits de saison”</em> (→ adapter les plats suggérés en fonction des saisons)</li>
+                            <li><em>“Éviter si possible les aliments irritants</em> (intolérances alimentaires), mais pouvoir quand même se faire plaisir de temps en temps” (→ limiter les recettes avec aliments irritants sans les bannir totalement des suggestions)</li> 
+                        </ul>
+                </div>
+
+                <div class="qa-container">
+                    <p class="question">As-tu déjà essayé des applis ou services pour gérer les repas ou faire les courses ? Qu’en as-tu pensé ?</p>
+                                            
+                        <ul>
+                            <li>Jow : Performant sur la partie courses, mais moins sur la partie planification.</li>
+                            <li>KptnCook : Application payante, pas de version desktop.</li> 
+                            <li>Mealime : Seulement en anglais.</li>
+                        </ul>
+                </div>
+
+                <h3>Proto-persona</h3>
+                <p></p>
+                <ul>
+                    <li><b>Âge</b> : 28 ans</li>
+                    <li><b>Profession</b> : Développeur</li>
+                    <li><b>Situation familiale</b> : Vit en couple</li>
+                    <li><b>Style de vie</b> : Très occupé, journées chargées, casanier</li>
+                    <li><b>Objectifs alimentaires</b> : Manger de saison, réduire les plats industriels et le fast-food</li>
+                    <li><b>Contraintes</b> : Peu de temps, manque d’idées</li>
+                    <li><b>Comportements</b> : Achète souvent à la supérette du coin ou commande à emporter, préfère des plats rapides à cuisiner car manque de temps</li>
+                    <li><b>Irritants</b> : Fatigué de devoir tout le temps réfléchir à quoi manger, se lasse vite de cuisiner et manger toujours les mêmes plats</li>
+                </ul>
+                    <div class="callout">
+                        <div class="callout-content">
+                            <p class="card-title">Opportunités pour l'appli :</b></p>
+                            <ul>
+                                <li>Génération automatique de menus adaptés à son temps disponible</li>
+                                <li>Mise en avant de plats de saison simples et nutritifs</li>
+                                <li>Liste de courses collaborative et synchronisée avec les repas</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                <h3>Benchmark UX</h3>
+                
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th><a href="https://jow.fr/home" target="_blank">Jow</a></th>
+                                <th><a href="https://www.kptncook.com/" target="_blank">KptnCook</a></th>
+                                <th><a href="https://www.mealime.com/" target="_blank">Mealime</a></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Slogan</td>
+                                <td><em>Jow, l’appli qui fait les courses et aide à faire à manger </em></td>
+                                <td><em>Discover the joy of effortless cooking. </em></td>
+                                <td><em>Plan your meals for the entire week in minutes. </em></td>
+                            </tr>
+                            <tr>
+                                <td>Supports</td>
+                                <td>✔️ Mobile, Desktop</td>
+                                <td>✖️ Mobile only</td>
+                                <td>✔️ Mobile, Desktop</td>
+                            </tr>
+                            <tr>
+                                <td>Navbar</td>
+                                <td>Courses, Explorer, Offres, Profil</td>
+                                <td>Aujourd’hui, Chercher, Favoris, Planning, Courses</td>
+                                <td>Meal plan, Groceries, Favorites, Settings</td>
+                            </tr>
+                            <tr>
+                                <td>Collaboration</td>
+                                <td>✖️ Non</td>
+                                <td>✔️ Oui </td>
+                                <td>✖️ Non</td>
+                            </tr>
+                            <tr>
+                                <td>Personnalisation</td>
+                                <td><b>Onboarding</b> :
+                                    <p>✔️ Onboarding complet (nombre de personnes vivant dans le foyer, régime alimentaire, ingrédients à exclure, équipements de cuisine, objectifs)</p>
+                                    <b>Repas</b> :
+                                    <p>✔️ Suggestions de repas en fonction des préférences renseignées par l’utilisateur</p>
+                                    <p>✔️ Nombre de portions personnalisable au repas</p>
+                                    <b>Recettes :</b>
+                                    <p>✔️ Création de recettes maison (avec template à remplir manuellement)</p> 
+                                    <p>✖️ Impossibilité d’importer une recette</p>
+                                    <p>✖️ Les recettes Jow ne peuvent pas être éditées par l’utilisateur (possibilité d’ajouter une ”note perso” seulement)</p>
+                                </td>
+                                <td><b>Onboarding</b> :
+                                    <p>✖️ Onboarding limité en version gratuite (objectifs, régime alimentaire [omnivore ou végétarien seulement], ingrédients à exclure [alcool seulement], nombre de portions par repas)</p>
+                                    <b>Repas</b> :
+                                    <p>✔️ Suggestions de repas en fonction des préférences renseignées par l’utilisateur</p>
+                                    <p>✔️ Nombre de portions personnalisable au repas</p>
+                                    <p>✔️ Système de swiping ludique “J’aime/J’aime pas”</p>
+                                    <b>Recettes :</b>
+                                    <p>✖️ Impossibilité de créer des recettes maison </p> 
+                                    <p>✖️ Les recettes ne peuvent pas être éditées par l’utilisateur (possibilité d’ajouter une ”note perso” seulement)</p>
+                                </td>
+                                <td><b>Onboarding</b> :
+                                    <p>✖️ Onboarding partiel (diet, allergies, dislikes, portions par repas)</p>
+                                    <b>Repas</b> :
+                                    <p>✔️ Suggestions de repas en fonction des préférences renseignées par l’utilisateur</p>
+                                    <p>✔️ Nombre de portions personnalisable au repas</p>
+                                    <b>Recettes :</b>
+                                    <p>✔️ Création de recettes maison (avec template à remplir manuellement)</p> 
+                                    <p>✔️ Possibilité d’importer une recette </p>
+                                    <p>✖️ Les recettes Mealime ne peuvent pas être éditées par l’utilisateur (possibilité d’ajouter une ”note perso” seulement)</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Automatisation</td>
+                                <td><b>Planification</b> :
+                                    <p>✔️ Ajout automatique de plats pour le nombre de recettes déterminé</p>
+                                    <p>✖️ Modification des repas uniquement manuelle</p>
+                                    <b>Courses</b> :
+                                    <p>✔️ Remplissage automatique du panier (modifiable manuellement) en fonction des repas planifiés, propose en plus de retirer les basiques susceptibles d’être déjà dans le placard ou frigo de l’utilisateur</p>
+                                    <p>✔️ Livraison ou retrait dans le supermarché le plus proche (cependant tous les supermarchés ne sont pas disponibles)</p>
+                                    </td>
+                                <td><b>Planification</b> :
+                                    <p>✖️ Ajout de repas uniquement manuel (mode “Surprenez-moi” uniquement en version payante)</p>
+                                    <b>Courses</b> :
+                                    <p>✔️ Remplissage automatique du panier (modifiable manuellement) en fonction des repas planifiés</p>
+                                    <p>✔️ Liste de courses sous forme de checklist, modifie automatiquement les quantités si les portions sont modifiées ultérieurement</p>
+                                </td>
+                                <td><b>Planification</b> :
+                                    <p>✖️ Ajout de repas uniquement manuel</p>
+                                    <b>Courses</b> :
+                                    <p>✔️ Remplissage automatique du panier (modifiable manuellement) en fonction des repas planifiés</p>
+                                    <p>✖️ Liste de courses sous forme de checklist, ne modifie pas automatiquement les quantités si les portions sont modifiées ultérieurement</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Planification</td>
+                                <td>✖️ Pas de vue calendrier<br>✖️ Fonctionnalité limitée : obligé de valider le panier de courses pour enregistrer le planning de repas (+ il faut atteindre un montant minimum pour pouvoir passer commande)</td>
+                                <td>✔️ Vue calendrier<br>✔️ Possibilité d’associer une recette à un ou plusieurs jours<br>✖️ Par défaut, ne propose qu’un seul repas par jour</td>
+                                <td>✔️ Vue calendrier<br>✔️ Possibilité d’associer un repas du planning à un jour<br>✖️ Fonctionnalité limitée : pas possible de planifier le même plat sur plusieurs jours par exemple</td>
+                            </tr>
+                            <tr>
+                                <td>Fonctionnalités de recherche</td>
+                                <td>✔️ Collections/thématiques utiles (anti-inflammatoires, faibles en calories…)<br>✔️ Highlight sur les ingrédients de saison<br>✖️ Pas de filtres dans les recherches de recettes</td>
+                                <td>✖️ Pas de highlight sur les ingrédients de saison<br>✖️ Enormément de recettes verrouillées en version gratuite<br>✖️ Pas de filtres dans les recherches de recettes</td>
+                                <td>✖️ Pas de highlight sur les ingrédients de saison<br>✖️ Pas de filtres dans les recherches de recettes</td>
+                            </tr>
+                            <tr>
+                                <td>Ergonomie</td>
+                                <td>✔️ UX globalement bonne, à condition de bien avoir en tête qu’il s’agit avant tout d’une application de courses<br>✖️ Enormément de scroll sur le catalogue, sentiment overwhelming</td>
+                                <td>✔️ UX globalement bonne<br>✖️ Onglet “Aujourd’hui” (qui propose un menu différent tous les jours) équivoque, on s’attend à voir les repas que l’on a programmés pour ce jour</td>
+                                <td>✖️ Fonctionnalités cachées (ex: ”Create a recipe” dans “Settings”, collections accessibles uniquement après avoir démarré un meal plan)</td>
+                            </tr>
+                            <tr>
+                                <td>Look & feel</td>
+                                <td>✔️ UI soignée et dynamique</td>
+                                <td>✔️ UI soignée et dynamique</td>
+                                <td>✖️ UI terne et basique, un peu old-school</td>
+                            </tr>
+                            <tr>
+                                <td>Forces</td>
+                                <td>✔️ Promos sur les paniers<br>✔️ Notes et commentaires de la communauté (dimension communautaire) <br>✔️ Lumière sur les produits de saison</td>
+                                <td>✔️ Application collaborative<br>✔️ Grande flexibilité des listes des courses en fonction des portions</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Faiblesses</td>
+                                <td>✖️ Application lente<br>✖️ Application inutilisable à moins de se connecter avec l’un des supermarchés partenaires (ou essai gratuit)<br>✖️ Application essentiellement tournée sur les courses plus que sur la planification</td>
+                                <td>✖️ Version gratuite extrêmement limitée<br>✖️ Pas de focus sur les produits de saison<br>✖️ Pas de possibilité d’ajouter ses propres recettes<br>✖️ Disponible uniquement sur mobile</td>
+                                <td>✖️ Mauvaise architecture de l’information<br>✖️ Disponible uniquement en anglais</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+
+            </section>
+
+            <section class="case-phase" id="ideate">
+                <div class="title-banner">
+                    <h2>🎨<br> Processus de conception</h2>
+                </div>
+
+                <h3>User flow</h3>
+                <p><b>[Lancement de l’application] Identification / Création d’un compte et Onboarding :</b></p>
+                <img src="../resources/cookpal/cookpal-user-flow-1.png">
+
+                <p><b>Planifier ses repas pour la semaine et obtenir la liste de courses correspondante :</b></p>
+                <img src="../resources/cookpal/cookpal-user-flow-2.png">
+
+                <h3>Wireframes</h3>
+
+                
+                <h3>Design System</h3>
+            
+                <h3>Prototypes</h3>
+                    <div class="case-img-container">
+                        <img src="../resources/beautify/beautify-demo-1.gif" alt="Prototype : onboarding, quiz, recommandations, création de compte">
+                        <img src="../resources/beautify/beautify-demo-2.gif" alt="Prototype : page d'accueil personnalisée, recherche de produits (filtre, vue mosaïque ou liste), fiche produit (composition, avis, mise en favori), recherche tutoriel, fiche tutoriel">
+                        <img src="../resources/beautify/beautify-demo-3.gif" alt="Prototype : communauté, votre compte">
+                    </div>
+
+                <div class="button-container"><a href="https://www.figma.com/proto/WAVBWvjRxbVJJduyXPKI9Y/Beautify?node-id=1-183&t=Q5GApBbA2PYu7zMC-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A183" class="button" target="_blank">Voir le prototype sur Figma</a></div>
+                        
+            </section>
+
+            <section class="results">
+                <div class="title-banner">
+                    <h2>🧪<br>Tests utilisteurs</h2>
+                </div>
+
+            </section>
+
+    </main>
+
+    <a href="#top" class="back-to-top">↑</a>
+
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-content">
+                <p><b>Marina Lay</b></p>
+                <p>UX/UI Designer</p>
+                <p>📍 : Marcq-en-Barœul, Nord (59)</p>
+            </div>
+            <div class="footer-content">
+                <p><b>Contact :</b></p>
+                <p><a href="https://www.linkedin.com/in/marinalay/">LinkedIn</a></p>
+                <p>📧 : <a href="mailto:marina.lay92@gmail.com">marina.lay92@gmail.com</a></p>
+                <p>📱 : +33 6 04 05 69 64</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Marina Lay. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+

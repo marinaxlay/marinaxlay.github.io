@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CUBE (Société Générale) Case Study | Marina Lay, UX/UI Designer</title>
-    <script src="../js/script.js"></script>
+    <title>CUBE | Marina Lay, UX/UI Designer & Intégratrice web freelance</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/cube.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <a id="top"></a>
@@ -18,19 +19,19 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="/en/index.html"><img src="../resources/logo.svg" alt="Marina Lay logo"></a>
+                <a href="index.html"><img src="../resources/logo.svg" alt="Marina Lay - Retour à l'accueil"></a>
             </div>
-            <div class="hamburger-menu">
+            <div class="hamburger-menu" aria-label="menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="/en/projects.html">Projects</a></li>
-                    <li><a href="/en/about.html">About</a></li>
+                    <li><a href="projects">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="#footer" class="contact">Contact</a></li>
-                    <li class="language-options"><a href="../projects-cube.html" data-lang="fr" alt="français">🇫🇷</a> | <a href="/en/projects-cube.html" data-lang="en" class="active" alt="english">🇬🇧</a></li>
+                    <li class="language-options"><a href="../realisations-cube.html" data-lang="fr" alt="français">🇫🇷</a> | <a href="/en/projects-cube.html" data-lang="en" class="active" alt="english">🇬🇧</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,428 +44,358 @@
                 <div class="container">
                     <div class="case-study-layout">
                         <div class="case-study-image">
-                            <img src="../resources/cube/cube-header.png" alt="CUBE UI">
+                            <img src="../resources/cube/cube-header.png" alt="" />
                         </div>
                         <div class="project-details">
                             <h1>CUBE</h1>
-                            <p class="intro-text">Designing a showcase homepage for one of Société Générale's IT directions.</p>
-                            
-                            <p><b>Time frame:</b> February - July 2023</p>
-                            <p><b>Tools:</b> Figma</p>
-                            <p><b>Team:</b> Boris Durupt-Zhou, Camille Kui</p>
+                            <p class="intro-text">Refonte d'une page vitrine pour l'une des directions IT de Société Générale.</p>
+                            <p><b><span class="highlight">Période :</span></b> Février - Juillet 2023</p>
+                            <p><b><span class="highlight">Format :</span></b> Desktop</p>
+
                         </div>
                     </div>
-                    
                 </div>
             </section>
-
-            <section class="case-introduction">
-                <div class="case-study-phase">
-                    <h2>🎯<br> Context and objectives</h2>
+               
+            <section class="introduction">
+                <div class="title-banner">
+                    <h2>🎯<br>Contexte et objectifs</h2>
                 </div>
-                <h3>Introduction</h3>
-                <p>CUBE is the knowledge management portal for CFT (Corporate Functions Technologies), one of Société Générale's IT departments. Its aim is to identify and synthesize all information necessary for all CFT employees regardless of their expertise, and centralize it to facilitate information searching.</p>
-                <img src="../resources/cube/cube-v0.png" alt="CUBE original homepage design">
-                <p>Several UX projects are conducted each year on CUBE to ensure continuous improvement. During one of these previous projects, users spontaneously gave us the following feedback about the homepage:</p>
+
+                <p>CUBE est le portail de gestion des connaissances de CFT (Corporate Functions Technologies), l’une des directions IT de Société Générale. Son objectif est d’identifier et synthétiser toute information nécessaire à l’ensemble des collaborateurs de CFT, et de les centraliser afin de faciliter la recherche d’information.</p>
+                <img src="../resources/cube/cube-v0.png" alt="" />
+                <p>Dans un objectif d’amélioration continue de la plate-forme, plusieurs chantiers UX sont menés chaque année sur CUBE. Lors de l’un de ces précédents chantiers, des utilisateurs nous avaient fait les retours spontanés suivants au sujet de la page d’accueil :</p>
                 <ul>
-                    <li><em>"I find the homepage really empty. The white background with text on it doesn't attract me, it doesn't speak to me."</em></li>
-                    <li><em>"My first impression is that it's rather cold. It lacks dynamic elements."</em></li>
-                    <li><em>"I wonder if there's a way to do something visually. It feels like it's the emptiest and simplest page of the entire site."</em></li>
-                    <li><em>"When I land on the homepage, it looks dead."</em></li>
+                    <li><em>“Je trouve la page d’accueil vachement vide. Ça m’attire pas le fond blanc avec du texte dessus, ça me parle pas.”</em></li>
+                    <li><em>“Je me demande s’il n’y a pas moyen visuellement de faire quelque chose sur la page d’accueil. On a l’impression que c’est la plus vide et la plus simple de tout le site.”</em></li>
+                    <li><em>“Mon premier ressenti c’est que c’est plutôt froid. Il manque d’éléments dynamiques.”</em></li>
+                    <li><em>“Quand j’arrive sur la page d’accueil, j’ai l’impression que c’est mort.”</em></li>
                 </ul>
 
-                <p>A redesign of the homepage was therefore deemed necessary, with several key challenges:</p>
+                <p>Une refonte de la page d’accueil était donc jugée nécessaire, avec plusieurs enjeux à la clé :</p>
                 <div class="callout">
                     <div class="callout-content">
-                        <h4>Project challenges :</h4>
+                        <p class="card-title">Enjeux du chantier</p>
                         <ul>
-                            <li>Give visitors a better first impression of CUBE.</li>
-                            <li>Improve the attractiveness of CFT.</li>
-                            <li>Strengthen CUBE's positioning as an internal showcase for CFT.</li>
+                            <li>Donner une meilleure impression de CUBE aux visiteurs.</li>
+                            <li>Améliorer l’attractivité de CFT.</li>
+                            <li>Renforcer le positionnement de CUBE en tant que vitrine interne pour CFT.</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <section class="case-phase" id="empathize">
-                <div class="case-study-phase">
-                    <h2>🔍<br> User research</h2>
+            <section class="ux-research">
+                <div class="title-banner">
+                    <h2>🧠<br>Recherche utilisateur</h2>
                 </div>
-                
-                <p>For the preliminary research phase, we organized a series of interviews with 44 of our target users to identify pain points and changes needed for the CUBE homepage.</p>
-                <p>The main pain points I identified during these interviews were as follows:</p>
 
-                <ul>
-                    <li><b>Confusion about the portal's purpose</b>: <em>“I'm having trouble identifying what kind of platform I've landed on.”</em></li>
-                    <li><b>Confusion about the portal's target audience</b>: <em>“I feel like I'm not the target.”</em></li>
-                    <li><b>Old-fashioned, outdated design</b>: <em>“From a look and feel point of view, it's a bit old-fashioned overall.”</em></li>
-                    <li><b>A lack of color and dynamism</b>: <em>“Everything is white and dull.”, “There could be a bit more color play.”, “There should be evolving content.”</em></li>
-                    <li><b>Poor use of space</b>: <em>“The icons and text are very small, and there's all this unused space all around.”, “Your CUBE shortcuts take up half the page.”</em>.</li>
-                    <li><b>Non-compliance with Groupe graphic charter</b>: <em>“Maybe it needs to be a little more Group-chartered.”</em></li>
-                    <li><b>Poor information architecture</b>: <em>"I feel like there shouldn't be some prioritization. Everything seems mixed up."</em></li>
-                </ul>
+            <p>Pour la phase de recherche utilisateur, j'ai organisé une série d'entretiens avec 44 de nos utilisateurs cible afin d’identifier les irritants et les évolutions à apporter à la page d’accueil.</p>
+            <p>Les principaux points de frictions que j'ai pu identifier durant ces entretiens sont les suivants :</p>
+            <ul>
+                <li><b>Une incertitude quant à l'objectif du portail</b> : <em>“J’ai du mal à identifier sur quel type de plate-forme je suis arrivé.”</em></li>
+                <li><b>Une incertitude quant à l'audience cible du portail</b> : <em>“J’ai l’impression de ne pas être la cible.”</em></li>
+                <li><b>Un design vieillot et obsolète</b> : <em>“D’un point de vue look and feel ça fait un peu vieillot dans l’ensemble.”</em></li>
+                <li><b>Un manque de couleurs et de dynamisme</b> : <em>“Tout est blanc et terne.”, “Il pourrait y avoir un peu plus de jeux de couleurs.”, “Il faudrait du contenu évolutif.”</em></li>
+                <li><b>Une mauvaise utilisation de l'espace</b> : <em>“Les icônes et le texte sont tout petits, mais il y a tout cet espace inutilisé tout autour.”, “Vos raccourcis CUBE prennent la place sur la moitié de la page.”</em></li>
+                <li><b>Une charte graphique Groupe non-respectée</b> : <em>“Il faudrait peut-être que ce soit un peu plus charté Groupe.”</em></li>
+                <li><b>Une mauvaise architecture de l'information</b> : <em>“Je sais pas s’il devrait pas y avoir un travail de hiérarchisation. Tout semble mélangé.”</em></li>
+            </ul>
             </section>
-                
-                <section class="case-phase" id="ideate">
-                    <div class="case-study-phase">
-                        <h2>💡<br> Ideation</h2>
-                    </div>
-                    
-                    <p>I organized a 1.5-hour workshop aimed at gathering initial ideas from the team and prioritizing them.</p>
-                    <img src="../resources/cube/cube-workshop.png" alt="Workshop outcome">
-                
-                    <p>Workshop results and prioritization of ideas:</p>
-                
-                    <div class="idea-grid">
-                        <div class="idea-card orange">
-                            <div class="idea-number">1</div>
-                            <div class="idea-content">
-                                <h4>Clarify CUBE's identity :</h4>
-                                    <li>A short definition of CUBE</li>
-                                    <li>A presentation paragraph: what can be found on CUBE?</li>
-                                    <li>A logo with a subtitle defining CUBE</li>
-                            </div>
-                        </div>
-                
-                        <div class="idea-card orange">
-                            <div class="idea-number">2</div>
-                            <div class="idea-content">
-                                <h4>Integrate lively, engaging visuals :</h4>
-                                    <li>More images and colors</li>
-                                    <li>Fewer buttons, but clearer buttons</li>
-                                    <li>Fewer buttons, but clearer buttons</li>
-                                    <li>Adherence to Société Générale's Design System</li>
-                            </div>
-                        </div>
-                
-                        <div class="idea-card orange">
-                            <div class="idea-number">3</div>
-                            <div class="idea-content">
-                                <h4>Push news to users :</h4>
-                                    <li>Direct access to the CFT community on the Viva Engage corporate social network</li>
-                                    <li>Direct access to the latest CFT newsletter</li>
-                            </div>
-                        </div>
-                
-                        <div class="idea-card orange">
-                            <div class="idea-number">4</div>
-                            <div class="idea-content">
-                                <h4>Facilitate topic search :</h4>
-                                    <li>Prominent search bar</li>
-                                    <li>Chatbot integration</li>
-                            </div>
-                        </div>
-                        
-                        <div class="idea-card orange">
-                            <div class="idea-number">5</div>
-                            <div class="idea-content">
-                                <h4>Push dynamic content to users :</h4>
-                                    <li>Most viewed pages</li>
-                                    <li>Recently updated content</li>
-                                    <li>Highlighting pages related to current events at Société Générale and/or CFT</li>
-                            </div>
-                        </div>
-                    </div>             
-                    </section>
-                    
-                <section class="case-phase">
-                <div class="case-study-phase">
-                    <h2>🎨<br> Conception process</h2>
+
+            <section class="design">
+                <div class="title-banner">
+                    <h2>🎨<br>Processus de conception</h2>
                 </div>
 
-                <p>The design process involved the following steps:</p>
-                <ul>
-                    <li><b>Wireframing</b>: Creation of wireframes to define the homepage's structure and flow.</li>
-                    <li><b>Design System</b>: Development of a coherent visual identity, including the color palette, typography and graphic elements of the Group's Design System.</li>
-                    <li><b>Prototyping and iterative testing</b>: Production of prototypes, subjected to user testing to validate design choices and make adjustments.</li>
-                </ul>
+                    <p><b>Le processus de conception a suivi les étapes suivantes :</b></p>
+                    <ol>
+                        <li><b>Wireframes</b> : Création de maquettes pour définir la structure et le flux de l'application.</li>
+                        <li><b>Design System</b> : Développement d'une identité visuelle cohérente, incluant la palette de couleurs, la typographie et les éléments graphiques du Design System du Groupe.</li>
+                        <li><b>Prototypes et tests itératifs</b> : Réalisation des prototypes, soumis à des tests utilisateurs pour valider les choix de conception et apporter des ajustements.​</li>
+                    </ol>
+                </div>
 
-                    <h3>Wireframing</h3>
-                    <p>The UX recommendations we were able to draw from the interviews and ideas generated during the workshop allowed us to build this first wireframe on Figma:</p>
-                    <img src="../resources/cube/cube-wireframe.gif" alt="Wireframe">
+                <div class="container">
+                    <h3>Wireframes</h3>
+                    <p>Les entretiens utilisateurs et ce que j'en ai dégagé m'ont permis de constituer cette première maquette pour définir la structure et la navigation de la page d'accueil :</p>
+                    <img src="../resources/cube/cube-wireframe.gif" alt="" />
+                </div>
 
+                <div class="container">
                     <h3>Design System</h3>
-                    <p>To address user concerns raised during interviews and strengthen their sense of belonging to Société Générale, we adopted the colors, typography, and icons from the Group's Design System. Among these colors, we chose one (#418080) to serve as the primary color to give CUBE a distinct visual identity from other Société Générale internal portals:</p>
-                    <br>
+                    <p>Afin de répondre aux inquiétudes des utilisateurs remontées lors des entretiens et renforcer leur sentiment d’appartenance au Groupe, j'ai repris les couleurs, typographies et icônes du Design System du Groupe. Parmi ces couleurs, j'en ai choisi une (#418080) qui servira de couleur primaire afin de donner à CUBE une identité visuelle distincte des autres portails internes Société Générale, le tout dans le respect de la charte :</p>
 
-                        <h4>Colors :</h4>
-                        <div class="colors-container">
-                            <div class="color-category">
-                                <h5>Primary</h5>
-                                <div>
-                                    <div class="color-box" style="background-color: #418080;">
-                                        #418080
+                            <h4>COULEURS</h4>
+                            <div class="colors-container">
+                                <div class="color-category">
+                                    <h5>Primaire</h5>
+                                    <div>
+                                        <div class="color-box" style="background-color: #418080;">
+                                            #418080
+                                        </div>
                                     </div>
                                 </div>
+                                
+                                <div class="color-category">
+                                    <h5>Secondaires</h5>
+                                    <div class="color-grid">
+                                        <div class="color-box" style="background-color: #42C59C;">
+                                            #42C59C
+                                        </div>
+                                        <div class="color-box" style="background-color: #E7915F;">
+                                            #E7915F
+                                        </div>
+                                        <div class="color-box" style="background-color: #DE3B20;">
+                                            #DE3B20
+                                        </div>
+                                        <div class="color-box" style="background-color: #834A4B;">
+                                            #834A4B
+                                        </div>
+                                        <div class="color-box" style="background-color: #444952;">
+                                            #444952
+                                        </div>
+                                        <div class="color-box" style="background-color: #B5BAC9;">
+                                            #B5BAC9
+                                        </div>
+                                        <div class="color-box" style="background-color: #6587F9;">
+                                            #6587F9
+                                        </div>
+                                        <div class="color-box" style="background-color: #386A9F;">
+                                            #386A9F
+                                        </div>
+                                        <div class="color-box" style="background-color: #524A8E;">
+                                            #524A8E
+                                        </div>
+                                    </div>
+                                 </div>
                             </div>
-                            
-                            <div class="color-category">
-                                <h5>Secondary</h5>
-                                <div class="color-grid">
-                                    <div class="color-box" style="background-color: #42C59C;">
-                                        #42C59C
-                                    </div>
-                                    <div class="color-box" style="background-color: #E7915F;">
-                                        #E7915F
-                                    </div>
-                                    <div class="color-box" style="background-color: #DE3B20;">
-                                        #DE3B20
-                                    </div>
-                                    <div class="color-box" style="background-color: #834A4B;">
-                                        #834A4B
-                                    </div>
-                                    <div class="color-box" style="background-color: #444952;">
-                                        #444952
-                                    </div>
-                                    <div class="color-box" style="background-color: #B5BAC9;">
-                                        #B5BAC9
-                                    </div>
-                                    <div class="color-box" style="background-color: #6587F9;">
-                                        #6587F9
-                                    </div>
-                                    <div class="color-box" style="background-color: #386A9F;">
-                                        #386A9F
-                                    </div>
-                                    <div class="color-box" style="background-color: #524A8E;">
-                                        #524A8E
-                                    </div>
+                            <h4>TYPOGRAPHIE</h4>
+                            <div class="typography-container">
+                                <div class="typography-item">
+                                    <div class="typography-title">H1 – MONTSERRAT EXTRABOLD, 800, 26px :</div>
+                                    <div class="typography-example h1">Heading 1 Example</div>
+                                </div>
+                                
+                                <div class="typography-item">
+                                    <div class="typography-title">H2 – Source Sans Pro, 700, 20px :</div>
+                                    <div class="typography-example h2">Heading 2 Example</div>
+                                </div>
+                                
+                                <div class="typography-item">
+                                    <div class="typography-title">Body – Source Sans Pro, 400, 16px :</div>
+                                    <div class="typography-example body">This is an example of body text using Source Sans Pro font.</div>
                                 </div>
                             </div>
-                        </div>
-            
-                        <h4>Typography :</h4>
-                        <div class="typography-container">
-                            <div class="typography-item">
-                                <div class="typography-title">H1 – MONTSERRAT EXTRABOLD, 800, 26px :</div>
-                                <div class="typography-example h1">Heading 1 Example</div>
+                
+                            <h4>ICÔNES</h4>
+                            <div class="icons-container">
+                                <img src="../resources/cube/newspaper-icon.png" alt="icône journal" width="40" height="40">
+                                <img src="../resources/cube/rocket-icon.png" alt="icône fusée" width="40" height="40">
+                                <img src="../resources/cube/education-icon.png" alt="icône toque étudiant" width="40" height="40">
+                                <img src="../resources/cube/code-icon.png" alt="icône balises de code" width="40" height="40">
+                                <img src="../resources/cube/portal-icon.png" alt="icône globe" width="40" height="40">
+                                <img src="../resources/cube/hub-icon.png" alt="icône hub" width="40" height="40">
+                                <img src="../resources/cube/event-icon.png" alt="icône calendrier" width="40" height="40">
                             </div>
-                            
-                            <div class="typography-item">
-                                <div class="typography-title">H2 – Source Sans Pro, 700, 20px :</div>
-                                <div class="typography-example h2">Heading 2 Example</div>
-                            </div>
-                            
-                            <div class="typography-item">
-                                <div class="typography-title">Body – Source Sans Pro, 400, 16px :</div>
-                                <div class="typography-example body">This is an example of body text using Source Sans Pro font.</div>
-                            </div>
-                        </div>
-            
-                        <h4>Icons :</h4>
-                        <div class="icons-container">
-                            <img src="../resources/cube/newspaper-icon.png" alt="Newspaper icon" width="40" height="40">
-                            <img src="../resources/cube/rocket-icon.png" alt="Rocket icon" width="40" height="40">
-                            <img src="../resources/cube/education-icon.png" alt="Education icon" width="40" height="40">
-                            <img src="../resources/cube/code-icon.png" alt="Code icon" width="40" height="40">
-                            <img src="../resources/cube/portal-icon.png" alt="Portal icon" width="40" height="40">
-                            <img src="../resources/cube/hub-icon.png" alt="Hub icon" width="40" height="40">
-                            <img src="../resources/cube/event-icon.png" alt="Event icon" width="40" height="40">
-                        </div>    
-                        
-                    <h3>Prototyping and iterative testing:</h3>
+                </div>
+
+                <div class="container">
+                    <h3>Prototypes et tests itératifs</h3>
 
                     <div class="accordion-item">
                         <div class="accordion-header">
-                            First iteration
+                            Première itération
                             <div class="accordion-icon"></div></div>
                         <div class="accordion-content">
-                            <p>We then built a first prototype with the aim of submitting it to user tests to measure the satisfaction level with this first version and note changes to be made during a second iteration.</p>
-                            <img src="../resources/cube/cube-prototype-1.gif" alt="Prototype V1">
+                            <p>J'ai ensuite construit un premier prototype dans l’optique de le soumettre à des tests utilisateurs pour mesurer le niveau de satisfaction sur cette première version et prendre note des changements à apporter au cours d’une seconde itération :</p>
+                            <img src="../resources/cube/cube-prototype-1.gif" alt="" />
                              
-                            <p><b>User tests feedback</b>:</p>
+                            <p><b>Retours obtenus lors des tests utilisateurs</b> :</p>
                             <ul>
-                                <li>A bulky banner,</li>
-                                <li>A bulky 'En ce moment' section, giving a static impression and whose interest merges with the 'Zoom sur...' section.</li>
-                                <li>Ambiguous subject headings in the 'Zoom sur...' section,</li>
-                                <li>A 'Les plus consultés' section that is bulky, has an outdated design and gives a static impression,</li>
-                                <li>A 'Vos espaces utiles' section that is not visible due to the hidden scroll, and causes too sharp a graphic break with the upper part of the page,</li>
-                                <li>A 'Qu'est-ce que CUBE?' section that is too dense and not visible enough due to the hidden scroll.</li>
+                                <li>Une bannière encombrante,</li>
+                                <li>Une section 'En ce moment' encombrante, donnant une impression statique et dont l'intérêt se confond avec la section 'Zoom sur...'.</li>
+                                <li>Des intitulés de sujets peu évocateurs dans la section 'Zoom sur...',</li>
+                                <li>Une section 'Les plus consultés' encombrante, au design vieillot et donnant une impression statique,</li>
+                                <li>Une section 'Vos outils et espaces utiles' peu visible à cause du scroll caché, et provoquant une rupture graphique trop brutale avec la partie supérieure de la page,</li>
+                                <li>Une section 'Qu'est-ce que CUBE ?' trop dense et pas assez visible à cause du scroll caché.</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="accordion-item">
                         <div class="accordion-header">
-                            Second iteration
+                            Deuxième itération
                             <div class="accordion-icon"></div></div>
                         <div class="accordion-content">
-                            <p>Feedback from user tests on the first version of the prototype enabled me to submit a second version:</p>
-                            <img src="../resources/cube/cube-prototype-2.gif" alt="Prototype V2">
+                            <p>Les retours obtenus lors des tests utilisateurs au sujet de la première version du prototype m'a permis d'en proposer une seconde version :</p>
+                            <img src="../resources/cube/cube-prototype-2.gif" alt="" />
                              
-                            <p><b>User tests feedback</b> :</p>
+                            <p><b>Retours obtenus lors des tests utilisateurs</b> :</p>
                             <ul>
-                                <li>Ambiguous icons on the banner,</li>
-                                <li>Slides scrolling too fast in the carousel of the 'En ce moment' section,</li>
-                                <li>Unclear subject headings in the 'Zoom sur...' section,</li>
-                                <li>Misunderstanding of trend indicators in the 'Les plus consultés' section,</li>
-                                <li>Confusing phrasing in the 'Qu'est-ce que CUBE?' section.</li>
+                                <li>Des icônes équivoques sur la bannière,</li>
+                                <li>Un défilement des slides trop rapide dans le carousel de la section 'En ce moment',</li>
+                                <li>Des intitulés de sujets peu évocateurs dans la section 'Zoom sur...',</li>
+                                <li>Une mauvaise compréhension des indicateurs de tendance dans la section 'Les plus consultés',</li>
+                                <li>Un phrasing troublant dans la section 'Qu'est-ce que CUBE ?'.</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="accordion-item">
                         <div class="accordion-header">
-                            Third iteration
+                            Troisième itération
                             <div class="accordion-icon"></div></div>
                         <div class="accordion-content">
-                            <p>Feedback from user tests on the second version of the prototype led me to propose a third and final version:</p>
-                            <img src="../resources/cube/cube-prototype-3.gif" alt="Prototype V3">
+                            <p>Les retours obtenus lors des tests utilisateurs au sujet de la seconde version du prototype m'a permis d'en proposer une troisième et ultime version :</p>
+                            <img src="../resources/cube/cube-prototype-3.gif" alt="" />
                              
-                            <p><b>Improvements based on feedback from the latest user tests</b> :</p>
+                            <p><b>Améliorations apportées selon les retours obtenus lors des derniers tests utilisateurs</b> :</p>
                             <ul>
-                                <li>Migration of banner buttons to the footer, in text form (‘CUBE Community’ and ‘Contact us’).</li>
-                                <li>Slides in the carousel slowed down, bullets replaced by arrows to allow users to select slides themselves, ‘YOU CHANGE’ button renamed to ‘NEWSLETTER CFT’.</li>
+                                <li>Migration des boutons de la bannière dans le footer, sous forme de texte ('Communauté CUBE' et 'Contactez-nous').</li>
+                                <li>Ralentissement <del></del> la vitesse de défilement des slides dans le carousel, remplacement des puces par des flèches pour permettre aux utilisateurs de sélectionner les slides eux-mêmes, renommage du bouton ‘YOU CHANGE’ en ‘NEWSLETTER CFT’.</li>
                                 <li>Simplification des intitulés des tuiles au maximum, ajout des descriptions au survol des tuiles pour plus de transparence et de clarté sur le contenu qui se trouve derrière chacune d’elle.</li>
-                                <li>Tile titles simplified as far as possible, with hover descriptions added for greater transparency and clarity over the content behind each tile.</li>
-                                <li>Trend indicators removed, and descriptions added to hover over each entry for greater transparency and clarity on the content behind each one.</li>
-                                <li>CUBE description reworded to be clearer and less ambiguous.</li>
+                                <li>Suppression des indicateurs de tendances, apparitiond d'une description au survol de chaque entrée pour plus de transparence et de clarté sur le contenu qui se trouve derrière chacune d’elle.</li>
+                                <li>Reformulation de la description de CUBE de manière plus claire et moins ambigüe.</li>
                             </ul>
                         </div>
                         </div>
 
-                        <img src="../resources/cube/cube-final-prototype.gif" alt="Final prototype">
-
+                        <img src="../resources/cube/cube-final-prototype.gif" alt="" />
             </section>
-                    
-                <section class="case-phase" id="test">
-                    <div class="case-study-phase">
-                        <h2>🚀<br>Results</h2>
+
+            <section class="results">
+                <div class="title-banner">
+                    <h2>🚀<br>Résultats obtenus</h2>
+                </div>
+                <p><b>Après la mise en production de la nouvelle page d'accueil :</b> :</p>
+                <ul>
+                    <li>92% des utilisateurs trouvent le design moderne et attrayant, clair et intuitif,</li>
+                    <li>100% des utilisateurs trouvent le contenu poussé sur la page d'accueil pertinent,</li>
+                    <li>88% des utilisateurs trouvent que la nouvelle page d'accueil de CUBE est une bonne vitrine interne pour CFT.</li>
+                </ul>
+            </section>
+
+                <section class="featured-work">
+                    <div class="title-banner">
+                        <h2>🚧<br>Autres réalisations sur le produit</h2>
                     </div>
 
-                    <p><b>After the new home page went live:</b></p>
-                    <ul>
-                        <li>92% of users find the design modern and attractive, clear and intuitive,</li>
-                        <li>100% of users find the content pushed onto the homepage relevant,</li>
-                        <li>88% of users find the new CUBE homepage a good internal showcase for CFT.</li>
-                    </ul>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Refonte du gabarit des pages wiki du portail
+                            <div class="accordion-icon"></div></div>
+                        <div class="accordion-content">
+                            <p><b>Objectif</b> : <em>“Faire évoluer l’identité visuelle de CUBE en recherchant la clarté et la sobriété afin de favoriser son adoption et améliorer l’expérience de tous sur la plate-forme.”</em></p>
+                            <p><b>Méthodes</b> : 3 phases d’entretiens utilisateurs (avec 31 utilisateurs) :</p>
+                            <ol>
+                                <li><b>Phase d’idéation</b> : Questions ouvertes, reccueil de leurs impressions sur les pages en l’état production de maquettes low-fi </li>
+                                <li><b>Phase de suggestion</b> : Présentation des maquettes aux utilisateurs, démarche de rercherche de solutions, production de prototype medium/high-fidelity</li>
+                                <li><b>Phase de test</b> : Présentation du prototype aux utlisateurs, démarche de validation des solutions par les utilisateurs.</li>
+                            </ol>
+                            <p><b>Solutions</b> :</p>
+                            <ul>
+                                <li>Intégration d’onglets au sein des pages pour réduire le scroll et alléger la charge cognitive des utilisateurs en garantissant une meilleure structure de l’information,</li>
+                                <li>Révision des actions cliquables textuelles pour limiter les éléments de texte, les différentier du corps de texte et alléger la charge cognitive des utilisateurs,</li>
+                                <li>Redéfinition des styles de titre pour assurer une meilleure lisibilité de l’info et faire un pas vers la charte Groupe.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Refonte de l'arborescence du portail
+                            <div class="accordion-icon"></div></div>
+                        <div class="accordion-content">
+                            <p><b>Objectif</b> : <em>“Mieux guider les utilisateurs sur le portail à travers une navigation claire en réorganisant les entrées de la barre de navigation et en proposant d’autres méthodes de navigation.”</em></p>
+                            <p><b>Méthodes</b> :</p>
+                            <ol>
+                                <li><b>Ateliers de card sorting</b> : Faire coopérer les utilisateurs pour converger sur la catégorisation des pages.</li>
+                                <li><b>Ateliers de tree testing</b> : Pour valider ou challenger la nouvelle arborescence.</li>
+                            </ol>
+                            <p><b>Solutions</b> :</p>
+                            <ul>
+                                <li>Une barre de navigation limitée à des grandes thématiques plutôt qu’une liste exhaustive des pages existantes,</li>
+                                <li>Des intitulés plus clairs, permettant une catégorisation plus percutante des sujets, et donc une recherche d’informations plus intuitive sur le portail.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Refonte du parcours d’ajout de document @ contributeurs
+                            <div class="accordion-icon"></div></div>
+                        <div class="accordion-content">
+                            <p><b>Objectif</b> : <em>« Simplifier la publication en proposant un parcours de publication plus intuitif. »</em></p>
+                            <p><b>Comment ?</b> :</p>
+                            <ul>
+                                <li>En allégeant le formulaire d’ajout d’un document,</li>
+                                <li>En modernisant la pop-up d’erreur ou de confirmation d’ajout d’un document.</li>
+                            </ul>
+                            <p><b>Méthodes</b> : 2 phases de tests (avec 14 utilisateurs) :</p>
+                            <ol>
+                                <li><b>Tests utilisateurs</b> : Présentation des maquettes V1, ajustement des maquettes à partir des retours obtenus.</li>
+                                <li><b>Tests utilisateurs</b> : Présentation des maquettes V2, finalisation des maquettes à partir des retours obtenus.</li>
+                            </ol>
+                            <p><b>Feedbacks</b> :</p>
+                            <ul>
+                                <li><em>« C'est bien mieux de n'avoir qu'un champ pour le titre et le nom. »</em></li>
+                                <li><em>«  C'est super d'avoir toutes les infos nécessaires en cas d'erreur. »</em></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            Refonte du composant dédié à la visualisation des documents @ visiteurs
+                            <div class="accordion-icon"></div></div>
+                        <div class="accordion-content">
+                            <p><b>Objectif</b> : <em>« Simplifier l’accès aux documents en proposant un mode d’affichage plus intuitif. »</em></p>
+                            <p><b>Comment ?</b> :</p>
+                            <ul>
+                                <li>En rassemblant tous les documents d’une page sans distinction de langue,</li>
+                                <li>En précisant la langue sur le document,</li>
+                                <li>En identifiant un tri par défaut et en ajoutant un système de filtre (par langue, par audience, par ordre alphabétique…).</li>
+                            </ul>
+                            <p><b>Méthodes</b> : 2 phases de tests (avec 14 utilisateurs) :</p>
+                            <ol>
+                                <li><b>Tests utilisateurs</b> : Présentation des maquettes V1, ajustement des maquettes à partir des retours obtenus.</li>
+                                <li><b>Tests utilisateurs</b> : Présentation des maquettes V2, finalisation des maquettes à partir des retours obtenus.</li>
+                            </ol>
+                            <p><b>Feedbacks</b> :</p>
+                            <ul>
+                                <li><em>« C'est super. Plus agréable et intuitif. »</em></li>
+                                <li><em>« Il y a moins de boutons, c'est moins lourd, c'est encore mieux, c'est parfait. »</em></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    </div>
                 </section>
-                
-                
-                        <section class="case-phase" id="other-works">
-                            <div class="case-study-phase">
-                                <h2>🚧<br>Other UX projects on this product</h2>
-                            </div>
+        
+    </main>
 
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <p>Redesigning wiki page templates</p>
-                                    <div class="accordion-icon"></div></div>
-                                <div class="accordion-content">
-                                    <p><b>Objective</b>: <em>Improve CUBE's visual identity, aiming for clarity and sobriety to encourage adoption and enhance the experience of the platform for all.”</em></p>
-                                    <a target="_blank" href="../resources/cube/whiteboard.png"><img src="../resources/cube/whiteboard.png"></a>
-                                    <p><b>Methods</b>: 3 rounds of interviews (with 31 users) :</p>
-                                    <ol>
-                                        <li><b>Ideation</b>: Open-ended questions, collection of their impressions of the existing wiki pages, production of low-fi wireframes.</li>
-                                        <li><b>Suggestion</b>: Presentation of wireframes to users, solution-finding process, production of medium/high-fidelity prototypes.</li>
-                                        <li><b>Test</b>: Presentation of prototype to users, validation of solutions by users.</li>
-                                    </ol>
-                                    <p><b>Solutions</b>:</p>
-                                    <ul>
-                                        <li>Integration of tabs within pages to reduce scrolling and lighten users' cognitive load by guaranteeing better information architecture,</li>
-                                        <li>Revision of clickable text actions to limit text elements, better differentiate them from body text and lighten users' cognitive load,</li>
-                                        <li>Redefinition of title styles to ensure better readability of information and take a step towards the Group charter.</li>
-                                    </ul>
-                                </div>
-                            </div>
-        
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <p>Redesign of the portal's tree structure</p>
-                                    <div class="accordion-icon"></div></div>
-                                <div class="accordion-content">
-                                    <p><b>Objective</b>: <em>“Better guide users through the portal with clear navigation by reorganizing the entries in the navigation bar and offering alternative navigation methods.”</em></p>
-                                    <p><b>Methods</b>:</p>
-                                    <ol>
-                                        <li><b>Card sorting workshop</b>: Get users to cooperate on page categorization.</li>
-                                        <li><b>Tree testing workshop</b>: Validate or challenge the new tree structure.</li>
-                                    </ol>
-                                    <p><b>Solutions</b>:</p>
-                                    <ul>
-                                        <li>A navigation bar limited to broad themes rather than an exhaustive list of existing pages,</li>
-                                        <li>Clearer headings, enabling more effective categorization of subjects, and thus a more intuitive search for information on the portal.</li>
-                                    </ul>
-                                </div>
-                            </div>
-        
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <p>Redesign of the document publication journey @ contributors</p>
-                                    <div class="accordion-icon"></div></div>
-                                <div class="accordion-content">
-                                    <p><b>Objective</b>: <em>"Simplify document publication by offering a more intuitive user journey."</em></p>
-                                    <p><b>How?</b>:</p>
-                                    <ul>
-                                        <li>By lightening the 'add a document' form,</li>
-                                        <li>By modernizing the error or confirmation pop-up for adding a document.</li>
-                                    </ul>
-                                    <p><b>Methods</b>: 2 phases de tests (avec 14 utilisateurs) :</p>
-                                    <ol>
-                                        <li><b>User tests</b>: Presentation of wireframe, adjustment of wireframes based on feedback.</li>
-                                        <li><b>User tests</b>: Presentation of prototype, polishing of prototypes based on feedback.</li>
-                                    </ol>
-                                    <p><b>Feedbacks</b>:</p>
-                                    <ul>
-                                        <li><em>"It's much better to have just one field for title and name."</em></li>
-                                        <li><em>"It's great to have all the information you need in case you make a mistake."</em></li>
-                                    </ul>
-                                </div>
-                            </div>
-        
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <p>Redesign of the document display component @ visitors</p>
-                                    <div class="accordion-icon"></div></div>
-                                <div class="accordion-content">
-                                    <p><b>Objective</b>: <em>"Simplify access to documents by offering a more intuitive display mode."</em></p>
-                                    <p><b>How?</b>:</p>
-                                    <ul>
-                                        <li>By gathering all the documents on one page without distinction of language,</li>
-                                        <li>By specifying the language on the document,</li>
-                                        <li>By identifying a default sort and adding a filter system (by language, by audience, by alphabetical order...).</li>
-                                    </ul>
-                                    <p><b>Methods</b>: 2 phases de tests (avec 14 utilisateurs) :</p>
-                                    <ol>
-                                        <li><b>User tests</b>: Presentation of wireframe, adjustment of wireframes based on feedback.</li>
-                                        <li><b>User tests</b>: Presentation of prototype, polishing of prototypes based on feedback.</li>
-                                    </ol>
-                                    <p><b>Feedbacks</b>:</p>
-                                    <ul>
-                                        <li><em>"It's great. More pleasant and intuitive."</em></li>
-                                        <li><em>"There are fewer buttons, it's less heavy, it's even better, it's perfect."</em></li>
-                                    </ul>
-                                </div>
-                            </div>
-        
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <p>Creation of an analytics tool (dashboard) @ team</p>
-                                    <div class="accordion-icon"></div></div>
-                                <div class="accordion-content">
-                                    - Coming soon -
-                                </div>
-                            </div>
-        
-                        </section>
-        
-                </div>
+    <a href="#top" class="back-to-top">↑</a>
 
-                
-            </main>
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-content">
+                <p><b>Marina Lay</b></p>
+                <p>UX/UI Designer</p>
+                <p>📍 : Marcq-en-Barœul, Nord (59)</p>
+            </div>
+            <div class="footer-content">
+                <p><b>Contact :</b></p>
+                <p><a href="https://www.linkedin.com/in/marinalay/">LinkedIn</a></p>
+                <p>📧 : <a href="mailto:marina.lay92@gmail.com">marina.lay92@gmail.com</a></p>
+                <p>📱 : +33 6 04 05 69 64</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Marina Lay. Tous droits réservés.</p>
+        </div>
+    </footer>
 
-            <a href="#top" class="back-to-top">↑</a>
-
-        
-            <footer id="footer">
-                <div class="footer-content">
-                    <h2>Thank you for stopping by!</h2>
-                    <p>📞 +33 6 04 05 69 64</p>
-                    <p>📧 <a href="mailto:marina.lay92@gmail.com">marina.lay92@gmail.com</a></p>
-                    <p><a href="https://www.linkedin.com/in/marinalay/" target="_blank">LinkedIn</a></p>
-                </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2025 Marina Lay. All rights reserved.</p>
-                </div>
-            </footer>
-        
-        </body>
-        </html>        
+    <script src="../js/script.js"></script>   
+</body>
+</html>
