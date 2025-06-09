@@ -57,12 +57,7 @@
             </section>
 
 
-            <section class="context">
-                <div class="title-banner">
-                    <h2>🎯<br>Contexte et objectifs</h2>
-                </div>                
-                
-                <h3>Introduction</h3>
+            
                 <p>Organiser les repas de la semaine, faire les courses, éviter le gaspillage, manger équilibré, varier les plats… autant de micro-décisions qui, répétées jour après jour, finissent par peser lourd dans la charge mentale domestique.</p>
                 <p>C’est en partant de ce constat vécu au quotidien dans mon propre foyer que j’ai initié ce projet personnel : concevoir une application qui automatise au maximum la gestion des repas pour simplifier la vie des utilisateurs.</p>
                 
@@ -79,8 +74,7 @@
 
                         </div>
                     </div>
-                </div>
-            </section>
+
 
             <section class="ux-research">
                 <div class="title-banner">
@@ -144,21 +138,11 @@
                             <li><b>Style de vie</b> : Très occupé, journées chargées</li>
                             <li><b>Objectifs alimentaires</b> : Manger de saison, réduire les plats industriels et le fast-food</li>
                             <li><b>Contraintes</b> : Peu de temps, manque d’idées</li>
-                            <li><b>Comportements</b> : Achète souvent à la supérette du coin ou commande à emporter, préfère des plats rapides à cuisiner car manque de temps</li>
+                            <li><b>Comportements</b> : Achète souvent à la supérette du coin ou commande à emporter, préfère des plats de saison et rapides à cuisiner car manque de temps</li>
                             <li><b>Irritants</b> : Fatigué de devoir tout le temps réfléchir à quoi manger, se lasse vite de cuisiner et manger toujours les mêmes plats</li>
                         </ul>
                     </div>
                 </div>
-                    <div class="callout">
-                        <div class="callout-content">
-                            <p class="card-title">Opportunités pour l'appli :</b></p>
-                            <ul>
-                                <li>Génération automatique de menus adaptés à son temps disponible</li>
-                                <li>Mise en avant de plats de saison simples et nutritifs</li>
-                                <li>Liste de courses collaborative et synchronisée avec les repas</li>
-                            </ul>
-                        </div>
-                    </div>
                 
                 <h3>Benchmark UX</h3>
                 
@@ -291,6 +275,60 @@
                         </tbody>
                     </table>
                 </div>
+
+                <h3>Recommandations UX</h3>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <p>Automatisation et flexibilité</p>
+                        <div class="accordion-icon"></div></div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Automatiser tout ce qui est possible (génération de repas + liste de courses) tout en permettant un maximum de flexibilité à l’utilisateur (modifications manuelles et automatiques)</li>
+                            <li>Permettre à l’utilisateur d’indiquer ses jours d’absence pour que ces jours soient ignorés dans la génération de planning de repas</li>
+                            <li>Permettre à l’utilisateur d’indiquer les jours où le planning de repas n’a pas été respecté, pour que le planning soit décalé de X jours</li>
+                            <li>Saisonnalité : Privilégier les recettes de saison dans les suggestions + mise en avant des produits de saison dans le catalogue de recettes</li>
+                            <li>Changer automatiquement les quantités et les ingrédients dans la liste de courses si des modifications aux repas sont apportées (édition d'une recette, changemen du nombre de portions...)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <p>Personnalisation</p>
+                        <div class="accordion-icon"></div></div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Onboarding : nombre de personnes dans le foyer, nombre de portions par repas (restes ?), allergies alimentaires (ingrédients complètement bannis des suggestions), intolérances alimentaires (limiter ou bannir complètement des suggestions ?), aversions (limiter ou bannir complètement des suggestions ?), préférences (ingrédients, types de cuisine, etc. pour que des suggestions correspondantes soient plus souvent poussées à l’utilisateur)</li>
+                            <li>Intolérances et aversions indiquées par des tags de couleurs lorsque des ingrédients apparaissent dans des suggestions</li>
+                            <li>J’aime (la recette sera poussée à l’utilisateur dans les suggestions) / J’aime pas (la recette ne sera plus poussée à l’utilisateur dans les suggestions)</li>
+                            <li>Permettre à l’utilisateur d’éditer une recette existante (ingrédients, quantités, instructions...)</li>
+                            <li>Permettre à l’utilisateur de créer une recette (manuellement ou en en important une depuis une URL)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <p>Collaboration</p>
+                        <div class="accordion-icon"></div></div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Permettre à l’utilisateur d’inviter une personne de son foyer (viewer ou éditeur) pour qu’ils puissent partager les mêmes informations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <p>Centralisation</p>
+                        <div class="accordion-icon"></div></div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Proposer de compléter la liste de courses par des produits récurrents qui ne font pas partie des repas (fruits, apéro, produits ménagers, etc.) pour que toutes les courses soient réunies sur un seul espace</li>
+                        </ul>
+                    </div>
+                </div>
             
 
             </section>
@@ -306,6 +344,9 @@
 
                 <p><b>Planifier ses repas pour la semaine et obtenir la liste de courses correspondante :</b></p>
                 <a target="_blank" href="resources/cookpal/cookpal-user-flow-2.png"><img src="resources/cookpal/cookpal-user-flow-2.png"></a>
+
+                <p><b>Ajouter une recette à une ou des collection(s) :</b></p>
+                <a target="_blank" href="resources/cookpal/cookpal-user-flow-3.png"><img src="resources/cookpal/cookpal-user-flow-3.png"></a>
 
                     <div class="callout">
                         <p><b>🚧 Work still in progress! 🚧</b></p> 
