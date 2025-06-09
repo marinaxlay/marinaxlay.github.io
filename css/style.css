@@ -1109,14 +1109,22 @@ footer a {
 .idea-card {
     border-radius: var(--border-radius-lg);
     padding: var(--spacing-md);
-    position: relative;
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
 }
 
 .card-title {
     font-weight: bold;
+    text-transform: uppercase;    
+    letter-spacing: 1px;
+}
+
+.card-title.green {
     color:var(--primary-color); 
+}
+
+.card-title.red {
+    color:var(--accent-color); 
 }
 
 .idea-card.green {
@@ -1129,20 +1137,6 @@ footer a {
 
 .idea-card.red {
     background-color: rgba(255, 115, 115, 0.1); 
-}
-
-.idea-number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-    color: white;
-    font-weight: bold;
-    margin-right: var(--spacing-sm);
-    flex-shrink: 0;
 }
 
 .idea-content {
@@ -1615,11 +1609,13 @@ footer a {
 
 .persona-container {
     border: solid 1px var(--primary-color);
-    border-radius: var(--border-radius-lg);
-    padding: var(--spacing-md);
-    display: flex;
-    flex-direction: row;
-    gap: var(--spacing-sm);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md) var(--spacing-md) 0 var(--spacing-md);
+}
+
+.persona-top {
+
+    gap: var(--spacing-md);
 }
 
 @media (max-width: 900px) {
