@@ -425,7 +425,7 @@ footer a {
 
 .hero-homepage, .hero {
     background-color: var(--primary-color);
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-md) 0;
     margin-bottom: var(--spacing-lg);
 }
 
@@ -579,7 +579,7 @@ footer a {
     }
 
     .hero-homepage .intro-text {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     .hero-homepage .button {
@@ -685,12 +685,12 @@ footer a {
 
 .service-card {
     border-radius: var(--border-radius-lg);
-    border: solid 1px var(--primary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
     padding: var(--spacing-md);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .service-icon {
@@ -1273,14 +1273,14 @@ footer a {
 
 /* About page specific styles */
 .about-content {
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
 }
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: var(--spacing-xl);
-    margin-bottom: var(--spacing-lg);
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
 }
 
 .about-skills {
@@ -1614,8 +1614,9 @@ footer a {
 }
 
 .persona-top {
-
     gap: var(--spacing-md);
+    display: flex;
+    flex-direction: row;
 }
 
 @media (max-width: 900px) {
@@ -1624,10 +1625,10 @@ footer a {
         gap: var(--spacing-sm);
     }
 
-    .persona-container img {
-        width: 50%;
-        height: 50%;
+    .persona-top img {
+        object-fit: scale-down;
     }
+
 }
 
 
