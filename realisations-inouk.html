@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inouk | Marina Lay • UX/UI Designer</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/beautify.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a id="top"></a>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="../resources/logo.svg" alt="Marina Lay logo"></a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="#footer" class="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="case-study beautify">
+        <div class="container">
+
+            <section class="case-study-header">
+                <div class="container">
+                    <div class="case-study-layout">
+                        <div class="case-study-image">
+                            <img src="resources/inouk/inouk-header.png" alt="" />
+                        </div>
+                        <div class="project-details">
+                            <h1>Inouk Challenge</h1>
+                            <p class="intro-text">Identification de gains rapides UX/UI pour une application mobile.</p>                            
+                            
+                            <p><b><span class="highlight">Catégorie :</span></b> Projet associatif</p>
+                            <p><b><span class="highlight">Période :</span></b> Juin 2025</p>
+                            <p><b><span class="highlight">Format :</span></b> Mobile</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="context">
+                <div class="title-banner">
+                    <h2>🎯 Contexte et objectifs</h2>
+                </div>
+
+                <p>INOUK est une jeune association dont la mission est de transformer le temps passé sur son écran en temps disponible pour se reconnecter à ce qui nous entoure, aux autres et à soi, à travers un challenge en équipe et des défis.</p>
+                <p>J’ai intégré l’association en juin 2025 en tant que UX/UI Designer bénévole alors que la V3 de l’application était déjà quasiment prête à être déployée et testée auprès d’utilisateurs sur une période de deux semaines. J’ai donc dans un premier temps apporté mon expertise UX/UI afin d’identifier des gains rapides, faciles à mettre en place par le développeur dans un laps de temps réduit.</p>
+
+            </section>
+
+            <section class="ux-research">
+                <div class="title-banner">
+                    <h2>🔍 Identification de quick wins</h2>
+                </div>
+
+                <h3>Ecran "Challenge"</h3>
+
+                <a target="_blank" href="resources/inouk/inouk-challenge.png"><img src="resources/inouk/inouk-challenge.png" alt="" /></a>
+
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Catégorie</th>
+                                <th>Problème identifié</th>
+                                <th>Quick win</th>
+                                <th>Impact utilisateur</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Microcopie</td>
+                                <td>“🔗 Lien vers la discussion de tribu” : icône lien trop générique, pas de CTA clair.</td>
+                                <td><b>Renommer le bouton en “💬 Accéder à la discussion de tribu”.</b></td>
+                                <td>Plus de clarté.</td>
+                            </tr>
+                            <tr>
+                                <td>Accessibilité</td>
+                                <td>Contraste de la snackbar insuffisant (1:61).</td>
+                                <td><b>Mettre le texte de la snackbar en #333333 (contraste 7:7).</b></td>
+                                <td>Meilleure lisibilité.</td>
+                            </tr>
+                            <tr>
+                                <td>UI / Look & feel</td>
+                                <td>Snackbar chevauchant la barre de navigation, paralysant l'utilisateur dans sa navigation.</td>
+                                <td><b>Remonter la snackbar au-dessus de la barre de navigation.</b></td>
+                                <td>L'utilisateur peut poursuivre sa navigation, même si la snackbar est affichée.</td>
+                            </tr>
+                            <tr>
+                                <td>UI / Look & feel</td>
+                                <td>Marges trop étroites, sentiment étouffant, difficulté à distinguer les différentes sections de l'écran.</td>
+                                <td><b>Augmenter les margins (24px) et gaps (16px)</b></td>
+                                <td>Meilleure utilisation du blanc : l’utilisateur distingue mieux les différentes sections de l'écran, l’interface respire davantage.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Ecran "Défi"</h3>
+
+                <a target="_blank" href="resources/inouk/inouk-defis.png"><img src="resources/inouk/inouk-defis.png" alt="" /></a>
+
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Catégorie</th>
+                                <th>Problème identifié</th>
+                                <th>Quick win</th>
+                                <th>Impact utilisateur</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Microcopie</td>
+                                <td>Bouton “Valider le défi” : Formulation impersonnelle.</td>
+                                <td><b>Renommer en “J’ai relevé ce défi !”.</b></td>
+                                <td>Sentiment gratifiant pour l’utilisateur, qui se sent encouragé à poursuivre ses efforts.</td>
+                            </tr>
+                            <tr>
+                                <td>Microcopie</td>
+                                <td>“Réalisation” : propriété pas claire.</td>
+                                <td><b>Renommer en "Type de défi".</b></td>
+                                <td>Plus de clarté.</td>
+                            </tr>
+                            <tr>
+                                <td>Feedback utilisateur</td>
+                                <td>Aucun feedback utilisateur (textuel et encourageant) après avoir valider un défi.</td>
+                                <td><b>Ajouter une pop-up “Bien joué ! Tu remportes 3 points.” lorsque l’utilisateur valide un défi.</b></td>
+                                <td>Sentiment gratifiant pour l’utilisateur, qui se sent encouragé à poursuivre ses efforts.</td>
+                            </tr>
+                            <tr>
+                                <td>Accessibilité</td>
+                                <td>Contraste du titre sur fond avec image insuffisant, rendant la lecture difficile.</td>
+                                <td><b>Rajouter un filtre noir en gradient en bas de l’image header + augmenter la graisse du titre.</b></td>
+                                <td>Meilleure lisibilité.</td>
+                            </tr>
+                            <tr>
+                                <td>Accessibilité</td>
+                                <td>Le texte et les icônes de la barre de notifications sont en noir sur fond sombre ou en dark mode, rendant leur lecture difficile.</td>
+                                <td><b>Afficher le texte et les icônes de la barre de notifications en blanc sur fond sombre ou lorsque l’appli est en dark mode.</b></td>
+                                <td>Meilleure lisibilité.</td>
+                            </tr>
+                            <tr>
+                                <td>UI / Look & feel</td>
+                                <td>CTA pas suffisamment visible, se confond avec la barre de navigation du téléphone de part le gap réduit et les dimensions similaires entre les deux composants.</td>
+                                <td><b>Augmenter la taille du CTA et le gap avec la barre de navigation du téléphone.</b></td>
+                                <td>Le CTA est plus visible, l'utilisateur sait immédiatement où cliquer.</td>
+                            </tr>
+                            <tr>
+                                <td>UI / Look & feel</td>
+                                <td>Marges trop étroites, sentiment étouffant, difficulté à distinguer les différentes sections de l'écran.</td>
+                                <td><b>Augmenter les margins (24px) et gaps (16px).</b></td>
+                                <td>Meilleure utilisation du blanc : l’utilisateur distingue mieux les différentes sections de l'écran, l’interface respire davantage.</td>
+                            </tr>
+                            <tr>
+                                <td>UI / Look & feel</td>
+                                <td>Le composant "+ 03 pts" peut être pris pour un bouton cliquable de part sa similarité avec le CTA principal de l'écran.</td>
+                                <td><b>Réduire l'opacité du composant “+ 03 pts”.</b></td>
+                                <td>L'utilisateur comprend visuellement qu'il ne s'agit pas d'un bouton cliquable.</td>
+                            </tr>
+                            <tr>
+                                <td>UI / Look & feel</td>
+                                <td>Les informations sur le header sont trop étriquées.</td>
+                                <td><b>Ordonner les informations dans le header en colonne plutôt qu'en rang (row).</b></td>
+                                <td>Meilleure lisibilité, permet des titres plus longs.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+    </main>
+
+    <a href="#top" class="back-to-top">↑</a>
+
+
+   <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-content">
+                <h2>Merci de votre visite !</h2>
+
+                <p><b>Marina Lay</b></p>
+                <p>Product Designer UX/UI</p>
+                <p>📍 : Marcq-en-Barœul, Nord (59)</p>
+            </div>
+            <div class="footer-content">
+                <p><b>Contact :</b></p>
+                <p><a href="https://www.linkedin.com/in/marinalay/" target="_blank">LinkedIn</a></p>
+                <p>📧 : <a href="mailto:marina.lay92@gmail.com">marina.lay92@gmail.com</a></p>
+                <p>📱 : +33 6 04 05 69 64</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Marina Lay. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
