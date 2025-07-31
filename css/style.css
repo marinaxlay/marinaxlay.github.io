@@ -961,7 +961,8 @@ footer a {
 
 .project-card h3 {
     padding: 0 var(--spacing-sm);
-    margin-bottom: 1px;
+    margin-bottom: var(--spacing-xs);
+    margin-top: var(--spacing-xs);
     font-size: 1.5rem;
 }
 
