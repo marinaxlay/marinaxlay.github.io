@@ -133,7 +133,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 8px;
     border-bottom: #c5c5c5 solid 1px;
 }
 
@@ -187,6 +186,11 @@ header .container {
     color: var(--light-text);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     text-decoration: none;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
 }
 
 /* Keyboard accessibility enhancements */
