@@ -695,6 +695,7 @@ footer a {
     height: 100%;
     padding: var(--spacing-md);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--white);
 }
 
 .service-icon {
@@ -719,6 +720,7 @@ footer a {
     text-align: left;
     justify-content: center;
     flex: 1;
+    background-color: var(--white);
 }
 
 .service-card h3 {
