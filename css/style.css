@@ -8,12 +8,12 @@
     --accent-dark: #382E2A;
     --text-color: #333333;
     --text-light: #666666;
-    --background-light: #F1EEE9;
+    --background-light: #FFFDFA;
     --background-dark: #643843;
     --dark-bg: #222222;
     --light-text: #F7F7F7;
     --white: #FFFFFF;
-    --hover-button: #275143;
+    --hover-button: #3f7c68;
     
     /* Espacement */
     --spacing-xs: 0.5rem;
@@ -230,7 +230,7 @@ header .container {
 .bar {
     height: 3px;
     width: 100%;
-    background-color: var(--white);
+    background-color: var(--text-color);
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
 }
@@ -261,7 +261,7 @@ header .container {
         right: -100%;
         width: 100%;
         height: 100%;
-        background-color: var(--primary-color);
+        background-color: var(--primary-light);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -302,6 +302,7 @@ header .container {
         text-align: center;
         width: 100%; /* Full width */
         padding: var(--spacing-sm) var(--spacing-md);
+        color: var(--text-color);
     }
 }
 
@@ -903,9 +904,9 @@ footer a {
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-    border: solid 2px var(--accent-color);
+    border: solid 2px var(--secondary-color);
     .corner {
-        border: solid 2px var(--accent-color);
+        border: solid 2px var(--secondary-color);
     }
     .project-card h3, .project-year, .project-description, .project-platforms {
         text-decoration: none;
