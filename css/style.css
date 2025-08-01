@@ -55,11 +55,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
     margin-bottom: var(--spacing-sm);
+    line-height: normal;
 }
 
 h1 {
     font-family: 'Titan One', 'Arial', cursive; 
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 400;
 }
 
@@ -73,19 +74,19 @@ h2 {
 }
 
 h3 {
-    font-family: 'Staatliches', 'Palatino Linotype', sans-serif;
-    font-weight: 500;
-    font-size: 1.8rem;
-    margin-bottom: var(--spacing-xs);
-    margin-top: var(--spacing-md);
-    letter-spacing: 1px;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
 }
 
 h4 {
     font-family: 'Inter', 'Arial', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-color);
 }
 
 h5 {
@@ -103,7 +104,7 @@ p {
 
 ul, ol {
     margin-bottom: var(--spacing-sm);
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 li {
@@ -330,7 +331,8 @@ header .container {
 footer {
     background-color: var(--dark-bg);
     color: var(--light-text);
-    padding: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
     text-align: center;
     margin-top: var(--spacing-xl);
 }
@@ -347,7 +349,8 @@ footer h2 {
 .footer-content {
     display: flex;
     flex-direction: column;
-    padding: var(--spacing-sm);
+    padding-top: var(--spacing-sm);
+    padding-bottom: var(--spacing-sm);
     font-family: 'inter', 'arial', sans-serif;
     width: 100%;
     margin-bottom: var(--spacing-xs);
@@ -729,10 +732,6 @@ footer a {
 }
 
 .service-card h3 {
-    margin-bottom: var(--spacing-xs);
-    color: var(--primary-color);
-    letter-spacing: 1px;
-    font-size: 26px;
     text-align: center;
 }
 
@@ -967,7 +966,9 @@ footer a {
     padding: 0 var(--spacing-sm);
     margin-bottom: var(--spacing-xs);
     margin-top: var(--spacing-xs);
-    font-size: 1.5rem;
+    font-size: 24px;
+    font-family: 'Titan One', 'Arial', cursive; 
+    font-weight: 100;
 }
 
 .project-year {
@@ -1070,7 +1071,6 @@ footer a {
 }
 
 .case-study-header h1 {
-    font-family: 'Staatliches', 'Palatino Linotype', sans-serif;
     font-size: 56px;
     color: white;
     letter-spacing: 1px;
@@ -1079,14 +1079,15 @@ footer a {
 .title-banner {
     background-color: #F1EEDB;
     color: var(--text-color);
-    padding: var(--spacing-sm);
+    padding-top: var(--spacing-sm);
+    padding-bottom: var(--spacing-sm);
     width: 100vw; /* Ensure the background spans the full width of the viewport */
     margin-left: calc(-50vw + 50%); /* Center*/
     text-align: center;
     margin-top: var(--spacing-lg);
     margin-bottom: var(--spacing-md);
-    font-size: 24px;
-    font-family: 'Courier Prime', Courier, monospace;
+    font-size: 18px;
+    line-height: normal;
 }
 
 .title-banner h2 {
@@ -1170,15 +1171,14 @@ footer a {
 }
 
 .table {
-    width: 100%;
+    width: auto;
     border-collapse: collapse;
     margin-bottom: var(--spacing-md);
-    font-size: 16px;
 }
 
 .table th, .table td {
     border: 1px solid var(--text-light);
-    padding: var(--spacing-sm);
+    padding: var(--spacing-xs);
     text-align: left;
     vertical-align: top;
 }
