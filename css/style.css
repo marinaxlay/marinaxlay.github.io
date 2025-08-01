@@ -965,7 +965,7 @@ footer a {
 .project-card h3 {
     padding: 0 var(--spacing-sm);
     margin-bottom: var(--spacing-xs);
-    margin-top: var(--spacing-xs);
+    margin-top: var(--spacing-md);
     font-size: 24px;
     font-family: 'Titan One', 'Arial', cursive; 
     font-weight: 100;
