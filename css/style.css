@@ -1077,7 +1077,7 @@ footer a {
 }
 
 .title-banner {
-    background-color: #e4e0c8;
+    background-color: #F1EEDB;
     color: var(--text-color);
     padding: var(--spacing-md);
     width: 100vw; /* Ensure the background spans the full width of the viewport */
@@ -1184,8 +1184,8 @@ footer a {
 }
 
 .table th {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: var(--primary-light);
+    color: var(--text-color);
 }
 
 .table td {
