@@ -898,7 +898,7 @@ footer a {
     transition: all 0.3s ease;
     flex-direction: row;
     color: var(--text-color);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     display: grid;
     grid-template-columns: 0.3fr 0.7fr;
     align-items: center;
@@ -1063,7 +1063,7 @@ footer a {
 .case-study-header {
     background-color: var(--dark-bg);
     color: var(--light-text);
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-sm) 0;
     width: 100vw; 
     margin-left: calc(-50vw + 50%); /* Center*/
     margin-bottom: var(--spacing-lg);
@@ -1079,7 +1079,7 @@ footer a {
 .title-banner {
     background-color: #F1EEDB;
     color: var(--text-color);
-    padding: var(--spacing-md);
+    padding: var(--spacing-sm);
     width: 100vw; /* Ensure the background spans the full width of the viewport */
     margin-left: calc(-50vw + 50%); /* Center*/
     text-align: center;
@@ -1359,7 +1359,7 @@ footer a {
     }
 }
 
-@media (max-width: 758px) {
+@media (max-width: 858px) {
     .project-details h1 {
         font-size: 2.5rem;
     }
@@ -1380,7 +1380,7 @@ footer a {
     }
     .case-study-layout {
         grid-template-columns: 1fr;
-        gap: var(--spacing-sm);
+        gap: var(--spacing-xs);
     }
     .idea-grid {
         grid-template-columns: 1fr;
