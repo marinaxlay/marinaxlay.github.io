@@ -52,6 +52,13 @@ body {
     padding: 0 var(--spacing-md);
 }
 
+@media (max-width: 859px) {
+
+    .container {
+        max-width: 800px;
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
     margin-bottom: var(--spacing-sm);
