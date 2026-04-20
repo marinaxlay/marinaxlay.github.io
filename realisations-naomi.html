@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naomi | Marina Lay • UX/UI Designer</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a id="top"></a>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="resources/logo.svg" alt="Marina Lay - Retour à l'accueil"></a>
+            </div>
+            <div class="hamburger-menu" aria-label="menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="#footer" class="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="case-study naomi">
+        <div class="container">
+
+            <section class="case-study-header">
+                <div class="container">
+                    <div class="case-study-layout">
+                        <div class="case-study-image">
+                            <img src="resources/naomi/naomi-header.png" alt="" />
+                        </div>
+                        <div class="project-details">
+                            <h1>Naomi</h1>
+                            <p class="intro-text">Conception d'un nouveau parcours structurant pour Naomi, la solution B2C de l'alliance Valiuz.</p>
+                            
+                            <p><b><span class="highlight">Rôle :</span></b> UX/UI Designer</p>
+                            <p><b><span class="highlight">Période :</span></b> Décembre 2025</p>
+                            <p><b><span class="highlight">Mots-clés :</span></b> Flux utilisateurs ; Zoning ; Prototypes</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="context">
+                <div class="title-banner">
+                    <h2>🎯 Contexte et objectifs</h2>
+                </div>
+
+                <p>Naomi est une solution de fidélité et de connaissance client basée sur l’open-banking, qui permet à ses utilisateurices de gagner du cashback en récompensant automatiquement leurs dépenses dans une galaxie  d’enseignes partenaires (Leroy Merlin, Decathlon, Auchan...).</p>
+                
+                <div class="callout">
+                    <div class="callout-content">
+                        <p class="card-title">Enjeux business + Objectif :</p>
+                        <p>Le système en place ne permettant pas aux équipes de Naomi de détecter les produits achetés par les utilisateurs via leurs bons d’achats, il était impossible d’intégrer les annonceurs (Pampers, Coca-Cola, Fleury Michon...) dans le parcours. <b>L’objectif : raccrocher Naomi à l’objectif retail media de Valiuz en remplaçant les bons d’achats par des cartes de paiement in-app pour entrer dans le système de caisse et identifier les produits achetés par les utilisateurs.</b></p>
+                    </div>
+                </div>
+
+                <p><em></em><b>Contrainte : </b>La carte de paiement devra être mono-enseigne et non-rechargeable dans un premier temps. A terme, l’objectif sera de mettre en place une carte de paiement multi-enseignes et rechargeable. Ce MVP doit servir de première étape vers cette évolution à terme.</em></p>
+
+            </section>
+
+            <section class="ux-audit">
+                <div class="title-banner">
+                    <h2>🧠 Process UX</h2>
+                </div>
+                
+                <h3>Atelier UX</h3>
+
+                <p>Brainstorming workshop with the team (marketing, data, tech) :</p>
+
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Irritant utilisateur identifié</th>
+                                <th>Opportunité</th>
+                                <th>Objectif</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>Les utilisateurs ont du mal à retrouver leurs bons d’achats rapidement pour régler leurs achats en magasin, dû à la multiplicité des bons d’achats (codes barres) sur leur interface.</p>
+                                </td>
+                                <td>
+                                    <p>Introduction de la carte de paiement in-app à code barre unique selon les enseignes (→ implique de profonds bouleversements côté parcours utilisateur).</p>
+                                </td>
+                                <td>
+                                    <p>Améliorer le time on task (temps qu’il faut à un utilisateur pour retrouver le bon code barre à présenter en caisse de son magasin).</p>
+                                </td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <td>
+                                    <p>Les utilisateurs sont passifs (aucune action requise de leur part une fois un bon acheté puis utilisé) et peuvent ainsi ne pas ouvrir l’application des semaines durant.</p>
+                                </td>
+                                <td>
+                                    <p>Introduction de challenges en magasin pour permettre aux utilisateurs de remporter une chance de gagner des récompenses supplémentaires sur des produits éligibles selon les opérations lancées par les marques.</p>
+                                </td>
+                                <td>
+                                    <p>Améliorer le taux de rétention.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                               
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>User flows</h3>
+
+                <p></p>
+
+                    <a target="_blank" href="resources/naomi/naomi-user-flows.png"><img src="resources/naomi/naomi-user-flows.png" alt=""></a>
+
+
+                </section>
+
+            <section class="design-process">
+                <div class="title-banner">
+                    <div class="container">
+                        <h2>🎨 Conception</h2>
+                    </div>
+                </div>
+
+                <h3>Wireframes</h3>
+                <div class="case-img-container">
+                    <a target="_blank" href="resources/france_travail/france-travail-wireframe-top.jpg"><img src="resources/france_travail/france-travail-wireframe-top.jpg" alt="" width="550" height="550"></a>
+                    <a target="_blank" href="resources/france_travail/france-travail-wireframe-bottom.jpg"><img src="resources/france_travail/france-travail-wireframe-bottom.jpg" alt="" width="550" height="550"></a>
+                </div>
+            </section>
+    </main>
+
+    <a href="#top" class="back-to-top">↑</a>
+
+<footer id="footer">
+        <div class="footer-content">
+            <div class="footer-content">
+                <h2>Merci de votre visite !</h2>
+
+                <p><b>Marina Lay</b></p>
+                <p>Product Designer UX/UI</p>
+                <p>📍 : Marcq-en-Barœul, Nord (59)</p>
+            </div>
+            <div class="footer-content">
+                <p><b>Contact :</b></p>
+                <p><a href="https://www.linkedin.com/in/marinalay/" target="_blank">LinkedIn</a></p>
+                <p>📧 : <a href="mailto:marina.lay92@gmail.com">marina.lay92@gmail.com</a></p>
+                <p>📱 : +33 6 04 05 69 64</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Marina Lay. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

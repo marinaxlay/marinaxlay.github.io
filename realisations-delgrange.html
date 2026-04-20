@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delgrange Voyages | Marina Lay • UX/UI Designer</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a id="top"></a>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="resources/logo.svg" alt="Marina Lay - Retour à l'accueil"></a>
+            </div>
+            <div class="hamburger-menu" aria-label="menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="#footer" class="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="case-study delgrange">
+        <div class="container">
+
+            <section class="case-study-header">
+                <div class="container">
+                    <div class="case-study-layout">
+                        <div class="case-study-image">
+                            <img src="resources/delgrange/delgrange-header.png" alt="" />
+                        </div>
+                        <div class="project-details">
+                            <h1>Delgrange Voyages</h1>
+                            <p class="intro-text">Conception d'un MVP dans le cadre du développement d'une nouvelle offre dédiée aux CSE.</p>
+                            
+                            <p><b><span class="highlight">Rôle :</span></b> Product Designer</p>
+                            <p><b><span class="highlight">Période :</span></b> Mars - Avril 2026</p>
+                            <p><b><span class="highlight">Mots-clés :</span></b> Ateliers ; Flux utilisateurs ; Prototypes</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="context">
+                <div class="title-banner">
+                    <h2>🎯 Contexte et objectifs</h2>
+                </div>
+
+                <p><b>Delgrange Voyages</b> est un acteur historique du tourisme dans le nord de la France, spécialisé à la fois dans le transport et l’organisation de voyages. Sa marque <b>Jevoyageenautocar</b> est son site de vente en ligne dédié spécifiquement à son activité de voyagiste en autocar.</p>
+
+                <p>Dans le cadre du développement d’une nouvelle offre dédiée aux CSE, l’objectif était de concevoir un MVP permettant : </p>
+                <ul>
+                    <li>aux <b>salariés</b> d’accéder à des tarifs préférentiels négociés par leur CSE,</li>
+                    <li>aux <b>élus CSE</b> de gérer facilement les voyages et la facturation,</li>
+                    <li>aux <b>administrateurs Jevoyageenautocar</b> de paramétrer les voyages pour les CSE depuis le back-office.</li>
+                </ul>
+
+                
+                <div class="callout">
+                    <div class="callout-content">
+                        <p class="card-title">Enjeux business :</p>
+                        <ul>
+                            <li><b>Diversification des revenus</b> : Passer d’un modèle B2C à un modèle B2B/B2B2C. L’enjeu est de réduire la dépendance à la saisonnalité du grand public en captant des volumes de réservations groupées.</li>
+                            <li><b>Positionnement concurrentiel</b> : Digitaliser une offre CSE souvent gérée par téléphone ou PDF, pour offrir une autonomie de consultation aux élus de CSE et se démarquer par la modernité de l’outil.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ux-audit">
+                <div class="title-banner">
+                    <h2>🧠 Process UX</h2>
+                </div>
+                
+                <h3>Atelier UX</h3>
+                <p>Identification des cibles, leurs objectifs et leurs actions clés (fonctionnalités minimales requises pour lancer un MVP).</p>
+                
+                    <a target="_blank" href="resources/delgrange/delgrange-ux-workshop.png"><img src="resources/delgrange/delgrange-ux-workshop.png" alt="" /></a>
+
+                <h3>Atelier client</h3>
+                <p>Nous avons abordé les questions liées aux règles métier (tarification, remises, réservations, récompenses...) avec le directeur général et les équipes marketing.</p>
+                
+                    <a target="_blank" href="resources/delgrange/delgrange-atelier-client.png"><img src="resources/delgrange/delgrange-atelier-client.png" alt="" /></a>
+
+                <p><b>Les différents ateliers ont conduit à plusieurs décisions structurantes :</b></p>
+                <ul>
+                    <li>Création d’une landing page explicative présentant clairement les avantages réservés aux CSE et permettre leur inscription via un formulaire.</li>
+                    <li>Duplication des parcours salariés et admins CSE, avec l’ajout de fonctionnalités supplémentaires pour les admins CSE (activation/désactivation d’une offre, accès à l’espace d’administration et à l’espace cadeaux, gestion des voyages...).</li>
+                    <li>Ajout de fonctionnalités dans le back-office déjà existant réservé aux administrateurs jevoyageenautocar.fr pour leur permettre de gérer les règles liées aux CSE (remises, récompenses...).</li>
+                    <li>Réutilisation des gabarits et composants UI déjà existants sur le site public jevoyageenautocar.fr pour unifier l’expérience et limiter les efforts techniques.</li>
+                </ul>
+
+                </section>
+
+            <section class="design-process">
+                <div class="title-banner">
+                    <div class="container">
+                        <h2>🎨 Solutions de design</h2>
+                    </div>
+                </div>
+
+                <h3>Wireframes</h3>
+                <div class="case-img-container">
+                    <a target="_blank" href="resources/france_travail/france-travail-wireframe-top.jpg"><img src="resources/france_travail/france-travail-wireframe-top.jpg" alt="" width="550" height="550"></a>
+                    <a target="_blank" href="resources/france_travail/france-travail-wireframe-bottom.jpg"><img src="resources/france_travail/france-travail-wireframe-bottom.jpg" alt="" width="550" height="550"></a>
+                </div>
+    
+                    <h3>Prototypes</h3>
+
+                    <div class="case-img-container">
+                        <a target="_blank" href="resources/france_travail/france-travail-proto-desktop.gif"><img src="resources/france_travail/france-travail-proto-desktop.gif" alt="" width="600" height="600"></a>
+                        <a target="_blank" href="resources/france_travail/france-travail-proto-tablet.gif"><img src="resources/france_travail/france-travail-proto-tablet.gif" alt="" width="230" height="230"></a>
+                        <a target="_blank" href="resources/france_travail/france-travail-proto-mobile.gif"><img src="resources/france_travail/france-travail-proto-mobile.gif" alt="" width="130" height="130"></a>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">Desktop<div class="accordion-icon"></div></div>
+                    <div class="accordion-content">
+                        <a target="_blank" href="resources/france_travail/france-travail-proto-desktop.png"><img src="resources/france_travail/france-travail-proto-desktop.png" alt=""></a>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Tablet<div class="accordion-icon"></div></div>
+                    <div class="accordion-content">
+                        <a target="_blank" href="resources/france_travail/france-travail-proto-tablet.png"><img src="resources/france_travail/france-travail-proto-tablet.png" alt=""></a>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Mobile<div class="accordion-icon"></div></div>
+                    <div class="accordion-content">
+                        <a target="_blank" href="resources/france_travail/france-travail-proto-mobile.png"><img src="resources/france_travail/france-travail-proto-mobile.png" alt=""></a>
+                    </div>
+                    </div>
+
+                    <section class="solutions">
+                        <div class="title-banner">
+                            <div class="container">
+                                <h2>🚀 Solutions mises en place</h2>
+                            </div>
+                        </div>
+                    <h4>Cohérence et uniformisation :</h4>
+                        <ul>
+                            <li><b>La couleur dominante est le bleu, de manière semblable au site du Service Public et de la plupart et de ses autres organismes et administrations, ce qui renforce le caractère institutionnel et officiel du site de France Travail.</b> Le bleu est aussi plus doux et moins agressif que le rouge originalement employé.</li>
+                            <li><b>Tous les liens se comportent de la même manière</b> et apparaissent soulignés au survol de la souris, indiquant à l’utilisateur qu’ils sont cliquables.</li>
+                        </ul>
+
+                    <h4>Architecture de l'information :</h4>
+                        <ul>
+                            <li><b>La barre de navigation comporte des onglets permettant à l’utilisateur de basculer aisément d’une partie du site à une autre</b>, et de mieux se situer sur le site.</li>
+                            <li><b>Un carrousel permet de mettre en avant une sélection d’articles auquel l’utilisateur peut se référer</b> s’il n’a pas le temps ou la patience de parcourir l’ensemble des articles sur la page d’accueil. Un tag permet également de déterminer en un coup d’œil la catégorie d’article dont il s’agit.</li>
+                            <li><b>Les articles sur la page d’accueil sont répartis par catégorie que l’on distingue facilement à l’aide de grands titres</b> (”Actualités”, “Evénements” et “Dossiers”) et sont au nombre de 3 à 4 par catégorie afin de limiter la charge cognitive de l’utilisateur.</li>
+                            <li><b>La taille réduite des illustrations d’articles permet de ne pas éclipser les boutons de la section “Service Candidat” (actions principales)</b>.</li>
+                            <li><b>La newsletter dispose de sa propre section (”Mode d’Emploi, le mag”), ce qui évite de la confondre avec les autres articles</b>. De même, le guide des simulateurs d’allocations et aides dispose de son propre bouton dans “Services Candidat”, tandis que “Je donne mon avis” se situe désormais dans le footer.</li>
+                        </ul>
+
+                    <h4>Accessibilité :</h4>
+                        <ul>
+                            <li><b>Les placeholders des barres de recherche ont un contraste de couleurs suffisamment élevé avec le fond</b> de manière à ce qu’ils soient visibles par un maximum d’utilisateurs.</li>
+                            <li><b>Les boutons “Voir tout” sont nommés de telle manière que les lecteurs d’écran puissent guider tous les utilisateurs correctement et efficacement</b>. Leur contraste de couleurs est également suffisamment élevé de manière à ce qu’ils soient visibles par un maximum d’utilisateurs.</li>
+                        </ul>
+                    </section>
+    </main>
+
+    <a href="#top" class="back-to-top">↑</a>
+
+<footer id="footer">
+        <div class="footer-content">
+            <div class="footer-content">
+                <h2>Merci de votre visite !</h2>
+
+                <p><b>Marina Lay</b></p>
+                <p>Product Designer UX/UI</p>
+                <p>📍 : Marcq-en-Barœul, Nord (59)</p>
+            </div>
+            <div class="footer-content">
+                <p><b>Contact :</b></p>
+                <p><a href="https://www.linkedin.com/in/marinalay/" target="_blank">LinkedIn</a></p>
+                <p>📧 : <a href="mailto:marina.lay92@gmail.com">marina.lay92@gmail.com</a></p>
+                <p>📱 : +33 6 04 05 69 64</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Marina Lay. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
