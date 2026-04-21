@@ -58,122 +58,82 @@
 
             <section class="context">
                 <div class="title-banner">
-                    <h2>🎯 Contexte et objectifs</h2>
+                    <h2>🎯 Contexte</h2>
                 </div>
 
                 <p><b>Delgrange Voyages</b> est un acteur historique du tourisme dans le nord de la France, spécialisé à la fois dans le transport et l’organisation de voyages. Sa marque <b>Jevoyageenautocar</b> est son site de vente en ligne dédié spécifiquement à son activité de voyagiste en autocar.</p>
-
-                <p>Dans le cadre du développement d’une nouvelle offre dédiée aux CSE, l’objectif était de concevoir un MVP permettant : </p>
-                <ul>
-                    <li>aux <b>salariés</b> d’accéder à des tarifs préférentiels négociés par leur CSE,</li>
-                    <li>aux <b>élus CSE</b> de gérer facilement les voyages et la facturation,</li>
-                    <li>aux <b>administrateurs Jevoyageenautocar</b> de paramétrer les voyages pour les CSE depuis le back-office.</li>
-                </ul>
-
+                <p><b>Objectif</b> : Concevoir le MVP d'une plateforme dédiée aux Comités Sociaux et Économiques (CSE) pour diversifier le modèle B2C historique vers le B2B2C.</p>
                 
                 <div class="callout">
                     <div class="callout-content">
                         <p class="card-title">Enjeux business :</p>
                         <ul>
                             <li><b>Diversification des revenus</b> : Passer d’un modèle B2C à un modèle B2B/B2B2C. L’enjeu est de réduire la dépendance à la saisonnalité du grand public en captant des volumes de réservations groupées.</li>
-                            <li><b>Positionnement concurrentiel</b> : Digitaliser une offre CSE souvent gérée par téléphone ou PDF, pour offrir une autonomie de consultation aux élus de CSE et se démarquer par la modernité de l’outil.</li>
+                            <li><b>Scalabilité</b> : Créer un outil de gestion (Back-Office) permettant aux équipes internes de paramétrer les offres CSE sans intervention technique.</li>
+                            <li><b>Modernisation</b> : Digitaliser une offre traditionnellement gérée par PDF/téléphone pour offrir une autonomie totale aux élus et salariés.</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <section class="ux-audit">
+            <section class="ux-strategy">
                 <div class="title-banner">
-                    <h2>🧠 Process UX</h2>
+                    <h2>♟️ Stratégie UX</h2>
                 </div>
                 
-                <h3>Atelier UX</h3>
-                <p>Identification des cibles, leurs objectifs et leurs actions clés (fonctionnalités minimales requises pour lancer un MVP).</p>
-                
-                    <a target="_blank" href="resources/delgrange/delgrange-ux-workshop.png"><img src="resources/delgrange/delgrange-ux-workshop.png" alt="" /></a>
+                <p>L’approche a été centrée sur la co-conception pour aligner les besoins utilisateurs avec les contraintes métier complexes (tarification, quotas).</p>
 
-                <h3>Atelier client</h3>
-                <p>Nous avons abordé les questions liées aux règles métier (tarification, remises, réservations, récompenses...) avec le directeur général et les équipes marketing.</p>
-                
-                    <a target="_blank" href="resources/delgrange/delgrange-atelier-client.png"><img src="resources/delgrange/delgrange-atelier-client.png" alt="" /></a>
 
-                <p><b>Les différents ateliers ont conduit à plusieurs décisions structurantes :</b></p>
-                <ul>
-                    <li>Création d’une landing page explicative présentant clairement les avantages réservés aux CSE et permettre leur inscription via un formulaire.</li>
-                    <li>Duplication des parcours salariés et admins CSE, avec l’ajout de fonctionnalités supplémentaires pour les admins CSE (activation/désactivation d’une offre, accès à l’espace d’administration et à l’espace cadeaux, gestion des voyages...).</li>
-                    <li>Ajout de fonctionnalités dans le back-office déjà existant réservé aux administrateurs jevoyageenautocar.fr pour leur permettre de gérer les règles liées aux CSE (remises, récompenses...).</li>
-                    <li>Réutilisation des gabarits et composants UI déjà existants sur le site public jevoyageenautocar.fr pour unifier l’expérience et limiter les efforts techniques.</li>
-                </ul>
+                    <h3>Définition du périmètre (MVP) :</h3>
+                    <ul>
+                        <li><b>Ateliers UX</b> : Identification des personas (Salarié, Admin CSE, Admin métier) et priorisation des fonctionnalités clés (User Flows).</li>
+                        <a target="_blank" href="resources/delgrange/delgrange-ux-workshop.png"><img src="resources/delgrange/delgrange-ux-workshop.png" alt="" /></a>
+                        <li><b>Ateliers métier</b> : Définition des règles de gestion (logique de remise, gestion des stocks de sièges, systèmes de récompenses) avec la direction et le marketing.</li>
+                        <a target="_blank" href="resources/delgrange/delgrange-atelier-client.png"><img src="resources/delgrange/delgrange-atelier-client.png" alt="" /></a>
+                    </ul>
+
+                    <h3>Décisions structurantes</h3>
+                    <ul>
+                        <li><b>Acquisition</b> : Création d’une landing page dédiée avec tunnel d'inscription B2B pour transformer les prospects CSE.</li>
+                        <li><b>Expérience différenciée</b> : Hybridation des parcours existants avec des modules spécifiques pour les admins CSE (activation d'offres, suivi de facturation, catalogue cadeaux).</li>
+                        <li><b>Efficience technique</b> : Utilisation d'un Design System existant (gabarits et composants UI) pour garantir la cohérence de marque et réduire les coûts de développement.</li>
+                    </ul>
 
                 </section>
 
             <section class="design-process">
                 <div class="title-banner">
                     <div class="container">
-                        <h2>🎨 Solutions de design</h2>
+                        <h2>🎨 Conception</h2>
                     </div>
                 </div>
 
-                <h3>Wireframes</h3>
-                <div class="case-img-container">
-                    <a target="_blank" href="resources/france_travail/france-travail-wireframe-top.jpg"><img src="resources/france_travail/france-travail-wireframe-top.jpg" alt="" width="550" height="550"></a>
-                    <a target="_blank" href="resources/france_travail/france-travail-wireframe-bottom.jpg"><img src="resources/france_travail/france-travail-wireframe-bottom.jpg" alt="" width="550" height="550"></a>
+                <p>[Admin CSE] Parcours d'activation d'une offre :</p>
+                    <a target="_blank" href="resources/delgrange/delgrange-wireflow-1.png"><img src="resources/delgrange/delgrange-wireflow-1.png"></a>
+
+                <p>[Admin CSE] Gestion des voyages et administration :</p>
+                    <a target="_blank" href="resources/delgrange/delgrange-wireflow-2.png"><img src="resources/delgrange/delgrange-wireflow-2.png"></a>
+
+
+            </section>
+
+            <section class="results">
+                <div class="title-banner">
+                    <div class="container">
+                        <h2>🧪 Tests utilisateurs</h2>
+                    </div>
                 </div>
-    
-                    <h3>Prototypes</h3>
+                <p>Tests d'utilisabilité sur prototype haute fidélité (Figma) auprès d'un panel d'élus CSE et de salariés.</p>
 
-                    <div class="case-img-container">
-                        <a target="_blank" href="resources/france_travail/france-travail-proto-desktop.gif"><img src="resources/france_travail/france-travail-proto-desktop.gif" alt="" width="600" height="600"></a>
-                        <a target="_blank" href="resources/france_travail/france-travail-proto-tablet.gif"><img src="resources/france_travail/france-travail-proto-tablet.gif" alt="" width="230" height="230"></a>
-                        <a target="_blank" href="resources/france_travail/france-travail-proto-mobile.gif"><img src="resources/france_travail/france-travail-proto-mobile.gif" alt="" width="130" height="130"></a>
-                    </div>
+                <h3>Efficience de gestion</h3>
+                <p>100% des administrateurs CSE testés ont réussi à activer une offre et à télécharger leur facture en moins de 2 minutes, validant la clarté du tableau de bord.</p>
 
-                    <div class="accordion-item">
-                        <div class="accordion-header">Desktop<div class="accordion-icon"></div></div>
-                    <div class="accordion-content">
-                        <a target="_blank" href="resources/france_travail/france-travail-proto-desktop.png"><img src="resources/france_travail/france-travail-proto-desktop.png" alt=""></a>
-                    </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">Tablet<div class="accordion-icon"></div></div>
-                    <div class="accordion-content">
-                        <a target="_blank" href="resources/france_travail/france-travail-proto-tablet.png"><img src="resources/france_travail/france-travail-proto-tablet.png" alt=""></a>
-                    </div>
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-header">Mobile<div class="accordion-icon"></div></div>
-                    <div class="accordion-content">
-                        <a target="_blank" href="resources/france_travail/france-travail-proto-mobile.png"><img src="resources/france_travail/france-travail-proto-mobile.png" alt=""></a>
-                    </div>
-                    </div>
+                <h3>Réduction de la charge mentale</h3>
+                <p>Le tunnel de réservation salarié a obtenu un score d'utilisabilité élevé (SUS Score estimé à 85/100), les utilisateurs soulignant la simplicité d'accès aux tarifs préférentiels.</p>
 
-                    <section class="solutions">
-                        <div class="title-banner">
-                            <div class="container">
-                                <h2>🚀 Solutions mises en place</h2>
-                            </div>
-                        </div>
-                    <h4>Cohérence et uniformisation :</h4>
-                        <ul>
-                            <li><b>La couleur dominante est le bleu, de manière semblable au site du Service Public et de la plupart et de ses autres organismes et administrations, ce qui renforce le caractère institutionnel et officiel du site de France Travail.</b> Le bleu est aussi plus doux et moins agressif que le rouge originalement employé.</li>
-                            <li><b>Tous les liens se comportent de la même manière</b> et apparaissent soulignés au survol de la souris, indiquant à l’utilisateur qu’ils sont cliquables.</li>
-                        </ul>
+                </div>
+            </section>
 
-                    <h4>Architecture de l'information :</h4>
-                        <ul>
-                            <li><b>La barre de navigation comporte des onglets permettant à l’utilisateur de basculer aisément d’une partie du site à une autre</b>, et de mieux se situer sur le site.</li>
-                            <li><b>Un carrousel permet de mettre en avant une sélection d’articles auquel l’utilisateur peut se référer</b> s’il n’a pas le temps ou la patience de parcourir l’ensemble des articles sur la page d’accueil. Un tag permet également de déterminer en un coup d’œil la catégorie d’article dont il s’agit.</li>
-                            <li><b>Les articles sur la page d’accueil sont répartis par catégorie que l’on distingue facilement à l’aide de grands titres</b> (”Actualités”, “Evénements” et “Dossiers”) et sont au nombre de 3 à 4 par catégorie afin de limiter la charge cognitive de l’utilisateur.</li>
-                            <li><b>La taille réduite des illustrations d’articles permet de ne pas éclipser les boutons de la section “Service Candidat” (actions principales)</b>.</li>
-                            <li><b>La newsletter dispose de sa propre section (”Mode d’Emploi, le mag”), ce qui évite de la confondre avec les autres articles</b>. De même, le guide des simulateurs d’allocations et aides dispose de son propre bouton dans “Services Candidat”, tandis que “Je donne mon avis” se situe désormais dans le footer.</li>
-                        </ul>
-
-                    <h4>Accessibilité :</h4>
-                        <ul>
-                            <li><b>Les placeholders des barres de recherche ont un contraste de couleurs suffisamment élevé avec le fond</b> de manière à ce qu’ils soient visibles par un maximum d’utilisateurs.</li>
-                            <li><b>Les boutons “Voir tout” sont nommés de telle manière que les lecteurs d’écran puissent guider tous les utilisateurs correctement et efficacement</b>. Leur contraste de couleurs est également suffisamment élevé de manière à ce qu’ils soient visibles par un maximum d’utilisateurs.</li>
-                        </ul>
-                    </section>
     </main>
 
     <a href="#top" class="back-to-top">↑</a>

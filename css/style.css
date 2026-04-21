@@ -109,6 +109,8 @@ ul, ol {
 
 li {
     list-style-position: outside;
+    margin-bottom: var(--spacing-xs);
+
 }
 
 a {
@@ -1174,6 +1176,7 @@ footer a {
     width: auto;
     border-collapse: collapse;
     margin-bottom: var(--spacing-md);
+    margin-top: var(--spacing-sm);
 }
 
 .table th, .table td {
