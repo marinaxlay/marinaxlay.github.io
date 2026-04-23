@@ -906,6 +906,12 @@ footer a {
     gap: var(--spacing-md);
 }
 
+.project-platforms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
