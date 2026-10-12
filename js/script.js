@@ -145,35 +145,186 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    
-    // Test both selectors
-    if (contactLink) {
-        contactLink.addEventListener('click', function(e) {
-            console.log('🔥 Contact link (href) clicked!');
-            console.log('Before - Hamburger active:', hamburger?.classList.contains('active'));
-            console.log('Before - Nav active:', nav?.classList.contains('active'));
-            
-            closeHamburgerMenu();
-            
-            console.log('After - Hamburger active:', hamburger?.classList.contains('active'));
-            console.log('After - Nav active:', nav?.classList.contains('active'));
+
+    // ========== NAVIGATION : SECTION ACTIVE ==========
+    const currentSection = document.body.dataset.section;
+    if (currentSection) {
+        document.querySelectorAll('.main-nav a[data-nav="' + currentSection + '"]').forEach(link => {
+            link.setAttribute('aria-current', 'page');
         });
     }
-    
-    if (contactLinkByClass) {
-        contactLinkByClass.addEventListener('click', function(e) {
-            console.log('🔥 Contact link (class) clicked!');
-            console.log('Before - Hamburger active:', hamburger?.classList.contains('active'));
-            console.log('Before - Nav active:', nav?.classList.contains('active'));
-            
-            closeHamburgerMenu();
-            
-            console.log('After - Hamburger active:', hamburger?.classList.contains('active'));
-            console.log('After - Nav active:', nav?.classList.contains('active'));
+
+    // ========== TOGGLE UX/UI ⇄ GRAPHIQUE ==========
+    // Fait glisser la pastille vers la cible avant de changer de page.
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    document.querySelectorAll('.mode-toggle a[data-nav]').forEach(link => {
+        link.addEventListener('click', e => {
+            if (link.getAttribute('aria-current') === 'page') {
+                e.preventDefault();
+                return;
+            }
+            if (reduceMotion || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+            e.preventDefault();
+            document.body.dataset.section = link.dataset.nav;
+            setTimeout(() => { window.location.href = link.href; }, 250);
         });
+    });
+
+    // ========== PORTFOLIO (données : js/projects.js) ==========
+    function escapeHTML(str) {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
     }
-    
-    // Debug all nav links
-    console.log('All nav links found:', document.querySelectorAll('.main-nav a'));
-    console.log('All anchor links found:', document.querySelectorAll('a[href^="#"]'));
+
+    function projectCard(project) {
+        const categories = project.categories.map(cat =>
+            '<span class="cat-tag ' + cat + '">' + escapeHTML(CATEGORY_LABELS[cat]) + '</span>'
+        ).join('');
+        const tags = project.tags.map(tag =>
+            '<span class="platform">' + escapeHTML(tag) + '</span>'
+        ).join('');
+
+        return '<a href="' + project.href + '"><article class="project-card">' +
+            '<div class="project-image">' +
+                '<img src="' + project.cover + '" alt="" loading="lazy" />' +
+                '<div class="project-categories">' + categories + '</div>' +
+            '</div>' +
+            '<div class="project-details">' +
+                '<h3>' + escapeHTML(project.title) + '</h3>' +
+                (project.year ? '<p class="project-year">' + escapeHTML(project.year) + '</p>' : '') +
+                '<p class="project-description">' + escapeHTML(project.description) + '</p>' +
+                '<div class="project-platforms">' + tags + '</div>' +
+            '</div>' +
+        '</article></a>';
+    }
+
+    // data-category : "all" ou une liste de catégories séparées par des espaces
+    function renderPortfolio(grid) {
+        if (typeof PROJECTS === 'undefined') return;
+        const category = grid.dataset.category;
+        const wanted = category === 'all' ? Object.keys(CATEGORY_LABELS) : category.split(' ');
+        const featuredOnly = grid.hasAttribute('data-featured');
+
+        const projects = PROJECTS
+            .filter(p => p.categories.some(cat => wanted.includes(cat)) && (!featuredOnly || p.featured))
+            .sort((a, b) => (Number(b.year) || 0) - (Number(a.year) || 0));
+
+        const label = wanted.length === 1 ? ' « ' + escapeHTML(CATEGORY_LABELS[wanted[0]]) + ' »' : '';
+        grid.innerHTML = projects.length
+            ? projects.map(projectCard).join('')
+            : '<div class="portfolio-empty"><span class="emoji" aria-hidden="true">🎨</span>' +
+              '<p>Les études de cas' + label + ' arrivent très bientôt.</p></div>';
+    }
+
+    document.querySelectorAll('[data-portfolio]').forEach(renderPortfolio);
+
+    // ========== TAGS DE FILTRE DU PORTFOLIO (accueil) ==========
+    // Un seul tag actif à la fois ; aucun tag actif = tous les projets.
+    document.querySelectorAll('[data-filter]').forEach(group => {
+        const tags = Array.from(group.querySelectorAll('.filter-tag'));
+        const grid = document.getElementById(group.dataset.filter);
+
+        tags.forEach(tag => {
+            tag.addEventListener('click', () => {
+                const wasActive = tag.getAttribute('aria-pressed') === 'true';
+                tags.forEach(t => t.setAttribute('aria-pressed', 'false'));
+                if (!wasActive) tag.setAttribute('aria-pressed', 'true');
+                grid.dataset.category = wasActive ? 'all' : tag.dataset.category;
+                renderPortfolio(grid);
+            });
+        });
+    });
+
+    // ========== TAGS DE FILTRE DU PARCOURS (accueil) ==========
+    // Même comportement que le portfolio : un seul tag actif, aucun = tout.
+    document.querySelectorAll('[data-filter-items]').forEach(group => {
+        const tags = Array.from(group.querySelectorAll('.filter-tag'));
+        const list = document.getElementById(group.dataset.filterItems);
+        const items = Array.from(list.querySelectorAll(':scope > [data-type]'));
+
+        tags.forEach(tag => {
+            tag.addEventListener('click', () => {
+                const wasActive = tag.getAttribute('aria-pressed') === 'true';
+                tags.forEach(t => t.setAttribute('aria-pressed', 'false'));
+                if (!wasActive) tag.setAttribute('aria-pressed', 'true');
+                items.forEach(item => {
+                    item.hidden = !wasActive && item.dataset.type !== tag.dataset.category;
+                });
+            });
+        });
+    });
+
+    // ========== CARROUSEL (Réalisations à la une) ==========
+    document.querySelectorAll('[data-carousel]').forEach(carousel => {
+        const track = carousel.querySelector('.carousel-track');
+        const controls = carousel.querySelector('.carousel-controls');
+        const prev = carousel.querySelector('[data-dir="-1"]');
+        const next = carousel.querySelector('[data-dir="1"]');
+
+        function update() {
+            const max = track.scrollWidth - track.clientWidth;
+            controls.hidden = max <= 1;
+            prev.disabled = track.scrollLeft <= 1;
+            next.disabled = track.scrollLeft >= max - 1;
+        }
+
+        function step() {
+            const card = track.firstElementChild;
+            if (!card) return track.clientWidth;
+            const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+            return card.getBoundingClientRect().width + gap;
+        }
+
+        [prev, next].forEach(btn => btn.addEventListener('click', () => {
+            track.scrollBy({ left: Number(btn.dataset.dir) * step() });
+        }));
+
+        track.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update);
+
+        // Le filtre par tag remplace les cartes : retour au début
+        new MutationObserver(() => {
+            track.scrollLeft = 0;
+            update();
+        }).observe(track, { childList: true });
+
+        update();
+    });
+
+    // ========== BARRE COMPACTE DES GROS BOUTONS (accueil) ==========
+    const stickySource = document.querySelector('[data-sticky-source]');
+    const pathBar = document.querySelector('.path-bar');
+    if (stickySource && pathBar) {
+        let ticking = false;
+        // Visible seulement une fois les gros boutons passés au-dessus de l'écran
+        const updatePathBar = () => {
+            const show = stickySource.getBoundingClientRect().bottom < 0;
+            pathBar.classList.toggle('is-visible', show);
+            pathBar.inert = !show;
+            ticking = false;
+        };
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                ticking = true;
+                requestAnimationFrame(updatePathBar);
+            }
+        }, { passive: true });
+        updatePathBar();
+    }
+
+    // ========== BARRES DE COMPÉTENCES ==========
+    // Le niveau (0 à 100) se règle dans le HTML : data-level="80"
+    document.querySelectorAll('.skill-bar').forEach(bar => {
+        const level = Math.max(0, Math.min(100, Number(bar.dataset.level) || 0));
+        const fill = document.createElement('span');
+        fill.className = 'skill-bar-fill' + (level >= 100 ? ' is-full' : '');
+        bar.style.setProperty('--level', level + '%');
+        bar.appendChild(fill);
+        bar.setAttribute('role', 'meter');
+        bar.setAttribute('aria-valuemin', '0');
+        bar.setAttribute('aria-valuemax', '100');
+        bar.setAttribute('aria-valuenow', String(level));
+        bar.setAttribute('aria-label', 'Niveau : ' + level + ' %');
+    });
 });

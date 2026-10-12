@@ -3,209 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marina Lay • UX/UI Designer</title>
+    <title>Marina Lay • Designer UX/UI & graphique</title>
+    <meta name="description" content="Portfolio de Marina Lay, designer UX/UI et graphique basée à Lille.">
     <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Outfit:wght@700;800&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/neo.css">
 </head>
 <body>
 <a id="top"></a>
-    <header>
+
+    <!-- Version compacte des gros boutons, fixée en haut au défilement -->
+    <nav class="path-bar" aria-label="Choisir un type de design" inert>
+        <a href="design-ux-ui.html" class="path-pill ux">Design UX/UI <span aria-hidden="true">→</span></a>
+        <a href="design-graphique.html" class="path-pill graphique">Design graphique <span aria-hidden="true">→</span></a>
+    </nav>
+
+    <main>
+
+    <!-- HERO -->
+    <section class="landing-hero">
+        <div class="blob blob-1" aria-hidden="true"></div>
+        <div class="blob blob-2" aria-hidden="true"></div>
+        <div class="blob blob-3" aria-hidden="true"></div>
+
         <div class="container">
-            <div class="logo">
-                <a href="index.html"><img src="resources/logo.svg" alt="Marina Lay"></a>            
-            </div>
-            <div class="hamburger-menu" aria-label="menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="realisations.html">Réalisations</a></li>
-                    <li><a href="a-propos.html">À propos</a></li>
-                    <li><a href="#footer" class="contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+            <div class="landing-hero-grid">
+                <div>
+                    <span class="availability">Disponible · Lille & Paris (hybride)</span>
+                    <h1>Marina<br><span class="outline">Lay</span></h1>
+                    <p class="role">Designer UX/UI &amp; graphique</p>
+                    <p class="lead">Je conçois des expériences utiles et responsables, et les visuels qui vont avec, pour apporter de la valeur à vos utilisateurs et à votre entreprise.</p>
+                </div>
 
-    <section class="hero-homepage">
-        <div class="container hero-homepage-container animate-on-scroll">
-            
-            <div class="hero-homepage-image">
-                <img src="resources/my-photo.png" alt="" />
-            </div>
-
-            <div class="hero-homepage-content">
-                <p><span class="availability-label">● Disponible</span></p>
-                <h1>MARINA LAY</h1>
-                <h2>Product Designer UX/UI</h2>
-                <p class="intro-text">Je conçois des expériences utiles et responsables qui apportent de la valeur à vos utilisateurs et à votre entreprise.</span></p>
-                <div class="button-container">
-                    <a href="realisations.html" class="button">Voir mes réalisations</a>
-                    <a href="a-propos.html" class="button">En savoir plus sur mon parcours</a>
+                <div class="hero-photo">
+                    <img src="resources/marina-lay.png" alt="Portrait de Marina Lay">
+                    <span class="sticker sticker-1">✦ UX/UI</span>
+                    <span class="sticker sticker-2">Graphisme ✎</span>
                 </div>
             </div>
-            
-        </div>
-    </section>
 
-        <section class="projects">
-        <div class="container animate-on-scroll">
-            <h2>Mes réalisations</h2>
-            <div class="projects-grid">
-
-                <a href="realisations-delgrange.html"><div class="project-card">
-                    <div class="project-image">
-                        <img src="resources/delgrange/delgrange-cover.png" alt="" />
-                    </div>
-                    <div class="project-details">
-                        <h3>Delgrange Voyages</h3>
-                        <p class="project-year">2026</p>
-                        <p class="project-description">Conception d'un MVP dans le cadre du développement d'une nouvelle offre dédiée aux CSE.</p>
-                        <div class="project-platforms">
-                            <span class="platform mobile">Desktop & Mobile</span><span class="platform mobile">B2B2C</span><span class="platform mobile">Tourisme</span>
-                        </div>
-                        <div class="corner top-left"></div>
-                        <div class="corner top-right"></div>
-                        <div class="corner bottom-left"></div>
-                        <div class="corner bottom-right"></div>
-                    </div>
-                </div></a>
-
-                <a href="realisations-naomi.html"><div class="project-card">
-                    <div class="project-image">
-                        <img src="resources/naomi/naomi-cover.png" alt="" />
-                    </div>
-                    <div class="project-details">
-                        <h3>Naomi x Valiuz</h3>
-                        <p class="project-year">2025</p>
-                        <p class="project-description">Conception d'un nouveau parcours structurant pour Naomi, la solution B2C de l'alliance Valiuz.</p>
-                        <div class="project-platforms">
-                            <span class="platform mobile">Mobile</span><span class="platform mobile">B2C</span><span class="platform mobile">Retail media</span>
-                        </div>
-                        <div class="corner top-left"></div>
-                        <div class="corner top-right"></div>
-                        <div class="corner bottom-left"></div>
-                        <div class="corner bottom-right"></div>
-                    </div>
-                </div></a>
-
-                <a href="realisations-inouk-v4.html"><div class="project-card">
-                    <div class="project-image">
-                        <img src="resources/inouk-v4/inouk-cover.png" alt="" />
-                    </div>
-                    <div class="project-details">
-                        <h3>Inouk Challenge</h3>
-                        <p class="project-year">2025</p>
-                        <p class="project-description">Identification des irritants et refonte de l'application mobile en conséquence.</p>
-                        <div class="project-platforms">
-                            <span class="platform mobile">Mobile</span><span class="platform mobile">B2C</span><span class="platform mobile">Associatif</span>
-                        </div>
-                        <div class="corner top-left"></div>
-                        <div class="corner top-right"></div>
-                        <div class="corner bottom-left"></div>
-                        <div class="corner bottom-right"></div>
-                    </div>
-                </div></a>
-
-                <a href="realisations-cube.html"><div class="project-card">
-                    <div class="project-image">
-                        <img src="resources/cube/cube-cover.png" alt="" />
-                    </div>
-                    <div class="project-details">
-                        <h3>CUBE</h3>
-                        <p class="project-year">2024</p>
-                        <p class="project-description">Refonte d'une page vitrine pour l'une des directions IT de Société Générale.</p>
-                        <div class="project-platforms">
-                            <span class="platform desktop">Desktop</span><span class="platform mobile">B2E</span><span class="platform mobile">Bancaire</span>
-                        </div>
-                        <div class="corner top-left"></div>
-                        <div class="corner top-right"></div>
-                        <div class="corner bottom-left"></div>
-                        <div class="corner bottom-right"></div>
-                    </div>
-                </div></a>
-
-            </div>
-        </div>
-        <br>
-    </section>
-
-    <section class="recommendations">
-        <div class="container animate-on-scroll">
-            <h2>Mes références</h2>
-            <div class="client">
-            <div class="client-quote">
-                <p>« Avec les utilisateurs, Marina conçoit des solutions à forte valeur ajoutée pour le produit qu'elle design. Ses livrables sont toujours de très haute qualité et sont la preuve de sa rigueur et de sa créativité. Je la recommande sincèrement. »</p>
-            </div>
-                <div class="client-details">
-                <div class="client-photo"><img src="resources/reviews/boris-durupt-zhou.jpg" alt="" /></div>
-                <div class="client-text">
-                    <div class="client-name"><a href="https://www.linkedin.com/in/borisduruptzhou/" target="_blank">Boris DURUPT-ZHOU</a></div>
-                    <div class="client-company">Product Owner @ Société Générale</div>
-                </div>
-            </div>
+            <div class="path-buttons" data-sticky-source>
+                <a href="design-ux-ui.html" class="path-button ux">
+                    <span class="path-button-label">Design UX/UI</span>
+                    <span class="path-button-hint">Recherche, parcours, maquettes &amp; prototypes</span>
+                    <span class="path-button-arrow" aria-hidden="true">→</span>
+                </a>
+                <a href="design-graphique.html" class="path-button graphique">
+                    <span class="path-button-label">Design graphique</span>
+                    <span class="path-button-hint">Identité, illustrations &amp; supports visuels</span>
+                    <span class="path-button-arrow" aria-hidden="true">→</span>
+                </a>
             </div>
         </div>
     </section>
 
-    
-
-<section class="values">
-        <div class="container animate-on-scroll">
-            <h2>Mes valeurs en design</h2>
-
-        <div class="services-grid">
-
-            <div class="service-card">
-                <div class="service-icon">
-                    <img src="resources/homepage/value-user-centered-design.svg" alt="" />
+        <!-- EN QUELQUES MOTS -->
+    <section class="section" id="a-propos">
+        <div class="container">
+            <div class="about-callout">
+                <h2 class="callout-tab">En quelques mots</h2>
+                <div>
+                    <p class="big">Je suis Marina, designer basée à Lille. Ma philosophie est simple : <span class="mark">un bon design doit être fluide et accessible à toutes et tous, sans exception.</span></p>
+                    <p>Avec une passion pour le dessin et une formation en communication technique, j'allie créativité et ergonomie pour créer des interfaces non seulement esthétiques mais aussi pratiques, et centrées sur <em>tous</em> les utilisateurs.</p>
+                    <p>Curieuse et proactive, j'apprends en continu pour gagner en efficacité et enrichir ma pratique. Quand je ne suis pas sur Figma, vous me trouverez plongée dans des jeux vidéo cosy, dans des créations à l'aquarelle ou au crochet, ou dans la foule d'un concert de metal. 🎮🎨🧶🤘</p>
                 </div>
-                <div class="service-desc">
-                <h3>Design centré utilisateur</h3>
-                <p>Je place l’utilisateur au cœur du processus de conception avec des choix fondés sur la recherche et les données.</p>
-            </div>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">
-                    <img src="resources/homepage/value-accessibility.svg" alt="" />
+                <div class="about-side">
+                    <div>
+                        <h3>Soft skills</h3>
+                        <ul class="chip-list">
+                            <li class="chip">Empathie</li>
+                            <li class="chip">Curiosité</li>
+                            <li class="chip">Adaptabilité</li>
+                            <li class="chip">Esprit critique</li>
+                            <li class="chip">Esprit d'équipe</li>
+                            <li class="chip">Créativité</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Langues</h3>
+                        <ul class="chip-list">
+                            <li class="chip">🇫🇷 Français · natif</li>
+                            <li class="chip">🇬🇧 Anglais · C2</li>
+                            <li class="chip">🇪🇸 Espagnol · B1</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="service-desc">
-                <h3>Design inclusif</h3>
-                <p>Je conçois des expériences qui respectent la diversité des utilisateurs, quels que soient leur genre, culture, âge, situation, ou encore leurs capacités.</p>
             </div>
-            </div>
-
-            <div class="service-card">
-                <div class="service-icon">
-                    <img src="resources/homepage/value-green-ux.svg" alt="" />
-                </div>
-                <div class="service-desc">
-                <h3>Eco-conception</h3>
-                <p>Je prends en compte la réduction de l’empreinte environnementale du numérique dans mes décisions en visant un design sobre, réfléchi et efficace.</p>
-            </div>
-            </div>
-            
         </div>
+    </section>
 
-    </div>
-</section>
+    <!-- RÉALISATIONS À LA UNE -->
+    <section class="section section-dark" id="realisations">
+        <div class="container">
+            <div class="section-head">
+                <h2>Mon portfolio</h2>
+                <div class="filter-tags" role="group" aria-label="Filtrer par type de design" data-filter="featured-grid">
+                    <button type="button" class="filter-tag" aria-pressed="false" data-category="ux">Design UX/UI</button>
+                    <button type="button" class="filter-tag" aria-pressed="false" data-category="graphique">Design graphique</button>
+                </div>
+            </div>
 
-<a href="#top" class="back-to-top">↑</a>
+            <div class="carousel" data-carousel>
+                <div class="portfolio-grid carousel-track" id="featured-grid" tabindex="0" role="region" aria-label="Réalisations à la une (défilement horizontal)" aria-live="polite" data-portfolio data-category="all" data-featured></div>
+                <div class="carousel-controls">
+                    <button type="button" class="carousel-btn" data-dir="-1" aria-label="Projets précédents">←</button>
+                    <button type="button" class="carousel-btn" data-dir="1" aria-label="Projets suivants">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MON PARCOURS (expériences + formation, du plus récent au plus ancien) -->
+    <section class="section" id="parcours">
+        <div class="container">
+            <div class="section-head">
+                <h2>Mon parcours</h2>
+                <div class="filter-tags" role="group" aria-label="Filtrer le parcours" data-filter-items="parcours-list">
+                    <button type="button" class="filter-tag" aria-pressed="false" data-category="experience">Expériences</button>
+                    <button type="button" class="filter-tag" aria-pressed="false" data-category="formation">Formation</button>
+                </div>
+            </div>
+
+            <ol class="timeline" id="parcours-list" aria-live="polite">
+                <li class="timeline-item" data-type="experience">
+                    <details class="job job-accordion">
+                        <summary class="job-head">
+                            <span class="job-logo" aria-hidden="true"><img src="resources/logos/korico-studio.png" alt=""></span>
+                            <h3>Brand &amp; Web Designer Freelance, <span class="org">Korico Studio</span></h3>
+                            <span class="job-date">Juin 2026 - Présent</span>
+                        </summary>
+                        <div class="job-body">
+                            <ul>
+                                <li>Prise de brief et définition de la stratégie de marque avec le client</li>
+                                <li>Réalisation de projets d'identité visuelle (logos et déclinaisons, systèmes typographiques, palette de couleurs, illustrations, charte graphique, etc.)</li>
+                                <li>Déclinaison d'identité visuelle à destination de supports signalétiques, imprimés et web (vitrophanie, menu de restaurant, visuels Instagram, etc.)</li>
+                                <li>Définition d'un calendrier éditorial, rédaction et réalisation graphique des visuels pour la communication de l'entreprise sur les réseaux sociaux</li>
+                                <li>Conception et intégration du site internet vitrine de l'entreprise</li>
+                                <li>Structuration de l'offre, prospection et gestion administrative de l'entreprise</li>
+                            </ul>
+                        </div>
+                    </details>
+                </li>
+                <li class="timeline-item" data-type="experience">
+                    <details class="job job-accordion">
+                        <summary class="job-head">
+                            <span class="job-logo" aria-hidden="true"><img src="resources/logos/goweb.png" alt=""></span>
+                            <h3>UX/UI Designer, <span class="org">Goweb (Roubaix)</span></h3>
+                            <span class="job-date">Sep. 2025 – Avr. 2026</span>
+                        </summary>
+                        <div class="job-body">
+                            <ul>
+                                <li>Conception UX/UI de nouvelles features pour la solution interne OnlyU, dans l'optique de son externalisation</li>
+                                <li>Rédaction des user stories et des critères d'acceptation</li>
+                                <li>Partage de pratiques UX et animation d'ateliers avec le pôle design</li>
+                                <li>Création de visuels pour la communication interne de l'agence</li>
+                            </ul>
+                        </div>
+                    </details>
+                </li>
+                <li class="timeline-item" data-type="experience">
+                    <details class="job job-accordion">
+                        <summary class="job-head">
+                            <span class="job-logo" aria-hidden="true"><img src="resources/logos/naomi.jpg" alt=""></span>
+                            <h3>Consultante UX/UI, <span class="org">Naomi (Lille)</span></h3>
+                            <span class="job-date">Déc. 2025 – Jan. 2026</span>
+                        </summary>
+                        <div class="job-body">
+                            <p>Conception d'un nouveau parcours clé pour l'application mobile Naomi, la solution B2C de l'alliance Valiuz :</p>
+                            <ul>
+                                <li>Définition des flux utilisateurs pour structurer le parcours de bout en bout</li>
+                                <li>Maquettes et prototypes Figma dans le respect du Design System existant</li>
+                                <li>Coordination avec les équipes tech, data et marketing</li>
+                            </ul>
+                        </div>
+                    </details>
+                </li>
+                <li class="timeline-item" data-type="experience">
+                    <details class="job job-accordion">
+                        <summary class="job-head">
+                            <span class="job-logo" aria-hidden="true"><img src="resources/logos/Inouk.png" alt=""></span>
+                            <h3>UX/UI Designer, <span class="org">Inouk (Paris)</span></h3>
+                            <span class="job-date">Juin 2025 – Déc. 2025</span>
+                        </summary>
+                        <div class="job-body">
+                            <p>Dans le cadre de la V4 de l'application mobile Inouk Challenge :</p>
+                            <ul>
+                                <li>Définition du tone of voice et amélioration de la microcopie, dans le respect de l'accessibilité numérique</li>
+                                <li>Optimisation de l'expérience globale et modernisation des interfaces</li>
+                                <li>Définition et implémentation du Design System (application mobile et site institutionnel)</li>
+                            </ul>
+                        </div>
+                    </details>
+                </li>
+                <li class="timeline-item" data-type="formation">
+                    <details class="job job-accordion">
+                        <summary class="job-head">
+                            <span class="job-logo job-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></span>
+                            <h3>How to design for accessibility: for UX Designers (WCAG 2.2), <span class="org">Udemy</span></h3>
+                            <span class="job-date">Déc. 2024</span>
+                        </summary>
+                        <div class="job-body">
+                            <p>Certification</p>
+                        </div>
+                    </details>
+                </li>
+                <li class="timeline-item" data-type="formation">
+                    <details class="job job-accordion">
+                        <summary class="job-head">
+                            <span class="job-logo job-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></span>
+                            <h3>Introduction to UX Writing, <span class="org">Udemy</span></h3>
+                            <span class="job-date">Nov. 2024</span>
+                        </summary>
+                        <div class="job-body">
+                            <p>Certification</p>
+                        </div>
+                    </details>
+                </li>
+                <li class="timeline-item" data-type="experience">
+                    <details class="job job-accordion">
+                        <summary class="job-head">
+                            <span class="job-logo" aria-hidden="true"><img src="resources/logos/societe-generale.png" alt=""></span>
+                            <h3>UX Designer &amp; Knowledge Manager, <span class="org">Société Générale (Fontenay-sous-Bois)</span></h3>
+                            <span class="job-date">Sep. 2021 – Mars 2024</span>
+                        </summary>
+                        <div class="job-body">
+                            <p>Amélioration de l'expérience utilisateur de CUBE, le portail interne des 2 000 collaborateurs de la DSI Groupe (France, Inde, Roumanie) :</p>
+                            <ul>
+                                <li>Études exploratoires : veille, benchmark UX, entretiens utilisateurs</li>
+                                <li>Animation d'ateliers de cadrage, co-conception et priorisation</li>
+                                <li>Maquettes et prototypes interactifs sur Figma, puis tests utilisateurs</li>
+                            </ul>
+                        </div>
+                    </details>
+                </li>
+                <li class="timeline-item" data-type="formation">
+                    <details class="job job-accordion">
+                        <summary class="job-head">
+                            <span class="job-logo job-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></span>
+                            <h3>Master Communication technique multilingue, <span class="org">Université Paris Cité</span></h3>
+                            <span class="job-date">2022 · Mention Très Bien</span>
+                        </summary>
+                        <div class="job-body">
+                            <p>Architecture de l'information, ergonomie, HTML/CSS, gestion de projet, ingénierie pédagogique, terminologie…</p>
+                        </div>
+                    </details>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    </main>
+
+<a href="#top" class="back-to-top" aria-label="Retour en haut">↑</a>
 
     <footer id="footer">
         <div class="footer-content">
             <div class="footer-content">
                 <h2>Merci de votre visite !</h2>
-
                 <p><b>Marina Lay</b></p>
-                <p>Product Designer UX/UI</p>
+                <p>Designer UX/UI &amp; graphique</p>
                 <p>📍 : Marcq-en-Barœul, Nord (59)</p>
             </div>
             <div class="footer-content">
@@ -216,10 +275,11 @@
             </div>
         </div>
         <div class="footer-copyright">
-            <p>&copy; 2025 Marina Lay. Tous droits réservés.</p>
+            <p>&copy; 2026 Marina Lay. Tous droits réservés.</p>
         </div>
     </footer>
 
+    <script src="js/projects.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
