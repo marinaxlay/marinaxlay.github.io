@@ -23,7 +23,7 @@ const PROJECTS = [
         year: '2026',
         href: 'portfolio-au-cast-on.html',
         cover: 'resources/au-cast-on/cover.png',
-        description: "Création d'identité visuelle pour le lancement d'une boutique de laines et salon de thé à Lille.",
+        description: "Création d'identité visuelle pour le lancement d'Au Cast-On, boutique de laines et salon de thé à Lille.",
         tags: ['Identité visuelle', 'Commerce'],
         categories: ['graphique'],
         featured: true
