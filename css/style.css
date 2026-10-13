@@ -1966,7 +1966,7 @@ body:has(main > .section-accent:last-child) footer {
 }
 
 .section-dark .section-head h2 {
-    color: var(--paper);
+    color: var(--card);
 }
 
 /* Si la page se termine par une bande sombre, elle se raccorde
@@ -2849,8 +2849,18 @@ header ~ main .section {
 /* Mobile : une carte et demie visible, pas de flèches
    (on fait défiler le carrousel au doigt) */
 @media (max-width: 700px) {
+    /* Sans les badges, les cartes sont plus compactes :
+       on en montre un peu plus à l'écran */
     .carousel {
-        --carousel-per-view: 1.5;
+        --carousel-per-view: 1.75;
+    }
+
+    .portfolio-grid .project-platforms {
+        display: none;
+    }
+
+    .portfolio-grid .project-description {
+        margin-bottom: 0;
     }
 
     .carousel-track.portfolio-grid {
@@ -3141,7 +3151,7 @@ footer {
 }
 
 footer h2 {
-    color: var(--paper);
+    color: var(--card);
     text-align: center;
 }
 
@@ -3197,7 +3207,6 @@ footer .footer-content .footer-content {
 .case-study-header {
     background: var(--accent-soft);
     color: var(--ink);
-    border-bottom: var(--border);
 }
 
 .case-study-header h1 {
