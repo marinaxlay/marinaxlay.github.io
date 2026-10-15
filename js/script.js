@@ -269,15 +269,22 @@ document.addEventListener('DOMContentLoaded', function() {
             next.disabled = track.scrollLeft >= max - 1;
         }
 
-        function step() {
-            const card = track.firstElementChild;
-            if (!card) return track.clientWidth;
-            const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
-            return card.getBoundingClientRect().width + gap;
+        // Position de chaque élément dans le carrousel (les visuels de la
+        // galerie n'ont pas tous la même largeur)
+        function offsets() {
+            const padding = parseFloat(getComputedStyle(track).scrollPaddingLeft) || 0;
+            const start = track.getBoundingClientRect().left + track.clientLeft - track.scrollLeft + padding;
+            return [...track.children].map(el => el.getBoundingClientRect().left - start);
         }
 
         [prev, next].forEach(btn => btn.addEventListener('click', () => {
-            track.scrollBy({ left: Number(btn.dataset.dir) * step() });
+            const dir = Number(btn.dataset.dir);
+            const pos = track.scrollLeft;
+            const list = offsets();
+            const target = dir > 0
+                ? list.find(x => x > pos + 1)
+                : list.filter(x => x < pos - 1).pop();
+            track.scrollTo({ left: target === undefined ? (dir > 0 ? track.scrollWidth : 0) : target });
         }));
 
         track.addEventListener('scroll', update, { passive: true });

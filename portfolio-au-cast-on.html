@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Au Cast-On | Marina Lay</title>
     <meta name="description" content=" Création d'identité visuelle pour le lancement d'Au Cast-On, boutique de laines et salon de thé à Lille.">
-    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon.png">
+    <link rel="icon" type="image/png" href="resources/favicon.png?v=2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Outfit:wght@700;800&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -73,38 +73,22 @@
                 </ol>
             </section>
 
-            <!-- Galerie -->
+            <!-- Galerie (carrousel continu) -->
             <section class="gd-block">
-                <h2>Visuels</h2>
-                <div class="gd-grid">
-                    <figure class="gd-visual">
+                <div class="carousel gd-carousel" data-carousel>
+                    <div class="carousel-track gd-gallery" tabindex="0" role="region" aria-label="Visuels Au Cast-On (défilement horizontal)">
                         <img src="resources/au-cast-on/illustrations.png" alt="Illustrations de la marque Au Cast-On" loading="lazy" width="1080" height="1350">
-                        <figcaption>Illustrations</figcaption>
-                    </figure>
-                    <figure class="gd-visual">
                         <img src="resources/au-cast-on/couleurs.png" alt="Palette de couleurs Au Cast-On" loading="lazy" width="1080" height="1350">
-                        <figcaption>Palette de couleurs</figcaption>
-                    </figure>
-                    <figure class="gd-visual">
                         <img src="resources/au-cast-on/logo.png" alt="Logo principal Au Cast-On et ses déclinaisons" loading="lazy" width="1080" height="1350">
-                        <figcaption>Logo</figcaption>
-                    </figure>
-                    <figure class="gd-visual">
                         <img src="resources/au-cast-on/typographies.png" alt="Système typographique Au Cast-On" loading="lazy" width="1080" height="1350">
-                        <figcaption>Typographies</figcaption>
-                    </figure>
-                    <figure class="gd-visual">
                         <img src="resources/au-cast-on/paper-cup.png" alt="Mockup de gobelet en carton aux couleurs d'Au Cast-On" loading="lazy" width="1080" height="1350">
-                        <figcaption>Gobelet</figcaption>
-                    </figure>
-                    <figure class="gd-visual">
                         <img src="resources/au-cast-on/instagram-mockup.png" alt="Mockup de compte Instagram Au Cast-On" loading="lazy" width="1080" height="1350">
-                        <figcaption>Instagram</figcaption>
-                    </figure>
-                    <figure class="gd-visual">
                         <img src="resources/au-cast-on/brandboard.png" alt="Brandboard Au Cast-On" loading="lazy" width="1080" height="1350">
-                        <figcaption>Brandboard</figcaption>
-                    </figure>
+                    </div>
+                    <div class="carousel-controls">
+                        <button type="button" class="carousel-btn" data-dir="-1" aria-label="Visuels précédents">←</button>
+                        <button type="button" class="carousel-btn" data-dir="1" aria-label="Visuels suivants">→</button>
+                    </div>
                 </div>
             </section>
 

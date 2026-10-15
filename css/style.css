@@ -2146,6 +2146,19 @@ body:has(main > .section-dark:last-child) footer {
 
 }
 
+/* Mobile : « Marina Lay » sur une seule ligne */
+@media (max-width: 700px) {
+    .landing-hero h1 {
+        font-size: min(3rem, 13vw);
+        white-space: nowrap;
+    }
+
+    .landing-hero h1 br {
+        display: none;
+    }
+
+}
+
 /* ---------- En quelques mots ---------- */
 .about-callout {
     position: relative;
@@ -2849,10 +2862,10 @@ header ~ main .section {
 /* Mobile : une carte et demie visible, pas de flèches
    (on fait défiler le carrousel au doigt) */
 @media (max-width: 700px) {
-    /* Sans les badges, les cartes sont plus compactes :
-       on en montre un peu plus à l'écran */
+    /* Une carte occupe l'essentiel de la largeur,
+       on devine le début de la suivante */
     .carousel {
-        --carousel-per-view: 1.75;
+        --carousel-per-view: 1.25;
     }
 
     .portfolio-grid .project-platforms {
@@ -3390,13 +3403,11 @@ main.case-study {
     margin: var(--spacing-sm) 0;
 }
 
-.gd-cover,
-.gd-visual {
+.gd-cover {
     margin: 0;
 }
 
-.gd-cover img,
-.gd-visual img {
+.gd-cover img {
     display: block;
     width: 100%;
     height: auto;
@@ -3483,42 +3494,68 @@ main.case-study {
     padding: 0 0.5rem;
 }
 
-/* Grille de visuels (formats portrait, ex. 1080×1350) */
-.gd-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: var(--spacing-md);
+/* Galerie : carrousel continu, visuels séparés d'un filet de 2px
+   (même hauteur, largeur selon le format), sur toute la largeur de l'écran */
+.gd-carousel {
+    --gd-gallery-height: clamp(600px, 26vw, 500px);
+    width: 100vw;
+    margin-inline: calc(50% - 50vw);
 }
 
-.gd-grid .gd-visual img {
-    box-shadow: var(--shadow);
+.carousel-track.gd-gallery {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    gap: 2px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
-/* Galerie à formats mixtes (portrait + paysage) */
-.gd-masonry {
-    columns: 3 280px;
-    column-gap: var(--spacing-md);
+.gd-gallery img {
+    display: block;
+    flex: 0 0 auto;
+    width: auto;
+    height: var(--gd-gallery-height);
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+    scroll-snap-align: start;
 }
 
-.gd-masonry .gd-visual {
-    break-inside: avoid;
-    margin-bottom: var(--spacing-md);
+/* Desktop : les flèches passent par-dessus les visuels */
+@media (min-width: 701px) {
+    .gd-carousel {
+        padding-inline: var(--spacing-sm);
+    }
+
+    .carousel-track.gd-gallery {
+        grid-column: 1 / -1;
+        margin-inline: calc(-1 * var(--spacing-sm));
+    }
+
+    .gd-carousel .carousel-btn {
+        position: relative;
+        z-index: 1;
+    }
+
 }
 
-.gd-masonry .gd-visual img {
-    box-shadow: var(--shadow);
+@media (max-width: 700px) {
+    .gd-carousel {
+        --gd-gallery-height: 440px;
+    }
+
+    .carousel-track.gd-gallery {
+        grid-column: 1 / -1;
+    }
+
 }
 
-.gd-visual figcaption {
-    display: inline-block;
-    margin-top: 1rem;
-    font-family: var(--font-ui);
-    font-weight: 700;
-    font-size: 0.9rem;
-    background: var(--card);
-    border: 2px solid var(--ink);
-    border-radius: 999px;
-    padding: 0.1rem 0.8rem;
+@media (prefers-reduced-motion: reduce) {
+    .carousel-track.gd-gallery { scroll-behavior: auto; }
+
 }
 
 @media (max-width: 760px) {
