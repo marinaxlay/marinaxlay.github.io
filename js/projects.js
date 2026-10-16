@@ -59,6 +59,16 @@ const PROJECTS = [
         featured: true
     },
     {
+        title: 'Coffee game : Mini-jeu .JS',
+        year: '2025',
+        href: 'portfolio-coffee-game.html',
+        cover: 'coffee_game/cover.png',
+        description: "Mini-jeu entièrement dessiné, conçu et développé en HTML/CSS/JS par mes propres soins.",
+        tags: ['Jeu', 'Pixel art', 'JavaScript'],
+        categories: ['perso'],
+        featured: false
+    },
+    {
         title: 'Inouk Challenge',
         year: '2025',
         href: 'realisations-inouk-v4.html',
@@ -82,5 +92,6 @@ const PROJECTS = [
 
 const CATEGORY_LABELS = {
     ux: 'Design UX/UI',
-    graphique: 'Design graphique'
+    graphique: 'Design graphique',
+    perso: 'Projets personnels'
 };
